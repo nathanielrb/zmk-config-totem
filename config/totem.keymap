@@ -88,7 +88,7 @@
          &kp SQT   &kp COMMA  &kp PERIOD  &kp P         &kp Y          &kp F      &kp G        &kp C      &kp R  &kp L
          &kp A     &kp O      &kp E       &kp U         &kp I          &kp D      &kp H        &kp T      &kp N  &kp S
 &kp TAB  &kp SEMI  &kp Q      &kp J       &kp K         &kp X          &kp B      &kp M        &kp W      &kp V  &kp Z  &kp BSPC
-                              &kp LSHFT   &lt 2 ESCAPE  &lt 3 MINUS    &kp SPACE  &lt 3 ENTER  &kp LSHFT
+                              &kp LSHFT   &lt 1 ESCAPE  &lt 3 MINUS    &kp SPACE  &lt 2 ENTER  &kp LSHFT
             >;
         };
 
