@@ -163,10 +163,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG    &trans  &trans    &kp LS(PRCNT)          &kp RA(COMMA)         &kp RA(GRAVE)  &kp RA(NUMBER_6)  &kp RA(TILDE)
-        &bootloader  &bt BT_NXT  &trans          &trans  &trans    &kp RA(DOUBLE_QUOTES)  &kp RA(SQT)           &kp GRAVE      &kp LS(CARET)     &kp LS(TILDE)
-&trans  &trans       &bt BT_PRV  &trans          &trans  &trans    &kp LS(UNDER)          &kp RA(LEFT_BRACKET)  &kp RA(S)      &kp LS(DLLR)      &kp LS(PIPE)   &kp BACKSPACE
-                                 &kp LEFT_SHIFT  &trans  &trans    &kp SPACE              &trans                &trans
+        &sys_reset   &trans      &out OUT_TOG    &trans      &trans    &kp LS(PRCNT)          &kp RA(COMMA)         &kp RA(GRAVE)  &kp RA(NUMBER_6)  &kp RA(TILDE)
+        &bootloader  &bt BT_PRV  &bt BT_CLR      &bt BT_NXT  &trans    &kp RA(DOUBLE_QUOTES)  &kp RA(SQT)           &kp GRAVE      &kp LS(CARET)     &kp LS(TILDE)
+&trans  &trans       &trans      &trans          &trans      &trans    &kp LS(UNDER)          &kp RA(LEFT_BRACKET)  &kp RA(S)      &kp LS(DLLR)      &kp LS(PIPE)   &kp BACKSPACE
+                                 &kp LEFT_SHIFT  &trans      &trans    &kp SPACE              &trans                &trans
             >;
         };
 
