@@ -112,7 +112,7 @@
          &kp LA(GRAVE)  &kp K_MUTE             &kp C_VOL_DN           &kp C_VOL_UP          &kp PRINTSCREEN    &kp LS(AT)     &kp LBKT      &kp RBKT      &kp LS(QMARK)  &kp LS(EXCL)
          &kp LEFT_GUI   &kp TAB                &sk LEFT_CONTROL       &sk LEFT_ALT          &sk RALT           &kp LS(POUND)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp BSLH
 &kp TAB  &kp LA(TAB)    &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC   &kp C_BRIGHTNESS_INC  &kp CAPSLOCK       &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)  &kp FSLH       &kp LS(TILDE)  &kp BSPC
-                                               &mt LEFT_SHIFT DELETE  &trans                &trans             &none          &mo 5         &kp LSHFT
+                                               &mt LEFT_SHIFT DELETE  &trans                &trans             &none          &mo 4         &kp LSHFT
             >;
         };
 
@@ -138,7 +138,7 @@
          &kp RA(TILDE)  &kp RA(COMMA)         &kp RA(NUMBER_6)  &kp RA(GRAVE)          &kp LS(PERCENT)              &none          &none          &none                     &none    &kp LA(GRAVE)
          &kp TILDE      &kp RA(SQT)           &kp CARET         &kp GRAVE              &kp LS(RA(DOUBLE_QUOTES))    &sk RIGHT_ALT  &sk LEFT_ALT   &sk LEFT_CONTROL          &kp TAB  &kp RA(LEFT_GUI)
 &kp TAB  &kp PIPE       &kp RA(LEFT_BRACKET)  &kp DOLLAR        &kp RA(RIGHT_BRACKET)  &kp UNDERSCORE               &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP               &kp END  &kp LA(TAB)       &kp BSPC
-                                              &kp LEFT_SHIFT    &mo 4                  &to 3                        &to 4          &none          &mt LEFT_SHIFT BACKSPACE
+                                              &kp LEFT_SHIFT    &to 4                  &to 3                        &kp SPACE      &none          &mt LEFT_SHIFT BACKSPACE
             >;
         };
 
@@ -161,10 +161,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &none  &kp RA(HOME)  &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &kp LS(STAR)  &kp N7  &kp N8  &kp N9  &kp DOT
-           &none  &kp LEFT      &kp DOWN        &kp UP_ARROW  &kp RIGHT    &kp LS(PLUS)  &kp N4  &kp N5  &kp N6  &kp EQUAL
-&kp EQUAL  &none  &none         &none           &none         &none        &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH   &kp BACKSPACE
-                                &kp LEFT_SHIFT  &trans        &to 0        &kp NUMBER_0  &trans  &trans
+         &none  &kp F7  &kp F8          &kp F9  &kp F12    &kp LS(STAR)  &kp N7  &kp N8  &kp N9  &kp DOT
+         &none  &kp F4  &kp F5          &kp F6  &kp F11    &kp LS(PLUS)  &kp N4  &kp N5  &kp N6  &kp EQUAL
+&kp TAB  &none  &kp F1  &kp F2          &kp F3  &kp F10    &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH   &kp BACKSPACE
+                        &kp LEFT_SHIFT  &trans  &to 0      &kp NUMBER_0  &trans  &trans
             >;
         };
 
@@ -187,10 +187,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp SQT   &kp COMMA         &kp DOT             &kp P           &kp Y          &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &none
-         &kp A     &mt LEFT_SHIFT O  &mt LEFT_CONTROL E  &mt LEFT_ALT U  &kp I          &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none
-&kp TAB  &kp SEMI  &kp Q             &kp J               &kp K           &kp X          &none     &none           &none         &none      &none  &kp BSPC
-                                     &trans              &lt 1 ESCAPE    &lt 3 MINUS    &to 0     &lt 2 ENTER     &tog 0
+       &none  &none                 &kp K_MUTE      &none         &none                   &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP     &kp END    &none
+       &none  &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN    &kp C_VOL_UP  &kp C_BRIGHTNESS_INC    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT  &none
+&none  &none  &none                 &none           &none         &none                   &kp K_CUT  &kp K_COPY      &kp K_PASTE     &none      &none  &kp BSPC
+                                    &kp LEFT_SHIFT  &to 0         &none                   &to 0      &to 0           &kp LEFT_SHIFT
             >;
         };
 
