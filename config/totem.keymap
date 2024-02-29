@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp LA(TAB)    &kp K_MUTE            &kp C_VOLUME_UP    &kp PRINTSCREEN       &kp CAPS    &kp LS(AT)     &kp LBKT      &kp RBKT      &kp LS(QMARK)  &kp LS(EXCL)
-         &kp LEFT_GUI   &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &sk RALT    &kp LS(POUND)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp BSLH
-&kp TAB  &kp LA(GRAVE)  &kp TAB               &kp LCTRL          &kp LALT              &kp DEL     &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)  &kp FSLH       &kp LS(TILDE)  &kp BSPC
-                                              &kp LSHFT          &trans                &trans      &mo 5          &tog 2        &kp LSHFT
+         &kp LA(GRAVE)  &kp K_MUTE             &kp C_VOL_DN           &kp C_VOL_UP          &kp PRINTSCREEN    &kp LS(AT)     &kp LBKT      &kp RBKT      &kp LS(QMARK)  &kp LS(EXCL)
+         &kp LEFT_GUI   &kp TAB                &sk LEFT_CONTROL       &sk LEFT_ALT          &sk RALT           &kp LS(POUND)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp BSLH
+&kp TAB  &kp LA(TAB)    &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC   &kp C_BRIGHTNESS_INC  &kp CAPSLOCK       &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)  &kp FSLH       &kp LS(TILDE)  &kp BSPC
+                                               &mt LEFT_SHIFT DELETE  &trans                &trans             &mo 5          &tog 2        &kp LSHFT
             >;
         };
 
@@ -137,10 +137,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp DOT    &kp N7  &kp N8          &kp N9        &kp LS(STAR)    &kp PG_UP  &kp HOME      &kp UP          &kp END    &kp LA(TAB)
-         &kp EQUAL  &kp N4  &kp N5          &kp N6        &kp LS(PLUS)    &kp PG_DN  &kp LEFT      &kp DOWN        &kp RIGHT  &kp RA(LEFT_GUI)
-&kp TAB  &kp FSLH   &kp N1  &kp N2          &kp N3        &kp MINUS       &kp BSPC   &kp LEFT_ALT  &kp LCTRL       &kp TAB    &kp LA(GRAVE)     &kp BSPC
-                            &kp LEFT_SHIFT  &kp LEFT_GUI  &kp NUMBER_0    &tog 4     &tog 0        &kp LEFT_SHIFT
+         &kp DOT    &kp N7  &kp N8          &kp N9        &kp LS(STAR)    &kp LEFT       &kp DOWN       &kp UP                    &kp RIGHT  &kp LA(GRAVE)
+         &kp EQUAL  &kp N4  &kp N5          &kp N6        &kp LS(PLUS)    &sk RIGHT_ALT  &sk LEFT_ALT   &sk LEFT_CONTROL          &kp TAB    &kp RA(LEFT_GUI)
+&kp TAB  &kp FSLH   &kp N1  &kp N2          &kp N3        &kp MINUS       &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP               &kp END    &kp LA(TAB)       &kp BSPC
+                            &kp LEFT_SHIFT  &kp LEFT_GUI  &kp NUMBER_0    &tog 4         &tog 0         &mt LEFT_SHIFT BACKSPACE
             >;
         };
 
@@ -189,10 +189,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp SQT   &kp COMMA       &kp DOT           &kp P         &kp Y          &kp F      &kp G        &kp C         &kp R           &kp L
-         &kp A     &mt LEFT_ALT O  &mt LEFT_SHIFT E  &mt LCTRL U   &kp I          &kp D      &mt LCTRL H  &mt LSHIFT T  &mt LEFT_ALT N  &kp S
-&kp TAB  &kp SEMI  &kp Q           &kp J             &kp K         &kp X          &kp B      &kp M        &kp W         &kp V           &kp Z  &kp BSPC
-                                   &trans            &lt 1 ESCAPE  &lt 3 MINUS    &kp SPACE  &lt 2 ENTER  &tog 0
+         &kp SQT   &kp COMMA         &kp DOT             &kp P           &kp Y          &kp F      &kp G           &kp C               &kp R             &kp L
+         &kp A     &mt LEFT_SHIFT O  &mt LEFT_CONTROL E  &mt LEFT_ALT U  &kp I          &kp D      &mt LEFT_ALT H  &mt LEFT_CONTROL T  &mt LEFT_SHIFT N  &kp S
+&kp TAB  &kp SEMI  &kp Q             &kp J               &kp K           &kp X          &kp B      &kp M           &kp W               &kp V             &kp Z  &kp BSPC
+                                     &trans              &lt 1 ESCAPE    &lt 3 MINUS    &kp SPACE  &lt 2 ENTER     &tog 0
             >;
         };
 
