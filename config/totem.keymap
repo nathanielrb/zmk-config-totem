@@ -187,37 +187,13 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &none                 &kp K_MUTE      &none         &none                   &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP     &kp END    &none
-       &none  &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN    &kp C_VOL_UP  &kp C_BRIGHTNESS_INC    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT  &none
-&none  &none  &none                 &none           &none         &none                   &kp K_CUT  &kp K_COPY      &kp K_PASTE     &none      &none  &kp BSPC
-                                    &kp LEFT_SHIFT  &to 0         &none                   &to 0      &to 0           &kp LEFT_SHIFT
+         &none  &none         &kp C_BRIGHTNESS_INC  &kp K_MUTE    &none    &none      &kp HOME       &kp UP_ARROW              &kp END      &none
+         &none  &kp C_VOL_DN  &kp C_BRIGHTNESS_DEC  &kp C_VOL_UP  &none    &none      &kp LEFT       &kp DOWN                  &kp RIGHT    &none
+&kp TAB  &none  &none         &none                 &none         &none    &none      &kp PAGE_DOWN  &kp ESCAPE                &kp PAGE_UP  &none  &kp BSPC
+                              &mt LEFT_SHIFT TAB    &to 0         &none    &kp SPACE  &kp ENTER      &mt LEFT_SHIFT BACKSPACE
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        tvp2_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 2";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃ SOLO      ┃ TOGGLE IN ┃ RESET ROT ┃ TOGGLE OUT┃ TAKE SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ ---       ┃ LAST KEY  ┃ NEW KEY   ┃ NEXT KEY  ┃ ENTER     ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃ FULLSCR   ┃ CPY2BRUSH ┃ DEL HEAD  ┃ PSTinPLACE┃ BOOK MARK ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃ REDO/SAV1 ┃TRANS/WARP ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-        &kp LC(F18)  &kp F7  &kp F8  &kp F9       &kp F12        &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &trans       &kp F4  &kp F5  &kp F6       &kp F11        &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &kp J        &kp F1  &kp F2  &kp F3       &kp F10        &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                             &trans  &kp LC(F12)  &kp LC(F11)    &trans  &trans  &trans
-            >;
-        };
     };
 };
