@@ -190,7 +190,7 @@
 
             bindings = <
          &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM    &none      &kp HOME       &kp UP_ARROW              &kp END      &none
-         &none                  &kp K_MUTE                &kp C_VOL_DN          &kp C_VOL_UP          &none                       &none      &kp LEFT       &kp DOWN                  &kp RIGHT    &kp DELETE
+         &bt BT_CLR_ALL         &kp K_MUTE                &kp C_VOL_DN          &kp C_VOL_UP          &none                       &none      &kp LEFT       &kp DOWN                  &kp RIGHT    &kp DELETE
 &kp TAB  &bt BT_CLR             &out OUT_USB              &bt BT_PRV            &bt BT_NXT            &out OUT_BLE                &none      &kp PAGE_DOWN  &kp ESCAPE                &kp PAGE_UP  &none       &kp BSPC
                                                           &mt LEFT_SHIFT TAB    &to 0                 &none                       &kp SPACE  &kp ENTER      &mt LEFT_SHIFT BACKSPACE
             >;
