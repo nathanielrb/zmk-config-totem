@@ -112,7 +112,7 @@
             bindings = <
          &kp LA(GRAVE)  &kp DOWN       &kp LEFT               &kp RIGHT     &kp UP_ARROW    &kp LS(AT)     &kp LBKT      &kp RBKT      &kp LS(QMARK)  &kp LS(EXCL)
          &kp LEFT_GUI   &kp TAB        &sk LEFT_CONTROL       &sk LEFT_ALT  &sk RALT        &kp LS(POUND)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp BSLH
-&kp TAB  &kp LA(TAB)    &kp PAGE_DOWN  &kp HOME               &kp END       &kp PAGE_UP     &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)  &kp FSLH       &kp LS(TILDE)  &kp BSPC
+&kp TAB  &kp LA(TAB)    &kp PAGE_DOWN  &kp HOME               &kp END       &kp PAGE_UP     &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)  &kp FSLH       &kp LS(TILDE)  &kp DELETE
                                        &mt LEFT_SHIFT DELETE  &trans        &trans          &kp CAPSLOCK   &mo 4         &kp LSHFT
             >;
         };
@@ -138,7 +138,7 @@
             bindings = <
          &kp RA(TILDE)  &kp RA(COMMA)         &kp RA(NUMBER_6)  &kp RA(GRAVE)          &kp LS(PERCENT)              &kp DOWN_ARROW  &kp LEFT      &kp RIGHT                 &kp UP_ARROW  &kp LA(GRAVE)
          &kp TILDE      &kp RA(SQT)           &kp CARET         &kp GRAVE              &kp LS(RA(DOUBLE_QUOTES))    &sk RIGHT_ALT   &sk LEFT_ALT  &sk LEFT_CONTROL          &kp TAB       &kp RA(LEFT_GUI)
-&kp TAB  &kp PIPE       &kp RA(LEFT_BRACKET)  &kp DOLLAR        &kp RA(RIGHT_BRACKET)  &kp UNDERSCORE               &kp PAGE_DOWN   &kp HOME      &kp END                   &kp PAGE_UP   &kp LA(TAB)       &kp BSPC
+&kp TAB  &kp PIPE       &kp RA(LEFT_BRACKET)  &kp DOLLAR        &kp RA(RIGHT_BRACKET)  &kp UNDERSCORE               &kp PAGE_DOWN   &kp HOME      &kp END                   &kp PAGE_UP   &kp LA(TAB)       &kp DELETE
                                               &kp LEFT_SHIFT    &to 4                  &to 3                        &kp SPACE       &none         &mt LEFT_SHIFT BACKSPACE
             >;
         };
@@ -162,10 +162,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &none            &kp F7  &kp F8          &kp F9  &kp F12    &kp LS(STAR)  &kp N7  &kp N8  &kp N9  &kp DOT
-         &kp PRINTSCREEN  &kp F4  &kp F5          &kp F6  &kp F11    &kp LS(PLUS)  &kp N4  &kp N5  &kp N6  &kp EQUAL
-&kp TAB  &none            &kp F1  &kp F2          &kp F3  &kp F10    &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH   &kp BACKSPACE
-                                  &kp LEFT_SHIFT  &trans  &to 0      &kp NUMBER_0  &trans  &trans
+         &none            &kp F7  &kp F8          &kp F9      &kp F12    &kp LS(LEFT_PARENTHESIS)  &kp N7     &kp N8      &kp N9  &kp RIGHT_PARENTHESIS
+         &kp PRINTSCREEN  &kp F4  &kp F5          &kp F6      &kp F11    &kp STAR                  &kp N4     &kp N5      &kp N6  &kp EQUAL
+&kp TAB  &none            &kp F1  &kp F2          &kp F3      &kp F10    &kp PLUS                  &kp N1     &kp N2      &kp N3  &kp FSLH               &kp BACKSPACE
+                                  &kp LEFT_SHIFT  &kp DELETE  &to 0      &kp NUMBER_0              &kp MINUS  &kp PERIOD
             >;
         };
 
