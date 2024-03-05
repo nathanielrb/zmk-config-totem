@@ -137,9 +137,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp RA(TILDE)  &kp RA(GRAVE)          &kp RA(SQT)           &kp RA(NUMBER_6)       &kp LS(PERCENT)    &kp HOME       &kp LEFT      &kp RIGHT                 &kp END      &kp LA(GRAVE)
-         &kp RA(COMMA)  &kp GRAVE              &kp RA(E)             &kp CARET              &kp DOLLAR         &sk RIGHT_ALT  &sk LEFT_ALT  &sk LEFT_CONTROL          &kp TAB      &kp RA(LEFT_GUI)
-&kp TAB  &kp PIPE       &kp RA(DOUBLE_QUOTES)  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp UNDERSCORE     &kp PAGE_DOWN  &kp DOWN      &kp UP                    &kp PAGE_UP  &kp LA(TAB)       &kp DELETE
+         &kp RA(TILDE)  &kp RA(GRAVE)          &kp RA(SQT)           &kp RA(NUMBER_6)       &kp LS(PERCENT)    &kp HOME       &kp LEFT      &kp RIGHT                 &kp END        &kp LA(GRAVE)
+         &kp RA(COMMA)  &kp GRAVE              &kp RA(E)             &kp CARET              &kp DOLLAR         &sk RIGHT_ALT  &sk LEFT_ALT  &sk LEFT_CONTROL          &kp TAB        &kp RA(LEFT_GUI)
+&kp TAB  &kp PIPE       &kp RA(DOUBLE_QUOTES)  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp UNDERSCORE     &kp PAGE_UP    &kp UP_ARROW  &kp DOWN                  &kp PAGE_DOWN  &kp LA(TAB)       &kp DELETE
                                                &kp LEFT_SHIFT        &to 4                  &to 3              &kp SPACE      &none         &mt LEFT_SHIFT BACKSPACE
             >;
         };
