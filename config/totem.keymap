@@ -140,7 +140,7 @@
          &kp RA(GRAVE)  &kp RA(SINGLE_QUOTE)  &kp RA(NUMBER_6)      &none                  &kp PERCENT       &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN  &kp C_VOL_UP            &kp C_BRIGHTNESS_INC  &kp K_MUTE
          &kp GRAVE      &kp RA(E)             &kp CARET             &kp DOLLAR             &kp ASTERISK      &sk HOME              &sk LEFT      &sk RIGHT               &kp END               &kp PRINTSCREEN
 &kp TAB  &kp TILDE      &kp PIPE              &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp UNDERSCORE    &kp PAGE_UP           &kp UP_ARROW  &kp DOWN                &kp PAGE_DOWN         &kp INSERT       &kp DELETE
-                                              &to 3                 &mo 3                  &to 4             &kp SPACE             &none         &mt LEFT_ALT BACKSPACE
+                                              &kp LEFT_ALT          &mo 3                  &to 3             &kp SPACE             &none         &mt LEFT_ALT BACKSPACE
             >;
         };
 
