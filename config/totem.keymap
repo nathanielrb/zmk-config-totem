@@ -87,7 +87,7 @@
             bindings = <
          &kp SQT   &kp COMMA  &kp PERIOD            &kp P             &kp Y                 &kp F      &kp G                 &kp C                   &kp R    &kp L
          &kp A     &kp O      &kp E                 &kp U             &kp I                 &kp D      &kp H                 &kp T                   &kp N    &kp S
-&kp TAB  &kp SEMI  &lt 3 Q    &lt 3 J               &mt LEFT_SHIFT K  &kp X                 &kp B      &lt 2 M               &lt 1 W                 &lt 3 V  &kp Z  &kp BACKSPACE
+&kp TAB  &kp SEMI  &lt 3 Q    &lt 2 J               &mt LEFT_SHIFT K  &kp X                 &kp B      &lt 2 M               &lt 1 W                 &lt 3 V  &kp Z  &kp BACKSPACE
                               &mt LEFT_CONTROL TAB  &kp LEFT_SHIFT    &mt LEFT_GUI MINUS    &kp SPACE  &mt LEFT_SHIFT ENTER  &mt LEFT_ALT BACKSPACE
             >;
         };
