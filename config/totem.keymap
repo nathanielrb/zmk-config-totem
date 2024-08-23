@@ -85,10 +85,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp SQT   &kp COMMA  &kp PERIOD            &kp P             &kp Y                 &kp F      &kp G                 &kp C                   &kp R    &kp L
-         &kp A     &kp O      &kp E                 &kp U             &kp I                 &kp D      &kp H                 &kp T                   &kp N    &kp S
-&kp TAB  &kp SEMI  &lt 3 Q    &lt 2 J               &mt LEFT_SHIFT K  &kp X                 &kp B      &lt 2 M               &lt 1 W                 &lt 3 V  &kp Z  &kp BACKSPACE
-                              &mt LEFT_CONTROL TAB  &kp LEFT_SHIFT    &mt LEFT_GUI MINUS    &kp SPACE  &mt LEFT_SHIFT ENTER  &mt LEFT_ALT BACKSPACE
+         &kp SQT   &kp COMMA       &kp PERIOD      &kp P               &kp Y          &kp F      &kp G               &kp C           &kp R           &kp L
+         &kp A     &kp O           &kp E           &kp U               &kp I          &kp D      &kp H               &kp T           &kp N           &kp S
+&kp TAB  &kp SEMI  &mt LEFT_ALT Q  &mt LEFT_GUI J  &mt LEFT_CONTROL K  &kp X          &kp B      &mt LEFT_CONTROL M  &mt LEFT_GUI W  &mt LEFT_ALT V  &kp Z  &kp BACKSPACE
+                                   &kp LEFT_SHIFT  &mo 1               &lt 3 MINUS    &kp SPACE  &mo 2               &kp LEFT_SHIFT
             >;
         };
 
@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &none          &kp LA(TAB)    &kp TAB          &kp LEFT_ALT   &kp BACKSPACE    &kp LS(AT)     &kp LBKT      &kp RBKT      &kp LS(QMARK)  &kp LS(EXCL)
-         &sk RIGHT_ALT  &kp LG(GRAVE)  &kp ESCAPE       &kp LA(GRAVE)  &kp ENTER        &kp LS(POUND)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp BSLH
-&kp TAB  &kp CAPSLOCK   &none          &kp LC(LS(TAB))  &kp LC(TAB)    &none            &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)  &kp FSLH       &kp LS(TILDE)  &kp DELETE
-                                       &none            &none          &none            &kp LEFT_GUI   &none         &none
+         &none          &kp LA(TAB)    &kp TAB          &kp LEFT_ALT   &kp BACKSPACE    &kp LS(AT)     &kp LBKT      &kp RBKT       &kp LS(QMARK)  &kp LS(EXCL)
+         &sk RIGHT_ALT  &kp LG(GRAVE)  &kp ESCAPE       &kp LA(GRAVE)  &kp ENTER        &kp LS(POUND)  &kp LS(LPAR)  &kp LS(RPAR)   &kp LS(COLON)  &kp BSLH
+&kp TAB  &kp CAPSLOCK   &none          &kp LC(LS(TAB))  &kp LC(TAB)    &none            &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)   &kp FSLH       &kp LS(TILDE)  &kp DELETE
+                                       &none            &none          &none            &mo 3          &mo 1         &kp BACKSPACE
             >;
         };
 
@@ -137,10 +137,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp RA(GRAVE)  &kp RA(SINGLE_QUOTE)  &kp RA(NUMBER_6)      &none                  &kp PERCENT       &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRIGHTNESS_INC  &kp K_MUTE
-         &kp GRAVE      &kp RA(E)             &kp CARET             &kp DOLLAR             &kp ASTERISK      &sk HOME              &sk LEFT      &sk RIGHT     &kp END               &kp PRINTSCREEN
-&kp TAB  &kp TILDE      &kp PIPE              &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp UNDERSCORE    &kp PAGE_UP           &kp UP_ARROW  &kp DOWN      &kp PAGE_DOWN         &kp INSERT       &kp DELETE
-                                              &kp LEFT_ALT          &mo 3                  &kp LEFT_GUI      &none                 &kp LEFT_GUI  &none
+         &kp RA(GRAVE)   &kp RA(SINGLE_QUOTE)  &kp RA(NUMBER_6)      &kp PERCENT            &kp ESCAPE    &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRIGHTNESS_INC  &kp K_MUTE
+         &kp GRAVE       &kp RA(E)             &kp CARET             &kp DOLLAR             &kp ENTER     &sk HOME              &sk LEFT      &sk RIGHT     &kp END               &kp PRINTSCREEN
+&kp TAB  &kp UNDERSCORE  &kp PIPE              &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &none         &kp PAGE_UP           &kp UP_ARROW  &kp DOWN      &kp PAGE_DOWN         &kp INSERT       &kp DELETE
+                                               &kp TAB               &mo 2                  &mo 3         &none                 &kp LEFT_GUI  &none
             >;
         };
 
