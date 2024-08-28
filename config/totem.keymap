@@ -26,7 +26,8 @@
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <300>;
+    hold-trigger-key-positions = <>;
 };
 
 / {
@@ -85,10 +86,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp SQT   &kp COMMA       &kp PERIOD      &kp P               &kp Y        &kp F      &kp G               &kp C            &kp R           &kp L
-         &kp A     &kp O           &lt 3 E         &lt 1 U             &kp I        &kp D      &lt 1 H             &lt 3 T          &kp N           &kp S
-&kp TAB  &kp SEMI  &mt LEFT_ALT Q  &mt LEFT_GUI J  &mt LEFT_CONTROL K  &kp X        &kp B      &mt LEFT_CONTROL M  &mt LEFT_GUI W   &mt LEFT_ALT V  &kp Z  &kp BACKSPACE
-                                   &lt 2 TAB       &kp LEFT_SHIFT      &kp MINUS    &kp SPACE  &kp LEFT_SHIFT      &lt 2 BACKSPACE
+         &kp SQT   &kp COMMA       &kp PERIOD      &kp P               &kp Y          &kp F      &kp G               &kp C           &kp R           &kp L
+         &kp A     &kp O           &kp E           &kp U               &kp I          &kp D      &kp H               &kp T           &kp N           &kp S
+&kp TAB  &kp SEMI  &mt LEFT_ALT Q  &mt LEFT_GUI J  &mt LEFT_CONTROL K  &kp X          &kp B      &mt LEFT_CONTROL M  &mt LEFT_GUI W  &mt LEFT_ALT V  &kp Z  &kp BACKSPACE
+                                   &mo 1           &kp LEFT_SHIFT      &lt 3 MINUS    &kp SPACE  &kp LEFT_SHIFT      &mo 1
             >;
         };
 
@@ -111,10 +112,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp RA(GRAVE)  &kp RA(SINGLE_QUOTE)  &kp RA(NUMBER_6)      &kp LEFT_ALT           &kp ESCAPE    &kp LS(AT)     &kp LBKT      &kp RBKT       &kp LS(QMARK)  &kp LS(EXCL)
-         &kp GRAVE      &kp RA(E)             &kp CARET             &kp DOLLAR             &kp ENTER     &kp LS(POUND)  &kp LS(LPAR)  &kp LS(RPAR)   &kp LS(COLON)  &kp BSLH
-&kp TAB  &kp UNDER      &kp PIPE              &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp DELETE    &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)   &kp FSLH       &kp LS(TILDE)  &kp DELETE
-                                              &kp TAB               &kp ESCAPE             &mo 2         &kp SPACE      &kp ENTER     &kp BACKSPACE
+         &kp RA(GRAVE)  &kp RA(SINGLE_QUOTE)  &kp RA(NUMBER_6)      &kp LEFT_ALT           &kp ESCAPE    &kp LS(AT)     &kp LBKT       &kp RBKT      &kp LS(QMARK)  &kp LS(EXCL)
+         &kp GRAVE      &kp RA(E)             &kp CARET             &kp DOLLAR             &kp ENTER     &kp LS(POUND)  &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(COLON)  &kp BSLH
+&kp TAB  &kp UNDER      &kp PIPE              &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp DELETE    &kp LS(AMPS)   &kp LS(LBRC)   &kp LS(RBRC)  &kp FSLH       &kp LS(TILDE)  &kp DELETE
+                                              &mo 2                 &kp ESCAPE             &kp TAB       &kp ENTER      &kp BACKSPACE  &mo 2
             >;
         };
 
