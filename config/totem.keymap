@@ -57,7 +57,7 @@
                 <&kp G &kp I &kp F>;
         };
 
-        fraandroid: fra {
+        frtaandroid: fra {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp A>;
@@ -78,7 +78,7 @@
             label = "FRE";
         };
 
-        freandroid: freandroid {
+        frseandroid: freandroid {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp E>;
@@ -92,7 +92,7 @@
             label = "FRU";
         };
 
-        fruandroid: fruandroid {
+        frzuandroid: fruandroid {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp U>;
@@ -200,7 +200,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &fruandroid   &kp RA(SINGLE_QUOTE)  &kp LS(NUMBER_6)  &freandroid           &fraandroid              &kp PERIOD  &kp N7        &kp N8         &kp N9  &kp EQUAL
+         &frzuandroid  &kp RA(SINGLE_QUOTE)  &kp LS(NUMBER_6)  &frseandroid          &frtaandroid             &kp PERIOD  &kp N7        &kp N8         &kp N9  &kp EQUAL
          &fru          &kp RA(E)             &kp RA(CARET)     &fre                  &fra                     &kp STAR    &kp N4        &kp N5         &kp N6  &kp MINUS
 &kp TAB  &kp LS(PLUS)  &sk RIGHT_ALT         &kp RA(COMMA)     &kp RA(GRAVE)         &kp RA(DOUBLE_QUOTES)    &kp PLUS    &kp N1        &kp N2         &kp N3  &kp COLON  &kp BACKSPACE
                                              &kp TAB           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp SPACE   &kp NUMBER_0  &kp BACKSPACE
