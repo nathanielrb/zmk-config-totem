@@ -122,10 +122,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp SQT   &kp COMMA         &kp PERIOD      &kp P               &kp Y          &kp F      &kp G               &kp C           &kp R             &kp L
-         &kp A     &mt LEFT_SHIFT O  &lt 3 E         &lt 1 U             &kp I          &kp D      &lt 1 H             &lt 3 T         &mt LEFT_SHIFT N  &kp S
-&kp TAB  &kp SEMI  &mt LEFT_ALT Q    &mt LEFT_GUI J  &mt LEFT_CONTROL K  &kp X          &kp B      &mt LEFT_CONTROL M  &mt LEFT_GUI W  &mt LEFT_ALT V    &kp Z  &kp BACKSPACE
-                                     &mo 2           &kp LEFT_SHIFT      &lt 3 MINUS    &kp SPACE  &kp LEFT_SHIFT      &mo 2
+         &kp SQT   &kp COMMA       &kp PERIOD      &kp P               &kp Y          &kp F      &kp G               &kp C           &kp R           &kp L
+         &kp A     &lt 2 O         &lt 3 E         &lt 1 U             &kp I          &kp D      &lt 1 H             &lt 3 T         &lt 2 N         &kp S
+&kp TAB  &kp SEMI  &mt LEFT_ALT Q  &mt LEFT_GUI J  &mt LEFT_CONTROL K  &kp X          &kp B      &mt LEFT_CONTROL M  &mt LEFT_GUI W  &mt LEFT_ALT V  &kp Z  &kp BACKSPACE
+                                   &mo 2           &kp LEFT_SHIFT      &lt 3 MINUS    &kp SPACE  &kp LEFT_SHIFT      &mo 2
             >;
         };
 
@@ -174,10 +174,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp SPACE     &kp K_MUTE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp SPACE    &kp DELETE   &kp TAB       &kp ESCAPE  &kp ENTER      &kp BACKSPACE
-         &kp CAPSLOCK  &kp PRINTSCREEN  &kp LC(LS(TAB))       &kp LC(TAB)           &kp SPACE    &sk HOME     &sk LEFT      &sk RIGHT   &kp END        &kp PRINTSCREEN
-&kp TAB  &kp SPACE     &kp SPACE        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC  &kp SPACE    &kp PAGE_UP  &kp UP_ARROW  &kp DOWN    &kp PAGE_DOWN  &kp INSERT       &kp DELETE
-                                        &to 0                 &none                 &none        &none        &kp LEFT_GUI  &to 0
+         &kp SPACE     &kp ESCAPE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_MUTE    &kp DELETE   &kp TAB       &kp BACKSPACE  &kp ENTER      &kp BACKSPACE
+         &kp CAPSLOCK  &kp PRINTSCREEN  &kp LC(LS(TAB))       &kp LC(TAB)           &kp SPACE     &sk HOME     &sk LEFT      &sk RIGHT      &kp END        &kp PRINTSCREEN
+&kp TAB  &kp SPACE     &kp SPACE        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC  &kp SPACE     &kp PAGE_UP  &kp UP_ARROW  &kp DOWN       &kp PAGE_DOWN  &kp INSERT       &kp DELETE
+                                        &to 0                 &none                 &none         &none        &kp LEFT_GUI  &to 0
             >;
         };
 
