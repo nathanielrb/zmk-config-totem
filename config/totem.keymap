@@ -34,12 +34,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
@@ -61,6 +55,48 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
+        };
+
+        fraandroid: fra {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+            label = "FRA";
+        };
+
+        fra: fra {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp A>;
+            label = "FRA";
+        };
+
+        fre: fre {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp E>;
+            label = "FRE";
+        };
+
+        freandroid: freandroid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp E>;
+            label = "FREANDROID";
+        };
+
+        fru: fru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp U>;
+            label = "FRU";
+        };
+
+        fruandroid: fruandroid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp U>;
+            label = "FRUANDROID";
         };
     };
 
@@ -112,10 +148,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp RA(GRAVE)  &kp RA(SINGLE_QUOTE)  &kp RA(NUMBER_6)      &kp LEFT_ALT           &none    &kp LS(AT)     &kp LBKT      &kp RBKT       &kp LS(QMARK)  &kp LS(EXCL)
-         &kp GRAVE      &kp RA(E)             &kp CARET             &kp DOLLAR             &none    &kp LS(POUND)  &kp LS(LPAR)  &kp LS(RPAR)   &kp LS(COLON)  &kp BSLH
-&kp TAB  &kp UNDER      &kp PIPE              &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &none    &kp LS(AMPS)   &kp LS(LBRC)  &kp LS(RBRC)   &kp FSLH       &kp LS(TILDE)  &kp DELETE
-                                              &kp TAB               &kp ESCAPE             &to 2    &kp SPACE      &kp ENTER     &kp BACKSPACE
+         &kp RA(GRAVE)  &kp CARET      &kp LESS_THAN         &kp GREATER_THAN       &kp DOLLAR    &kp BACKSLASH  &kp LBKT      &kp RBKT       &kp LS(QMARK)  &kp LS(EXCL)
+         &kp PERCENT    &kp AMPERSAND  &kp AT                &kp ASTERISK           &kp HASH      &kp PERIOD     &kp LS(LPAR)  &kp LS(RPAR)   &kp COMMA      &kp SEMICOLON
+&kp TAB  &kp UNDER      &kp PIPE       &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &none         &kp SLASH      &kp LS(LBRC)  &kp LS(RBRC)   &kp COLON      &kp LS(TILDE)  &kp DELETE
+                                       &kp TAB               &kp ESCAPE             &to 2         &kp SPACE      &kp ENTER     &kp BACKSPACE
             >;
         };
 
@@ -164,10 +200,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp N6        &kp N7        &kp N8   &kp N9                &kp N0                   &kp PERIOD  &kp N7        &kp N8         &kp N9  &kp EQUAL
-         &kp N1        &kp N2        &kp N3   &kp N4                &kp N5                   &kp STAR    &kp N4        &kp N5         &kp N6  &kp MINUS
-&kp TAB  &kp LS(PLUS)  &kp LS(STAR)  &kp DOT  &kp MINUS             &kp EQUAL                &kp PLUS    &kp N1        &kp N2         &kp N3  &kp COLON  &kp BACKSPACE
-                                     &kp TAB  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp SPACE   &kp NUMBER_0  &kp BACKSPACE
+         &fruandroid   &kp RA(SINGLE_QUOTE)  &kp LS(NUMBER_6)  &freandroid           &fraandroid              &kp PERIOD  &kp N7        &kp N8         &kp N9  &kp EQUAL
+         &fru          &kp RA(E)             &kp RA(CARET)     &fre                  &fra                     &kp STAR    &kp N4        &kp N5         &kp N6  &kp MINUS
+&kp TAB  &kp LS(PLUS)  &sk RIGHT_ALT         &kp RA(COMMA)     &kp RA(GRAVE)         &kp RA(DOUBLE_QUOTES)    &kp PLUS    &kp N1        &kp N2         &kp N3  &kp COLON  &kp BACKSPACE
+                                             &kp TAB           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp SPACE   &kp NUMBER_0  &kp BACKSPACE
             >;
         };
 
