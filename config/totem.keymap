@@ -195,7 +195,7 @@
 
             bindings = <
        &kp SQT        &kp COMMA        &kp PERIOD       &kp P                &kp Y        &kp F      &kp G                &kp C            &kp R            &kp L
-       &kp A          &ltl 3 O         &ltl 2 E         &ltl 1 U             &kp I        &kp D      &ltr 1 H             &ltr 2 T         &ltr 3 N         &kp S
+       &kp A          &ltl 2 O         &ltl 3 E         &ltl 1 U             &kp I        &kp D      &ltr 1 H             &ltr 3 T         &ltr 2 N         &kp S
 &none  &kp SEMICOLON  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &kp X        &kp B      &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z  &none
                                        &none            &kp LEFT_SHIFT       &kp MINUS    &kp SPACE  &kp LEFT_SHIFT       &none
             >;
@@ -223,7 +223,7 @@
        &kp SQT      &kp CARET      &kp LESS_THAN         &kp GREATER_THAN       &kp DOLLAR           &kp GRAVE      &kp LBKT      &kp RBKT       &kp LS(QMARK)  &kp LS(EXCL)
        &kp PERCENT  &kp AMPERSAND  &kp AT                &kp ASTERISK           &kp HASH             &kp UNDER      &kp LS(LPAR)  &kp LS(RPAR)   &kp COLON      &kp PIPE
 &none  &none        &none          &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp DOUBLE_QUOTES    &kp BACKSLASH  &kp LS(LBRC)  &kp LS(RBRC)   &kp SLASH      &kp LS(TILDE)  &none
-                                   &kp TAB               &kp ESCAPE             &to 2                &kp DEL        &kp ENTER     &kp BACKSPACE
+                                   &to 3                 &kp ESCAPE             &to 2                &none          &kp ENTER     &kp BACKSPACE
             >;
         };
 
@@ -246,9 +246,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none         &kp K_MUTE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &bt BT_NXT    &kp LC(DELETE)  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(BACKSPACE)  &none
-       &kp CAPSLOCK  &kp PRINTSCREEN  &kp LC(LS(TAB))       &kp LC(TAB)           &bt BT_PRV    &sk HOME        &sk LEFT      &sk RIGHT      &kp END            &none
-&none  &kp INSERT    &kp SPACE        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC  &kp SPACE     &kp PAGE_UP     &kp UP_ARROW  &kp DOWN       &kp PAGE_DOWN      &none  &none
+       &kp TAB       &kp ESCAPE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_MUTE    &kp LC(DELETE)  &kp LC(LEFT)  &kp LC(RIGHT)  &kp ENTER      &kp BACKSPACE
+       &kp CAPSLOCK  &kp PRINTSCREEN  &kp LC(LS(TAB))       &kp LC(TAB)           &bt BT_NXT    &sk HOME        &sk LEFT      &sk RIGHT      &kp END        &kp LC(BACKSPACE)
+&none  &kp INSERT    &kp SPACE        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC  &bt BT_PRV    &kp PAGE_UP     &kp UP_ARROW  &kp DOWN       &kp PAGE_DOWN  &none              &none
                                       &kp TAB               &kp ESCAPE            &to 0         &kp DELETE      &kp ENTER     &kp BACKSPACE
             >;
         };
@@ -272,10 +272,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &frzuandroid  &kp RA(SINGLE_QUOTE)  &kp LS(NUMBER_6)      &frseandroid          &frtaandroid             &kp PERIOD  &kp N7        &kp N8         &kp N9  &kp EQUAL
+       &frzuandroid  &kp RA(SINGLE_QUOTE)  &kp LS(NUMBER_6)      &frseandroid          &frtaandroid             &kp SLASH   &kp N7        &kp N8         &kp N9  &kp EQUAL
        &fru          &kp RA(E)             &kp RA(LS(NUMBER_6))  &fre                  &frza                    &kp STAR    &kp N4        &kp N5         &kp N6  &kp MINUS
 &none  &kp LS(PLUS)  &sk RIGHT_ALT         &kp RA(COMMA)         &kp RA(GRAVE)         &kp RA(DOUBLE_QUOTES)    &kp PLUS    &kp N1        &kp N2         &kp N3  &kp COLON  &none
-                                           &kp TAB               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp SPACE   &kp NUMBER_0  &kp BACKSPACE
+                                           &to 0                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PERIOD  &kp NUMBER_0  &kp BACKSPACE
             >;
         };
 
