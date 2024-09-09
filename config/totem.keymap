@@ -190,10 +190,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp SQT        &kp COMMA        &ltl 3 PERIOD    &ltl 1 P             &kp Y        &kp F      &ltr 1 G             &ltr 3 C         &kp R            &kp L
-       &kp A          &kp O            &kp E            &kp U                &kp I        &kp D      &kp H                &kp T            &kp N            &kp S
+       &kp SQT        &kp COMMA        &kp PERIOD       &kp P                &kp Y        &kp F      &kp G                &kp C            &kp R            &kp L
+       &kp A          &kp O            &lt 3 E          &kp U                &kp I        &kp D      &lt 1 H              &lt 3 T          &kp N            &kp S
 &none  &kp SEMICOLON  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &kp X        &kp B      &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z  &none
-                                       &sl 1            &sl 2                &kp MINUS    &kp SPACE  &sk LEFT_SHIFT       &none
+                                       &sl 3            &sk LEFT_SHIFT       &kp MINUS    &kp SPACE  &sl 2                &sl 1
             >;
         };
 
@@ -216,10 +216,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp GRAVE    &kp CARET      &kp CARET             &kp DOLLAR             &kp DOLLAR           &kp GRAVE      &kp LBKT      &kp RBKT      &kp LS(QMARK)  &kp LS(EXCL)
-       &kp PERCENT  &kp AMPERSAND  &kp AT                &kp ASTERISK           &kp HASH             &kp UNDER      &kp LS(LPAR)  &kp LS(RPAR)  &kp COLON      &kp PIPE
-&none  &none        &none          &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp DOUBLE_QUOTES    &kp BACKSLASH  &kp LS(LBRC)  &kp LS(RBRC)  &kp SLASH      &kp LS(TILDE)  &none
-                                   &none                 &none                  &none                &none          &to 3         &none
+       &kp GRAVE    &kp CARET      &kp CARET             &kp DOLLAR             &kp DOLLAR           &kp GRAVE      &kp LBKT      &kp RBKT       &kp LS(QMARK)  &kp LS(EXCL)
+       &kp PERCENT  &kp AMPERSAND  &kp AT                &kp ASTERISK           &kp HASH             &kp UNDER      &kp LS(LPAR)  &kp LS(RPAR)   &kp COLON      &kp PIPE
+&none  &none        &none          &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp DOUBLE_QUOTES    &kp BACKSLASH  &kp LS(LBRC)  &kp LS(RBRC)   &kp SLASH      &kp LS(TILDE)  &none
+                                   &to 3                 &to 0                  &none                &none          &none         &kp BACKSPACE
             >;
         };
 
@@ -245,7 +245,7 @@
        &kp LC(X)   &kp LC(C)     &kp LS(LC(TAB))  &kp LC(TAB)       &kp LC(V)         &kp LC(BACKSPACE)  &kp LC(LEFT)  &kp LC(RIGHT)  &kp BACKSPACE  &kp LC(BACKSPACE)
        &kp DEL     &kp TAB       &kp ESC          &kp RET           &kp BSPC          &sk HOME           &sk LEFT      &sk RIGHT      &kp END        &kp PRINTSCREEN
 &none  &bt BT_NXT  &kp LEFT_ALT  &kp LEFT_GUI     &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp PAGE_UP        &kp UP_ARROW  &kp DOWN       &kp PAGE_DOWN  &kp CAPSLOCK       &none
-                                 &none            &to 3             &to 2             &kp DELETE         &to 0         &none
+                                 &none            &to 2             &to 1             &kp DELETE         &to 0         &none
             >;
         };
 
@@ -271,7 +271,7 @@
        &frzuandroid  &kp RA(SINGLE_QUOTE)  &kp LS(NUMBER_6)      &frseandroid   &frtaandroid             &kp SLASH   &kp N7        &kp N8         &kp N9  &kp EQUAL
        &fru          &kp RA(E)             &kp RA(LS(NUMBER_6))  &fre           &frza                    &kp STAR    &kp N4        &kp N5         &kp N6  &kp MINUS
 &none  &kp LS(PLUS)  &sk RIGHT_ALT         &kp RA(COMMA)         &kp RA(GRAVE)  &kp RA(DOUBLE_QUOTES)    &kp PLUS    &kp N1        &kp N2         &kp N3  &kp COLON  &none
-                                           &none                 &to 0          &kp RIGHT_PARENTHESIS    &kp PERIOD  &kp NUMBER_0  &kp BACKSPACE
+                                           &to 0                 &to 1          &to 2                    &kp PERIOD  &kp NUMBER_0  &kp BACKSPACE
             >;
         };
 
