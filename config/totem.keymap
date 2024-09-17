@@ -170,6 +170,13 @@
             quick-tap-ms = <175>;
             hold-trigger-on-release;
         };
+
+        copypaste: copypaste {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COPYPASTE";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>, <&mt LC(V) LC(X)>;
+        };
     };
 
     keymap {
@@ -194,7 +201,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp SQT        &kp COMMA        &kp PERIOD       &kp P                &kp Y        &kp F      &kp G                &kp C            &kp R            &kp L
+       &none          &kp COMMA        &kp PERIOD       &kp P                &kp Y        &kp F      &kp G                &kp C            &kp R            &kp L
        &kp A          &ltl 2 O         &ltl 3 E         &ltl 1 U             &kp I        &kp D      &ltr 1 H             &ltr 3 T         &ltr 2 N         &kp S
 &none  &kp SEMICOLON  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &kp X        &kp B      &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z  &none
                                        &key_repeat      &sk LEFT_SHIFT       &kp MINUS    &kp SPACE  &sl 1                &caps_word
@@ -220,10 +227,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp GRAVE      &kp TAB        &kp ESCAPE        &kp CARET      &kp DOLLAR          &kp EXCLAMATION    &kp QUESTION  &kp ENTER     &kp BACKSPACE  &kp PIPE
-       &kp PERCENT    &kp AMPERSAND  &kp AT            &kp ASTERISK   &kp HASH            &kp UNDER          &kp LS(LPAR)  &kp LS(RPAR)  &kp COLON      &to 2
-&none  &sk RIGHT_ALT  &kp RA(SQT)    &kp RA(NUMBER_6)  &kp RA(GRAVE)  &kp RA(COMMA)       &kp BACKSLASH      &kp LS(LBRC)  &kp LS(RBRC)  &kp SLASH      &kp LS(TILDE)  &none
-                                     &to 4             &to 0          &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &to 3         &none
+       &kp GRAVE          &kp TAB            &kp ESCAPE  &kp RA(E)     &kp RA(GRAVE)       &kp TILDE          &caps_word    &kp ENTER     &kp BACKSPACE  &none
+       &kp DOUBLE_QUOTES  &kp SQT            &kp MINUS   &kp COLON     &kp RA(NUMBER_6)    &kp ASTERISK       &kp LS(LPAR)  &kp LS(RPAR)  &kp SLASH      &to 2
+&none  &sk RA(COMMA)      &kp RA(SEMICOLON)  &kp EXCL    &kp QUESTION  &kp BACKSLASH       &kp CARET          &kp LS(LBRC)  &kp LS(RBRC)  &kp DOLLAR     &to 1  &none
+                                             &to 4       &to 0         &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &to 3         &none
             >;
         };
 
@@ -246,10 +253,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bt BT_NXT  &kp TAB       &kp ESCAPE    &kp LC(LS(TAB))   &kp LC(TAB)       &kp DELETE   &kp CAPSLOCK  &kp ENTER  &kp BACKSPACE  &kp PRINTSCREEN
-       &kp LC(A)   &kp LC(X)     &kp LC(C)     &kp LC(V)         &kp LC(Z)         &sk HOME     &sk LEFT      &sk RIGHT  &kp END        &to 3
-&none  &kp LC(Y)   &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp PAGE_UP  &kp UP_ARROW  &kp DOWN   &kp PAGE_DOWN  &caps_word       &none
-                                 &none         &to 0             &to 1             &kp SPACE    &to 1         &none
+       &bt BT_NXT      &kp TAB       &kp ESCAPE       &kp DELETE        &kp F2       &kp F11      &kp CAPSLOCK  &kp ENTER  &kp BACKSPACE  &none
+       &kp LC(A)       &copypaste    &kp LC(LS(TAB))  &kp LC(TAB)       &kp LC(Z)    &sk HOME     &sk LEFT      &sk RIGHT  &kp END        &to 3
+&none  &sk LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI     &kp LEFT_CONTROL  &kp LC(Y)    &kp PAGE_UP  &kp UP_ARROW  &kp DOWN   &kp PAGE_DOWN  &kp PRINTSCREEN  &none
+                                     &none            &to 0             &to 1        &kp SPACE    &to 1         &none
             >;
         };
 
@@ -272,10 +279,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp F12  &kp F7  &kp F8  &kp F9  &none            &kp SLASH     &kp N7  &kp N8         &kp N9  &kp EQUAL
-       &kp F11  &kp F4  &kp F5  &kp F6  &kp ASTERISK     &kp PERIOD    &kp N4  &kp N5         &kp N6  &to 2
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp RA(COMMA)    &kp PLUS      &kp N1  &kp N2         &kp N3  &kp COLON  &none
-                        &none   &to 0   &kp MINUS        &kp NUMBER_0  &to 1   &kp BACKSPACE
+       &none        &kp COMMA         &kp PERIOD            &kp COLON              &none                &kp SLASH     &kp N7  &kp N8         &kp N9  &kp EQUAL
+       &kp PERCENT  &kp AT_SIGN       &kp AMPERSAND         &kp HASH               &kp ASTERISK         &kp MINUS     &kp N4  &kp N5         &kp N6  &to 2
+&none  &none        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp PLUS      &kp N1  &kp N2         &kp N3  &kp ASTERISK  &none
+                                      &none                 &to 0                  &kp MINUS            &kp NUMBER_0  &to 1   &kp BACKSPACE
             >;
         };
 
