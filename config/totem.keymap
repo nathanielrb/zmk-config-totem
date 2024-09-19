@@ -204,7 +204,7 @@
        &none    &kp COMMA        &kp PERIOD       &kp P                &kp Y          &kp F  &kp G                &kp C            &kp L            &none
        &kp A    &ltl 2 O         &ltl 3 E         &ltl 1 U             &kp I          &kp D  &ltr 1 H             &ltr 3 T         &ltr 2 N         &kp S
 &none  &kp SQT  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &kp X          &kp B  &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z  &none
-                                 &key_repeat      &kp R                &key_repeat    &sl 1  &kp SPACE            &caps_word
+                                 &none            &kp R                &key_repeat    &sl 1  &kp SPACE            &none
             >;
         };
 
