@@ -49,7 +49,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LSHFT>,
+                <&key_repeat>,
                 <&macro_tap>,
                 <&kp N2>,
                 <&macro_release>,
@@ -188,10 +188,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none    &kp COMMA        &kp PERIOD       &kp P                &kp Y    &kp F      &kp G                &kp C            &kp L            &none
-       &kp A    &ltl 2 O         &ltl 3 E         &ltl 1 U             &kp I    &kp D      &ltr 1 H             &ltr 3 T         &ltr 2 N         &kp S
-&none  &kp SQT  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &kp X    &kp B      &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z  &none
-                                 &none            &key_repeat          &kp R    &kp SPACE  &sl 1                &none
+       &none    &kp COMMA          &kp PERIOD       &kp P                &kp Y    &kp F      &kp G                &kp C            &kp L              &none
+       &kp A    &hml O LEFT_SHIFT  &ltl 3 E         &ltl 1 U             &kp I    &kp D      &ltr 1 H             &ltr 3 T         &hmr LEFT_SHIFT N  &kp S
+&none  &kp SQT  &hml LEFT_ALT Q    &hml LEFT_GUI J  &hml LEFT_CONTROL K  &kp X    &kp B      &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V    &kp Z  &none
+                                   &none            &sk LEFT_SHIFT       &kp R    &kp SPACE  &to 1                &none
             >;
         };
 
@@ -240,7 +240,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bt BT_NXT      &kp TAB       &kp ESCAPE       &kp DELETE        &kp F2       &kp F11      &kp CAPSLOCK  &kp ENTER  &kp BACKSPACE  &none
+       &bt BT_NXT      &kp TAB       &kp ESCAPE       &kp F11           &kp F2       &kp DELETE   &kp CAPSLOCK  &kp ENTER  &kp BACKSPACE  &none
        &kp LC(A)       &copypaste    &kp LC(LS(TAB))  &kp LC(TAB)       &kp LC(Z)    &sk HOME     &sk LEFT      &sk RIGHT  &kp END        &to 3
 &none  &sk LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI     &kp LEFT_CONTROL  &kp LC(Y)    &kp PAGE_UP  &kp UP_ARROW  &kp DOWN   &kp PAGE_DOWN  &kp PRINTSCREEN  &none
                                      &none            &to 0             &kp SPACE    &kp SPACE    &to 1         &none
