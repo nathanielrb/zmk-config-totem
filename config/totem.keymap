@@ -37,7 +37,7 @@
         esc {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <2 1>;
-            timeout-ms = <100>;
+            timeout-ms = <150>;
             layers = <0>;
         };
     };
@@ -198,7 +198,7 @@
 
             bindings = <
        &none    &kp COMMA          &kp PERIOD       &kp P                       &kp Y    &kp F      &kp G                &kp C            &kp L              &none
-       &kp A    &hml O LEFT_SHIFT  &ltl 3 E         &ltl 1 U                    &kp I    &kp D      &ltr 1 H             &ltr 3 T         &hmr LEFT_SHIFT N  &kp S
+       &kp A    &hml LEFT_SHIFT O  &ltl 3 E         &ltl 1 U                    &kp I    &kp D      &ltr 1 H             &ltr 3 T         &hmr LEFT_SHIFT N  &kp S
 &none  &kp SQT  &hml LEFT_ALT Q    &hml LEFT_GUI J  &hml LEFT_CONTROL K         &kp X    &kp B      &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V    &kp Z  &none
                                    &none            &repeat_shift LEFT_SHIFT 0  &kp R    &kp SPACE  &to 1                &none
             >;
