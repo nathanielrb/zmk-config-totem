@@ -172,6 +172,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "balanced";
         };
     };
 
@@ -250,7 +251,7 @@
 
             bindings = <
        &bt BT_NXT      &kp TAB       &kp ESCAPE       &kp F11           &kp F2       &kp DELETE   &kp CAPSLOCK  &kp ENTER  &kp BACKSPACE  &none
-       &kp LC(A)       &copypaste    &kp LC(LS(TAB))  &kp LC(TAB)       &kp LC(Z)    &sk HOME     &sk LEFT      &sk RIGHT  &kp END        &to 3
+       &kp LC(A)       &copypaste    &kp LC(LS(TAB))  &kp LC(TAB)       &kp LC(Z)    &sk HOME     &kp LEFT      &kp RIGHT  &kp END        &to 3
 &none  &sk LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI     &kp LEFT_CONTROL  &kp LC(Y)    &kp PAGE_UP  &kp UP_ARROW  &kp DOWN   &kp PAGE_DOWN  &kp PRINTSCREEN  &none
                                      &none            &to 0             &kp SPACE    &kp SPACE    &to 1         &none
             >;
