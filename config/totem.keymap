@@ -165,13 +165,13 @@
             bindings = <&kp LC(C)>, <&mt LC(V) LC(X)>;
         };
 
-        repeat_shift: repeat_shift {
+        repeat_sl: repeat_sl {
             compatible = "zmk,behavior-hold-tap";
-            label = "REPEAT_SHIFT";
-            bindings = <&kp>, <&key_repeat>;
+            label = "REPEAT_SL";
+            bindings = <&sl>, <&key_repeat>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "balanced";
         };
 
@@ -180,6 +180,25 @@
             label = "COMMA_SHIFT";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&sk LEFT_SHIFT>;
+        };
+
+        commashift: commashift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "COMMASHIFT";
+            bindings = <&sk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        hold_sl: hold_sl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_SL";
+            bindings = <&to>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
         };
     };
 
@@ -208,7 +227,7 @@
        &none    &comma_shift     &kp PERIOD       &kp P                &kp Y                &kp F              &kp G                &kp C            &kp L            &none
        &kp A    &kp O            &ltl 3 E         &ltl 1 U             &kp I                &kp D              &ltr 1 H             &ltr 3 T         &kp N            &kp S
 &none  &kp SQT  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &hml LEFT_SHIFT X    &hmr LEFT_SHIFT B  &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z  &none
-                                 &none            &sl 3                &kp R                &kp SPACE          &sl 1                &none
+                                 &none            &repeat_sl 3 0       &kp R                &kp SPACE          &hold_sl 1 1         &none
             >;
         };
 
