@@ -35,11 +35,16 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
+        comma-shift-fake {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <2 1>;
             timeout-ms = <150>;
             layers = <0>;
+        };
+
+        comma-shift-handsdown {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <15 16>;
         };
     };
 
@@ -228,7 +233,7 @@
        &kp SQT        &comma_shift     &kp PERIOD       &kp P                &kp Y                &kp F              &kp G                &kp C            &kp L            &kp MINUS
        &kp A          &kp O            &ltl 3 E         &ltl 1 U             &kp I                &kp D              &ltr 1 H             &ltr 3 T         &kp N            &kp S
 &none  &kp SEMICOLON  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &hml LEFT_SHIFT X    &hmr LEFT_SHIFT B  &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z      &none
-                                       &to 5            &kp R                &sl 3                &sl 1              &kp SPACE            &none
+                                       &to 5            &kp R                &key_repeat          &sl 1              &kp SPACE            &none
             >;
         };
 
@@ -339,9 +344,9 @@
         layer_5 {
             label = "alt_base";
             bindings = <
-       &kp V  &kp W  &kp G  &kp M  &kp J    &kp SEMI   &kp U      &kp O      &kp Y  &kp P
-       &kp N  &kp S  &kp T  &kp H  &kp K    &kp COMMA  &kp A      &kp E      &kp I  &kp C
-&none  &kp B  &kp F  &kp D  &kp L  &kp X    &kp MINUS  &kp DOT    &kp COMMA  &kp Q  &kp Z  &none
+       &kp V  &kp W  &kp G  &kp M  &kp J    &kp SEMI   &kp U      &kp O    &kp Y  &kp P
+       &kp N  &kp S  &kp T  &kp H  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp C
+&none  &kp B  &kp F  &kp D  &kp L  &kp X    &kp MINUS  &kp DOT    &kp SQT  &kp Q  &kp Z  &none
                      &to 0  &kp R  &none    &sl 6      &kp SPACE  &none
             >;
         };
