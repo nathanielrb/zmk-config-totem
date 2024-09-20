@@ -227,7 +227,7 @@
        &kp SQT        &comma_shift     &kp PERIOD       &kp P                &kp Y                &kp F              &kp G                &kp C            &kp L            &kp MINUS
        &kp A          &kp O            &ltl 3 E         &ltl 1 U             &kp I                &kp D              &ltr 1 H             &ltr 3 T         &kp N            &kp S
 &none  &kp SEMICOLON  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &hml LEFT_SHIFT X    &hmr LEFT_SHIFT B  &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z      &none
-                                       &none            &kp R                &sl 3                &hold_sl 1 1       &kp SPACE            &none
+                                       &to 5            &kp R                &sl 3                &hold_sl 1 1       &kp SPACE            &none
             >;
         };
 
@@ -332,6 +332,26 @@
        &bt BT_CLR_ALL         &kp K_MUTE                &kp C_VOL_DN          &kp C_VOL_UP          &none                       &none      &kp LEFT       &kp DOWN                  &kp RIGHT    &kp DELETE
 &none  &bt BT_CLR             &out OUT_USB              &bt BT_PRV            &bt BT_NXT            &out OUT_BLE                &none      &kp PAGE_DOWN  &kp ESCAPE                &kp PAGE_UP  &none       &none
                                                         &mt LEFT_SHIFT TAB    &to 0                 &none                       &kp SPACE  &kp ENTER      &mt LEFT_SHIFT BACKSPACE
+            >;
+        };
+
+        layer_5 {
+            label = "alt_base";
+            bindings = <
+       &kp V  &kp W  &kp G  &kp M  &kp J    &kp SEMI   &kp U      &kp O      &kp Y  &kp P
+       &kp N  &kp S  &kp T  &kp H  &kp K    &kp COMMA  &kp A      &kp E      &kp I  &kp C
+&none  &kp B  &kp F  &kp D  &kp L  &kp X    &kp MINUS  &kp DOT    &kp COMMA  &kp Q  &kp Z  &none
+                     &to 0  &kp R  &none    &sl 6      &kp SPACE  &none
+            >;
+        };
+
+        layer_6 {
+            label = "alt_sym";
+            bindings = <
+       &kp UNDER          &kp TAB        &kp ESCAPE  &kp AT            &kp AMPS         &kp GRAVE     &caps_word         &kp ENTER     &kp BACKSPACE  &kp TILDE
+       &kp DOUBLE_QUOTES  &kp COLON      &kp EXCL    &kp QUESTION      &kp HASH         &kp ASTERISK  &kp LS(LPAR)       &kp LS(RPAR)  &kp SLASH      &to 2
+&none  &kp PIPE           &kp RA(GRAVE)  &kp RA(E)   &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp CARET     &kp LS(LBRC)       &kp LS(RBRC)  &kp DOLLAR     &kp BACKSLASH  &none
+                                         &none       &kp LEFT_BRACKET  &to 5            &to 3         &kp RIGHT_BRACKET  &none
             >;
         };
 
