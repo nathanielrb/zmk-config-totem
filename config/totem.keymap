@@ -35,64 +35,34 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <1 2>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <6 7>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <7 8>;
-        };
-
         layeronelh {
             bindings = <&sl 1>;
-            key-positions = <12 13>;
+            key-positions = <2 3>;
         };
 
         layeronerh {
             bindings = <&sl 1>;
-            key-positions = <16 17>;
-        };
-
-        layertwolh {
-            bindings = <&to 2>;
-            key-positions = <11 13>;
+            key-positions = <6 7>;
         };
 
         layertworh {
             bindings = <&to 2>;
-            key-positions = <16 18>;
+            key-positions = <8 7>;
         };
 
-        layerthreelh {
-            bindings = <&to 3>;
-            key-positions = <11 12>;
+        shiftlh {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <2 3>;
         };
 
         layerthreerh {
             bindings = <&to 3>;
-            key-positions = <17 18>;
+            key-positions = <8 6>;
         };
 
         layerzerolh {
             bindings = <&to 0>;
-            key-positions = <13 14>;
-        };
-
-        layerzerorh {
-            bindings = <&to 0>;
-            key-positions = <15 16>;
+            key-positions = <2 1>;
         };
     };
 
@@ -278,7 +248,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp SQT        &comma_shift     &kp PERIOD       &kp P                &kp Y                &kp F              &kp G                &kp C            &kp L            &kp MINUS
+       &kp SQT        &kp COMMA        &kp PERIOD       &kp P                &kp Y                &kp F              &kp G                &kp C            &kp L            &kp MINUS
        &kp A          &kp O            &kp E            &kp U                &kp I                &kp D              &kp H                &kp T            &kp N            &kp S
 &none  &kp SEMICOLON  &hml LEFT_ALT Q  &hml LEFT_GUI J  &hml LEFT_CONTROL K  &hml LEFT_SHIFT X    &hmr LEFT_SHIFT B  &hmr LEFT_CONTROL M  &hmr LEFT_GUI W  &hmr LEFT_ALT V  &kp Z      &none
                                        &to 5            &kp R                &key_repeat          &sl 1              &kp SPACE            &none
