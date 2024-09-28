@@ -219,7 +219,7 @@
         commashift: commashift {
             compatible = "zmk,behavior-hold-tap";
             label = "COMMASHIFT";
-            bindings = <&sk>, <&kp>;
+            bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
@@ -258,10 +258,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp SQT            &kp COMMA        &kp PERIOD       &kp P                &kp Y    &kp F  &kp G                &kp C            &kp L            &kp MINUS
-       &hml LEFT_SHIFT A  &hml LEFT_ALT O  &hml LEFT_GUI E  &hml LEFT_CONTROL U  &kp I    &kp D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
-&none  &kp SEMICOLON      &kp Q            &kp J            &kp K                &kp X    &kp B  &kp M                &kp W            &kp V            &kp Z              &none
-                                           &to 5            &kp R                &to 3    &sl 1  &kp SPACE            &none
+       &kp SQT            &commashift COMMA LEFT_SHIFT  &kp PERIOD       &kp P                &kp Y    &kp F  &kp G                &kp C            &kp L            &kp MINUS
+       &hml LEFT_SHIFT A  &hml LEFT_ALT O               &hml LEFT_GUI E  &hml LEFT_CONTROL U  &kp I    &kp D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
+&none  &kp SEMICOLON      &kp Q                         &kp J            &kp K                &kp X    &kp B  &kp M                &kp W            &kp V            &kp Z              &none
+                                                        &to 5            &kp R                &to 3    &sl 1  &kp SPACE            &none
             >;
         };
 
@@ -337,8 +337,8 @@
 
             bindings = <
        &none  &kp COMMA         &kp PERIOD            &kp COLON              &kp PERCENT          &kp SLASH  &kp N7  &kp N8         &kp N9  &kp EQUAL
-       &none  &none             &none                 &none                  &none                &kp MINUS  &kp N4  &kp N5         &kp N6  &to 1
-&none  &none  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp PLUS   &kp N1  &kp N2         &kp N3  &kp ASTERISK  &none
+       &none  &none             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none                &kp MINUS  &kp N4  &kp N5         &kp N6  &to 1
+&none  &none  &kp LEFT_BRACKET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACKET    &kp PLUS   &kp N1  &kp N2         &kp N3  &kp ASTERISK  &none
                                 &none                 &kp SPACE              &to 2                &to 0      &kp N0  &kp BACKSPACE
             >;
         };
