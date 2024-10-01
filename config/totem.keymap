@@ -296,10 +296,10 @@
             >;
         };
 
-        symbol_layer {
+        punctuation_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "SYM";
+            label = "punct";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -313,10 +313,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp GRAVE      &kp AT         &kp HASH      &kp ASTERISK      &kp AMPERSAND    &kp TAB   &kp ESCAPE        &kp ENTER          &kp BACKSPACE      &kp DELETE
-       &kp UNDER      &kp CARET      &kp LS(LPAR)  &kp LS(RPAR)      &kp DOLLAR       &kp EXCL  &kp QUESTION      &kp COLON          &kp DOUBLE_QUOTES  &caps_word
-&none  &kp BACKSLASH  &kp RA(GRAVE)  &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH          &kp TILDE   &none
-                                     &none         &kp LEFT_BRACE    &to 0            &to 1     &kp RIGHT_BRACE   &none
+       &kp GRAVE   &kp TAB        &kp ESCAPE    &kp ASTERISK      &kp AMPERSAND    &kp AT      &kp EXCL          &kp ENTER          &kp BACKSPACE  &kp DELETE
+       &kp UNDER   &kp BACKSLASH  &kp LS(LPAR)  &kp LS(RPAR)      &kp CARET        &kp DOLLAR  &kp QUESTION      &kp MINUS          &kp COLON      &kp DOUBLE_QUOTES
+&none  &caps_word  &kp RA(GRAVE)  &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH      &kp TILDE          &none
+                                  &none         &kp LEFT_BRACE    &to 0            &to 3       &kp RIGHT_BRACE   &none
             >;
         };
 
@@ -337,9 +337,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp LC(A)       &kp LC(C)     &kp LC(X)        &kp LC(V)         &kp LC(Z)    &kp TAB      &kp ESCAPE        &kp ENTER  &kp BACKSPACE  &kp DELETE
-       &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI     &sk LEFT_CONTROL  &kp LC(Z)    &sk HOME     &kp LEFT          &kp RIGHT  &kp END        &kp CAPSLOCK
-&none  &sk LC(Y)       &kp F2        &kp LC(LS(TAB))  &kp LC(TAB)       &kp F11      &kp PAGE_UP  &kp UP_ARROW      &kp DOWN   &kp PAGE_DOWN  &kp PRINTSCREEN  &none
+       &kp LC(A)       &kp TAB       &kp ESCAPE       &kp LC(C)         &kp LC(X)    &kp TAB      &kp ESCAPE        &kp ENTER  &kp BACKSPACE  &kp DELETE
+       &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI     &sk LEFT_CONTROL  &kp LC(V)    &sk HOME     &kp LEFT          &kp RIGHT  &kp END        &kp CAPSLOCK
+&none  &sk LC(Z)       &kp F2        &kp LC(LS(TAB))  &kp LC(TAB)       &kp F11      &kp PAGE_UP  &kp UP_ARROW      &kp DOWN   &kp PAGE_DOWN  &kp PRINTSCREEN  &none
                                      &none            &kt LEFT_SHIFT    &to 0        &to 3        &kt LEFT_CONTROL  &none
             >;
         };
@@ -361,10 +361,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &kp COMMA       &kp PERIOD            &kp COLON              &kp PERCENT        &kp SLASH  &kp N7  &kp N8         &kp N9  &kp EQUAL
-       &none  &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none              &kp MINUS  &kp N4  &kp N5         &kp N6  &to 2
-&none  &none  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE    &kp PLUS   &kp N1  &kp N2         &kp N3  &kp ASTERISK  &none
-                              &none                 &kp SPACE              &to 0              &to 0      &kp N0  &kp BACKSPACE
+       &none      &kp COMMA       &kp PERIOD            &kp ASTERISK           &kp PERCENT        &kp SLASH  &kp N7  &kp N8         &kp N9  &kp EQUAL
+       &kp COLON  &kp COLON       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH           &kp MINUS  &kp N4  &kp N5         &kp N6  &kp MINUS
+&none  &none      &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE    &kp PLUS   &kp N1  &kp N2         &kp N3  &to 2      &none
+                                  &none                 &kp SPACE              &to 0              &to 2      &kp N0  &kp BACKSPACE
             >;
         };
 
