@@ -252,7 +252,8 @@
             bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
         };
 
         hold_sl: hold_sl {
@@ -291,7 +292,7 @@
        &kp SQT            &commashift COMMA LEFT_SHIFT  &kp PERIOD       &kp P                &kp Y    &kp F  &kp G                &kp C            &kp L            &kp MINUS
        &hml LEFT_SHIFT A  &hml LEFT_ALT O               &hml LEFT_GUI E  &hml LEFT_CONTROL U  &kp I    &kp D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
 &none  &kp SEMICOLON      &kp Q                         &kp J            &kp K                &kp X    &kp B  &kp M                &kp W            &kp V            &kp Z              &none
-                                                        &to 5            &kp R                &sl 1    &to 3  &kp SPACE            &none
+                                                        &to 9            &kp R                &sl 1    &to 3  &kp SPACE            &to 5
             >;
         };
 
@@ -400,17 +401,17 @@
         };
 
         layer_5 {
-            label = "alt_base";
+            label = "promethium";
             bindings = <
        &kp V  &kp W  &kp G  &kp M  &kp J    &kp SEMI   &kp U      &kp O    &kp Y  &kp P
        &kp N  &kp S  &kp T  &kp H  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp C
 &none  &kp B  &kp F  &kp D  &kp L  &kp X    &kp MINUS  &kp DOT    &kp SQT  &kp Q  &kp Z  &none
-                     &to 7  &kp R  &none    &sl 6      &kp SPACE  &to 0
+                     &to 0  &kp R  &none    &sl 6      &kp SPACE  &to 0
             >;
         };
 
         layer_6 {
-            label = "alt_sym";
+            label = "promethium_sym";
             bindings = <
        &kp UNDER          &kp TAB        &kp ESCAPE  &kp AT            &kp AMPS         &kp GRAVE     &caps_word         &kp ENTER     &kp BACKSPACE  &kp TILDE
        &kp DOUBLE_QUOTES  &kp COLON      &kp EXCL    &kp QUESTION      &kp HASH         &kp ASTERISK  &kp LS(LPAR)       &kp LS(RPAR)  &kp SLASH      &to 2
@@ -420,7 +421,7 @@
         };
 
         layer_7 {
-            label = "alt_base_30";
+            label = "promethium-30";
             bindings = <
        &kp F  &kp L  &kp G  &kp B  &kp P    &kp Z  &kp U      &kp O  &kp Y  &kp W
        &kp S  &kp N  &kp T  &kp H  &kp K    &kp X  &kp A      &kp E  &kp I  &kp C
@@ -430,12 +431,32 @@
         };
 
         layer_8 {
-            label = "alt_sym_30";
+            label = "promethium-30-sym";
             bindings = <
        &kp UNDER          &kp TAB        &kp ESCAPE  &kp AT            &kp AMPS         &kp GRAVE     &caps_word         &kp ENTER     &kp BACKSPACE  &kp TILDE
        &kp DOUBLE_QUOTES  &kp COLON      &kp EXCL    &kp QUESTION      &kp HASH         &kp ASTERISK  &kp LS(LPAR)       &kp LS(RPAR)  &kp SLASH      &to 2
 &none  &kp PIPE           &kp RA(GRAVE)  &kp RA(E)   &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp CARET     &kp LS(LBRC)       &kp LS(RBRC)  &kp DOLLAR     &kp BACKSLASH  &none
                                          &none       &kp LEFT_BRACKET  &to 7            &none         &kp RIGHT_BRACKET  &none
+            >;
+        };
+
+        layer_9 {
+            label = "rhodium";
+            bindings = <
+       &kp Z  &kp B  &kp H  &kp G  &kp Q     &kp MINUS  &kp DOT    &kp SQT  &kp J  &kp X
+       &kp C  &kp S  &kp N  &kp T  &kp K     &kp COMMA  &kp A      &kp E    &kp I  &kp M
+&none  &kp P  &kp F  &kp L  &kp D  &kp V     &kp SEMI   &kp U      &kp O    &kp Y  &kp W  &none
+                     &to 0  &kp R  &sl 10    &none      &kp SPACE  &to 0
+            >;
+        };
+
+        layer_10 {
+            label = "rhodium-sym";
+            bindings = <
+       &kp TAB        &kp ESCAPE     &kp ENTER     &kp BACKSPACE     &kp DELETE       &kp AMPERSAND  &kp ASTERISK      &kp HASH           &kp AT             &kp GRAVE
+       &caps_word     &kp CARET      &kp LS(LPAR)  &kp LS(RPAR)      &kp DOLLAR       &kp EXCL       &kp QUESTION      &kp COLON          &kp DOUBLE_QUOTES  &kp UNDER
+&none  &kp BACKSLASH  &kp RA(GRAVE)  &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH          &kp TILDE  &none
+                                     &none         &kp LEFT_BRACE    &to 0            &to 1          &kp RIGHT_BRACE   &none
             >;
         };
 
