@@ -38,11 +38,13 @@
         layeronelh {
             bindings = <&sltol1>;
             key-positions = <23 24>;
+            layers = <0 2 3>;
         };
 
         layeronerh {
             bindings = <&sltol1>;
             key-positions = <27 28>;
+            layers = <0 2 3>;
         };
 
         layerthreerh {
@@ -103,6 +105,18 @@
         bluetoothprev {
             bindings = <&bt BT_PRV>;
             key-positions = <25 21>;
+        };
+
+        backtozero {
+            bindings = <&to 0>;
+            key-positions = <23 24>;
+            layers = <1>;
+        };
+
+        backtozerorh {
+            bindings = <&to 0>;
+            key-positions = <27 28>;
+            layers = <1>;
         };
     };
 
