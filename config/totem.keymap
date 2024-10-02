@@ -118,6 +118,11 @@
             key-positions = <27 28>;
             layers = <1>;
         };
+
+        shifttab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <1 0>;
+        };
     };
 
     macros {
@@ -360,7 +365,7 @@
             bindings = <
        &kp TAB               &kp ESCAPE          &kp F2              &kp F11                 &kp LC(Y)    &kp CAPSLOCK  &kp LC(LS(TAB))   &kp LC(TAB)  &kp ENTER      &kp BACKSPACE
        &mt LEFT_SHIFT LC(A)  &mt LEFT_ALT LC(C)  &mt LEFT_GUI LC(X)  &mt LEFT_CONTROL LC(V)  &kp LC(Z)    &sk HOME      &kp LEFT          &kp RIGHT    &kp END        &to 3
-&none  &none                 &none               &none               &kp DELETE              &kp LC(Y)    &kp PAGE_UP   &kp UP_ARROW      &kp DOWN     &kp PAGE_DOWN  &kp PRINTSCREEN  &none
+&none  &kp LS(TAB)           &none               &none               &kp DELETE              &kp LC(Y)    &kp PAGE_UP   &kp UP_ARROW      &kp DOWN     &kp PAGE_DOWN  &kp PRINTSCREEN  &none
                                                  &none               &kt LEFT_SHIFT          &to 0        &to 1         &kt LEFT_CONTROL  &none
             >;
         };
@@ -416,40 +421,40 @@
         promethium {
             label = "promethium";
             bindings = <
-       &kp V  &kp W  &kp G  &kp M  &kp Q    &kp SEMI   &kp U      &kp O    &kp Y  &kp P
-       &kp N  &kp S  &kp T  &kp H  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp C
-&none  &kp B  &kp F  &kp D  &kp L  &kp X    &kp MINUS  &kp DOT    &kp SQT  &kp J  &kp Z  &none
-                     &to 6  &kp R  &sl 1    &sl 1      &kp SPACE  &to 0
+       &kp V  &kp W  &kp G  &kp M  &kp Q    &kp SEMI                      &kp U      &kp O    &kp Y  &kp P
+       &kp N  &kp S  &kp T  &kp H  &kp K    &commashift COMMA LEFT_SHIFT  &kp A      &kp E    &kp I  &kp C
+&none  &kp B  &kp F  &kp D  &kp L  &kp X    &kp MINUS                     &kp DOT    &kp SQT  &kp J  &kp Z  &none
+                     &to 6  &kp R  &sl 1    &sl 1                         &kp SPACE  &to 0
             >;
         };
 
         promethium_30 {
             label = "promethium-30";
             bindings = <
-       &kp F  &kp L  &kp G  &kp B  &kp P    &kp Z  &kp U      &kp O  &kp Y  &kp W
-       &kp S  &kp N  &kp T  &kp H  &kp K    &kp X  &kp A      &kp E  &kp I  &kp C
-&none  &none  &kp V  &kp M  &kp D  &none    &none  &kp COMMA  &kp Q  &kp J  &none  &none
-                     &to 0  &kp R  &sl 9    &sl 9  &kp SPACE  &to 0
+       &kp F  &kp L  &kp G  &kp B  &kp P    &kp Z  &kp U                         &kp O  &kp Y  &kp W
+       &kp S  &kp N  &kp T  &kp H  &kp K    &kp X  &kp A                         &kp E  &kp I  &kp C
+&none  &none  &kp V  &kp M  &kp D  &none    &none  &commashift COMMA LEFT_SHIFT  &kp Q  &kp J  &none  &none
+                     &to 0  &kp R  &sl 9    &sl 9  &kp SPACE                     &to 0
             >;
         };
 
         rhodium {
             label = "rhodium";
             bindings = <
-       &kp W  &kp B  &kp H  &kp G  &kp Z    &kp MINUS  &kp DOT    &kp SQT  &kp J  &kp X
-       &kp C  &kp S  &kp N  &kp T  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp M
-&none  &kp P  &kp F  &kp L  &kp D  &kp V    &kp SEMI   &kp U      &kp O    &kp Y  &kp Q  &none
-                     &to 0  &kp R  &sl 1    &sl 1      &kp SPACE  &to 8
+       &kp W  &kp B  &kp H  &kp G  &kp Z    &kp MINUS                     &kp DOT    &kp SQT  &kp J  &kp X
+       &kp C  &kp S  &kp N  &kp T  &kp K    &commashift COMMA LEFT_SHIFT  &kp A      &kp E    &kp I  &kp M
+&none  &kp P  &kp F  &kp L  &kp D  &kp V    &kp SEMI                      &kp U      &kp O    &kp Y  &kp Q  &none
+                     &to 0  &kp R  &sl 1    &sl 1                         &kp SPACE  &to 8
             >;
         };
 
         rhodium_30 {
             label = "rhodium-30";
             bindings = <
-       &kp V  &kp B  &kp H  &kp G  &kp P    &kp X  &kp COMMA  &kp Q  &kp J  &kp W
-       &kp C  &kp S  &kp N  &kp T  &kp K    &kp Z  &kp A      &kp E  &kp I  &kp M
-&none  &none  &kp F  &kp L  &kp D  &none    &none  &kp U      &kp O  &kp Y  &none  &none
-                     &to 0  &kp R  &sl 9    &sl 9  &kp SPACE  &to 0
+       &kp V  &kp B  &kp H  &kp G  &kp P    &kp X  &commashift COMMA LEFT_SHIFT  &kp Q  &kp J  &kp W
+       &kp C  &kp S  &kp N  &kp T  &kp K    &kp Z  &kp A                         &kp E  &kp I  &kp M
+&none  &none  &kp F  &kp L  &kp D  &none    &none  &kp U                         &kp O  &kp Y  &none  &none
+                     &to 0  &kp R  &sl 9    &sl 9  &kp SPACE                     &to 0
             >;
         };
 
