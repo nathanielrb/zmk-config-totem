@@ -313,7 +313,7 @@
        &kp SQT            &commashift COMMA LEFT_SHIFT  &kp PERIOD       &kp P                &kp Y      &kp F  &kp G                &kp C            &kp L            &kp MINUS
        &hml LEFT_SHIFT A  &hml LEFT_ALT O               &hml LEFT_GUI E  &hml LEFT_CONTROL U  &kp I      &kp D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
 &none  &kp SEMICOLON      &kp Q                         &kp J            &kp K                &kp X      &kp B  &kp M                &kp W            &kp V            &kp Z              &none
-                                                        &to 9            &kp R                &sltol1    &sl 1  &kp SPACE            &to 11
+                                                        &to 5            &kp R                &sltol1    &sl 1  &kp SPACE            &to 7
             >;
         };
 
@@ -334,10 +334,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp AMPERSAND        &kp AT         &kp EXCLAMATION  &kp HASH           &kp ENTER  &kp BACKSPACE
-       &kp GRAVE  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp UNDER      &kp QUESTION     &kp MINUS          &kp COLON  &to 2
-&none  &kp PIPE   &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTERISK     &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
-                                    &none         &kp LEFT_BRACE    &to 0                &to 3          &caps_word       &none
+       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp AMPERSAND        &kp AT         &kp EXCLAMATION    &kp HASH      &kp ENTER  &kp BACKSPACE
+       &kp UNDER  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp GRAVE      &kp QUESTION       &kp MINUS     &kp COLON  &to 2
+&none  &kp PIPE   &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp ASTERISK  &kp SLASH  &kp TILDE      &none
+                                    &none         &kp LEFT_BRACE    &to 0                &to 3          &caps_word         &none
             >;
         };
 
@@ -358,9 +358,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB               &kp ESCAPE          &kp F2              &kp F11                 &none        &kp CAPSLOCK  &kp LC(LS(TAB))   &kp LC(TAB)  &kp ENTER      &kp BACKSPACE
+       &kp TAB               &kp ESCAPE          &kp F2              &kp F11                 &kp LC(Y)    &kp CAPSLOCK  &kp LC(LS(TAB))   &kp LC(TAB)  &kp ENTER      &kp BACKSPACE
        &mt LEFT_SHIFT LC(A)  &mt LEFT_ALT LC(C)  &mt LEFT_GUI LC(X)  &mt LEFT_CONTROL LC(V)  &kp LC(Z)    &sk HOME      &kp LEFT          &kp RIGHT    &kp END        &to 3
-&none  &none                 &none               &none               &none                   &kp LC(Y)    &kp PAGE_UP   &kp UP_ARROW      &kp DOWN     &kp PAGE_DOWN  &kp PRINTSCREEN  &none
+&none  &none                 &none               &none               &kp DELETE              &kp LC(Y)    &kp PAGE_UP   &kp UP_ARROW      &kp DOWN     &kp PAGE_DOWN  &kp PRINTSCREEN  &none
                                                  &none               &kt LEFT_SHIFT          &to 0        &to 1         &kt LEFT_CONTROL  &none
             >;
         };
@@ -413,83 +413,53 @@
             >;
         };
 
-        layer_5 {
+        promethium {
             label = "promethium";
             bindings = <
-       &kp V  &kp W  &kp G  &kp M  &kp J    &kp SEMI   &kp U      &kp O    &kp Y  &kp P
+       &kp V  &kp W  &kp G  &kp M  &kp Q    &kp SEMI   &kp U      &kp O    &kp Y  &kp P
        &kp N  &kp S  &kp T  &kp H  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp C
-&none  &kp B  &kp F  &kp D  &kp L  &kp X    &kp MINUS  &kp DOT    &kp SQT  &kp Q  &kp Z  &none
-                     &to 0  &kp R  &sl 0    &none      &kp SPACE  &to 0
+&none  &kp B  &kp F  &kp D  &kp L  &kp X    &kp MINUS  &kp DOT    &kp SQT  &kp J  &kp Z  &none
+                     &to 6  &kp R  &sl 1    &sl 1      &kp SPACE  &to 0
             >;
         };
 
-        layer6 {
-            label = "promethium-sym";
-            bindings = <
-       &kp GRAVE      &kp AT         &kp HASH      &kp ASTERISK      &kp AMPERSAND    &kp TAB   &kp ESCAPE        &kp ENTER          &kp BACKSPACE      &kp DELETE
-       &caps_word     &kp CARET      &kp LS(LPAR)  &kp LS(RPAR)      &kp DOLLAR       &kp EXCL  &kp QUESTION      &kp COLON          &kp DOUBLE_QUOTES  &kp UNDER
-&none  &kp BACKSLASH  &kp RA(GRAVE)  &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH          &kp TILDE   &none
-                                     &none         &kp LEFT_BRACE    &to 5            &to 6     &kp RIGHT_BRACE   &none
-            >;
-        };
-
-        layer_7 {
+        promethium_30 {
             label = "promethium-30";
             bindings = <
        &kp F  &kp L  &kp G  &kp B  &kp P    &kp Z  &kp U      &kp O  &kp Y  &kp W
        &kp S  &kp N  &kp T  &kp H  &kp K    &kp X  &kp A      &kp E  &kp I  &kp C
 &none  &none  &kp V  &kp M  &kp D  &none    &none  &kp COMMA  &kp Q  &kp J  &none  &none
-                     &to 5  &kp R  &none    &sl 8  &kp SPACE  &to 0
+                     &to 0  &kp R  &sl 9    &sl 9  &kp SPACE  &to 0
             >;
         };
 
-        layer_8 {
-            label = "promethium-30-sym";
-            bindings = <
-       &kp UNDER          &kp TAB        &kp ESCAPE  &kp AT            &kp AMPS         &kp GRAVE     &caps_word         &kp ENTER     &kp BACKSPACE  &kp TILDE
-       &kp DOUBLE_QUOTES  &kp COLON      &kp EXCL    &kp QUESTION      &kp HASH         &kp ASTERISK  &kp LS(LPAR)       &kp LS(RPAR)  &kp SLASH      &to 2
-&none  &kp PIPE           &kp RA(GRAVE)  &kp RA(E)   &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp CARET     &kp LS(LBRC)       &kp LS(RBRC)  &kp DOLLAR     &kp BACKSLASH  &none
-                                         &none       &kp LEFT_BRACKET  &to 7            &none         &kp RIGHT_BRACKET  &none
-            >;
-        };
-
-        layer_9 {
+        rhodium {
             label = "rhodium";
             bindings = <
-       &kp Z  &kp B  &kp H  &kp G  &kp Q     &kp MINUS  &kp DOT    &kp SQT  &kp J  &kp X
-       &kp C  &kp S  &kp N  &kp T  &kp K     &kp COMMA  &kp A      &kp E    &kp I  &kp M
-&none  &kp P  &kp F  &kp L  &kp D  &kp V     &kp SEMI   &kp U      &kp O    &kp Y  &kp W  &none
-                     &to 0  &kp R  &sl 10    &none      &kp SPACE  &to 0
+       &kp W  &kp B  &kp H  &kp G  &kp Z    &kp MINUS  &kp DOT    &kp SQT  &kp J  &kp X
+       &kp C  &kp S  &kp N  &kp T  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp M
+&none  &kp P  &kp F  &kp L  &kp D  &kp V    &kp SEMI   &kp U      &kp O    &kp Y  &kp Q  &none
+                     &to 0  &kp R  &sl 1    &sl 1      &kp SPACE  &to 8
             >;
         };
 
-        layer_10 {
-            label = "rhodium-sym";
-            bindings = <
-       &kp GRAVE      &kp AT         &kp HASH      &kp ASTERISK      &kp AMPERSAND    &kp TAB   &kp ESCAPE        &kp ENTER          &kp BACKSPACE      &kp DELETE
-       &caps_word     &kp CARET      &kp LS(LPAR)  &kp LS(RPAR)      &kp DOLLAR       &kp EXCL  &kp QUESTION      &kp COLON          &kp DOUBLE_QUOTES  &kp UNDER
-&none  &kp BACKSLASH  &kp RA(GRAVE)  &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH          &kp TILDE   &none
-                                     &none         &kp LEFT_BRACE    &to 9            &to 10    &kp RIGHT_BRACE   &none
-            >;
-        };
-
-        layer_11 {
+        rhodium_30 {
             label = "rhodium-30";
             bindings = <
-       &kp V  &kp B  &kp H  &kp G  &kp P     &kp X   &kp COMMA  &kp Q  &kp J  &kp W
-       &kp C  &kp S  &kp N  &kp T  &kp K     &kp Z   &kp A      &kp E  &kp I  &kp M
-&none  &none  &kp F  &kp L  &kp D  &none     &none   &kp U      &kp O  &kp Y  &none  &none
-                     &to 0  &kp R  &sl 12    &sl 12  &kp SPACE  &to 0
+       &kp V  &kp B  &kp H  &kp G  &kp P    &kp X  &kp COMMA  &kp Q  &kp J  &kp W
+       &kp C  &kp S  &kp N  &kp T  &kp K    &kp Z  &kp A      &kp E  &kp I  &kp M
+&none  &none  &kp F  &kp L  &kp D  &none    &none  &kp U      &kp O  &kp Y  &none  &none
+                     &to 0  &kp R  &sl 9    &sl 9  &kp SPACE  &to 0
             >;
         };
 
-        layer_12 {
-            label = "rhodium-30-punct";
+        punct_for_30_keys {
+            label = "full_punct";
             bindings = <
-       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp AMPERSAND        &kp AT         &kp EXCLAMATION  &kp HASH           &kp ENTER  &kp BACKSPACE
-       &kp GRAVE  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp UNDER      &kp QUESTION     &kp MINUS          &kp COLON  &to 2
-&none  &kp PIPE   &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTERISK     &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
-                                    &none         &kp LEFT_BRACE    &to 0                &to 3          &caps_word       &none
+       &kp TAB    &kp ESCAPE     &kp CARET   &kp DOLLAR        &kp AMPERSAND        &kp AT         &kp EXCLAMATION    &kp HASH      &kp ENTER  &kp BACKSPACE
+       &kp GRAVE  &kp SEMICOLON  &kp PERIOD  &kp SINGLE_QUOTE  &kp RIGHT_BRACKET    &kp UNDER      &kp QUESTION       &kp MINUS     &kp COLON  &kp UNDER
+&none  &kp PIPE   &kp RA(GRAVE)  &kp RA(E)   &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp ASTERISK  &kp SLASH  &kp TILDE      &none
+                                 &none       &kp LEFT_BRACE    &to 0                &to 3          &caps_word         &none
             >;
         };
 
