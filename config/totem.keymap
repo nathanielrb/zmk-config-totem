@@ -49,52 +49,52 @@
 
         layerthreerh {
             bindings = <&tog 3>;
-            key-positions = <28 29>;
+            key-positions = <29 27>;
         };
 
         shiftlh {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <13 14>;
+            key-positions = <2 3>;
         };
 
         layertworh {
             bindings = <&tog 2>;
-            key-positions = <27 29>;
+            key-positions = <29 28>;
         };
 
         layerthreelh {
             bindings = <&tog 3>;
-            key-positions = <22 23>;
+            key-positions = <22 24>;
         };
 
         shiftrh {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <15 16>;
+            key-positions = <6 7>;
         };
 
         layertwolh {
             bindings = <&tog 2>;
-            key-positions = <22 24>;
+            key-positions = <22 23>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <1 2>;
+            key-positions = <1 0>;
         };
 
         bluetoothnext {
@@ -121,7 +121,7 @@
 
         shifttab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <1 0>;
+            key-positions = <21 22>;
         };
     };
 
@@ -315,10 +315,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp SQT            &commashift COMMA LEFT_SHIFT  &kp PERIOD       &kp P                &kp Y      &kp F  &kp G                &kp C            &kp L            &kp MINUS
-       &hml LEFT_SHIFT A  &hml LEFT_ALT O               &hml LEFT_GUI E  &hml LEFT_CONTROL U  &kp I      &kp D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
-&none  &kp SEMICOLON      &kp Q                         &kp J            &kp K                &kp X      &kp B  &kp M                &kp W            &kp V            &kp Z              &none
-                                                        &to 5            &kp R                &sltol1    &sl 1  &kp SPACE            &to 7
+       &kp SQT            &kp COMMA        &kp PERIOD       &kp P                &kp Y      &kp F  &kp G                &kp C            &kp L            &kp MINUS
+       &hml LEFT_SHIFT A  &hml LEFT_ALT O  &hml LEFT_GUI E  &hml LEFT_CONTROL U  &kp I      &kp D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
+&none  &kp SEMICOLON      &kp Q            &kp J            &kp K                &kp X      &kp B  &kp M                &kp W            &kp V            &kp Z              &none
+                                           &to 5            &kp R                &sltol1    &sl 1  &kp SPACE            &to 7
             >;
         };
 
