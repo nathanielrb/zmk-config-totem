@@ -48,7 +48,7 @@
         };
 
         layerthreerh {
-            bindings = <&tog 3>;
+            bindings = <&to 3>;
             key-positions = <29 27>;
         };
 
@@ -58,12 +58,12 @@
         };
 
         layertworh {
-            bindings = <&tog 2>;
+            bindings = <&to 2>;
             key-positions = <29 28>;
         };
 
         layerthreelh {
-            bindings = <&tog 3>;
+            bindings = <&to 3>;
             key-positions = <22 24>;
         };
 
@@ -73,7 +73,7 @@
         };
 
         layertwolh {
-            bindings = <&tog 2>;
+            bindings = <&to 2>;
             key-positions = <22 23>;
         };
 
@@ -110,7 +110,7 @@
         backtozero {
             bindings = <&to 0>;
             key-positions = <23 24>;
-            layers = <1>;
+            layers = <1 2 3>;
         };
 
         backtozerorh {
