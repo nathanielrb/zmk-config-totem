@@ -325,10 +325,10 @@
         punctuation_layer_right {
             label = "punct_right";
             bindings = <
-       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp AMPERSAND        &kp HASH       &kp EXCLAMATION  &kp AT             &kp ENTER  &kp BACKSPACE
-       &kp UNDER  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp GRAVE      &kp QUESTION     &kp MINUS          &kp COLON  &to 3
-&none  &kp PIPE   &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
-                                    &none         &kp LEFT_BRACE    &to 0                &to 4          &caps_word       &none
+       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp AMPERSAND        &kp PERCENT    &kp HASH      &kp AT             &kp ENTER  &kp BACKSPACE
+       &kp UNDER  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp GRAVE      &kp QUESTION  &kp EXCL           &kp COLON  &to 3
+&none  &kp PIPE   &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTRK     &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
+                                    &none         &kp LEFT_BRACE    &to 0                &to 4          &caps_word    &none
             >;
         };
 
@@ -349,7 +349,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp AMPERSAND        &kp AT         &kp N7      &kp N8  &kp N9  &kp BACKSPACE
+       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp AMPERSAND        &kp PERCENT    &kp N7      &kp N8  &kp N9  &kp BACKSPACE
        &kp UNDER  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp GRAVE      &kp N4      &kp N5  &kp N6  &to 3
 &none  &kp PIPE   &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp N1      &kp N2  &kp N3  &kp TILDE      &none
                                     &none         &kp LEFT_BRACE    &to 0                &to 4          &caps_word  &none
@@ -399,7 +399,7 @@
             bindings = <
        &none      &kp COMMA         &kp PERIOD            &kp HASH               &kp PERCENT          &kp SLASH     &kp N7  &kp N8         &kp N9  &kp EQUAL
        &kp COLON  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp ASTERISK  &kp N4  &kp N5         &kp N6  &kp MINUS
-&none  &kp TILDE  &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none                &kp PLUS      &kp N1  &kp N2         &kp N3  &to 1      &none
+&none  &kp TILDE  &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none                &kp PLUS      &kp N1  &kp N2         &kp N3  &to 3      &none
                                     &none                 &kp SPACE              &to 0                &to 3         &kp N0  &kp BACKSPACE
             >;
         };
