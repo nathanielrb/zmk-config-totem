@@ -99,12 +99,12 @@
 
         bluetoothnext {
             bindings = <&bt BT_NXT>;
-            key-positions = <26 30>;
+            key-positions = <22 25>;
         };
 
         bluetoothprev {
             bindings = <&bt BT_PRV>;
-            key-positions = <25 21>;
+            key-positions = <21 24>;
         };
 
         backtozero {
@@ -122,6 +122,11 @@
         shifttab {
             bindings = <&kp LS(TAB)>;
             key-positions = <21 22>;
+        };
+
+        bluetoothclr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <21 25>;
         };
     };
 
@@ -434,7 +439,7 @@
        &kp F  &kp P  &kp D  &kp L  &kp X    &kp SEMI   &kp U      &kp O    &kp Y  &kp B
        &kp S  &kp N  &kp T  &kp H  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp C
 &none  &kp V  &kp W  &kp G  &kp M  &kp J    &kp MINUS  &kp DOT    &kp SQT  &kp Q  &kp Z  &none
-                     &to 7  &kp R  &sl 1    &sl 2      &kp SPACE  &to 0
+                     &to 0  &kp R  &sl 1    &sl 2      &kp SPACE  &to 0
             >;
         };
 
