@@ -128,6 +128,11 @@
             bindings = <&bt BT_CLR>;
             key-positions = <21 25>;
         };
+
+        bluetoothclrall {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <21 23 25>;
+        };
     };
 
     macros {
