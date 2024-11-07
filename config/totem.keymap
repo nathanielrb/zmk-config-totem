@@ -445,7 +445,7 @@
        &kp F  &kp P  &kp D  &kp L  &kp X    &kp SEMI   &kp U      &kp O    &kp Y  &kp B
        &kp S  &kp N  &kp T  &kp H  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp C
 &none  &kp V  &kp W  &kp G  &kp M  &kp J    &kp MINUS  &kp DOT    &kp SQT  &kp Q  &kp Z  &none
-                     &to 0  &kp R  &sl 1    &sl 2      &kp SPACE  &to 0
+                     &to 0  &kp R  &kp R    &kp SPACE  &kp SPACE  &to 0
             >;
         };
 
