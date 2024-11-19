@@ -384,10 +384,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB               &kp ESCAPE          &kp F2              &kp F11                 &kp LC(Y)    &kp CAPSLOCK  &kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER      &kp BACKSPACE
-       &mt LEFT_SHIFT LC(A)  &mt LEFT_ALT LC(C)  &mt LEFT_GUI LC(X)  &mt LEFT_CONTROL LC(V)  &kp LC(Z)    &sk HOME      &kp LEFT         &kp RIGHT    &kp END        &to 4
-&none  &kp DELETE            &none               &none               &none                   &none        &kp PAGE_UP   &kp UP_ARROW     &kp DOWN     &kp PAGE_DOWN  &kp PRINTSCREEN  &none
-                                                 &none               &to 0                   &to 0        &to 1         &to 1            &none
+       &kp TAB               &kp ESCAPE          &kp F2              &kp F11                 &kp LC(Y)     &kp CAPSLOCK  &kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER      &kp BACKSPACE
+       &mt LEFT_SHIFT LC(A)  &mt LEFT_ALT LC(C)  &mt LEFT_GUI LC(X)  &mt LEFT_CONTROL LC(V)  &kp LC(Z)     &sk HOME      &kp LEFT         &kp RIGHT    &kp END        &to 4
+&none  &none                 &kp LC(N)           &kp LC(W)           &kp LC(P)               &kp DELETE    &kp PAGE_UP   &kp UP_ARROW     &kp DOWN     &kp PAGE_DOWN  &kp PRINTSCREEN  &none
+                                                 &none               &to 0                   &to 0         &to 1         &to 1            &none
             >;
         };
 
