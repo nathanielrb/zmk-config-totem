@@ -336,10 +336,10 @@
         punctuation_layer_right {
             label = "punct_right";
             bindings = <
-       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp PERCENT          &kp AMPS       &kp AT           &kp HASH           &kp ENTER  &kp BACKSPACE
-       &kp GRAVE  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp UNDER      &kp EXCLAMATION  &kp QUESTION       &kp COLON  &to 2
-&none  &kp PIPE   &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
-                                    &none         &to 0             &to 0                &to 4          &kp SPACE        &none
+       &kp TAB   &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp PERCENT          &kp AMPS       &kp AT           &kp HASH           &kp ENTER  &kp BACKSPACE
+       &to 1     &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp UNDER      &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp GRAVE
+&none  &kp PIPE  &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
+                                   &none         &to 0             &to 0                &to 4          &kp SPACE        &none
             >;
         };
 
@@ -360,7 +360,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp AMPERSAND        &kp PERCENT    &kp N7  &kp N8  &kp N9  &kp BACKSPACE
+       &kp TAB    &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp PERCENT          &kp AMPS       &kp N7  &kp N8  &kp N9  &kp BACKSPACE
        &kp UNDER  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp GRAVE      &kp N4  &kp N5  &kp N6  &to 3
 &none  &kp PIPE   &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp N1  &kp N2  &kp N3  &kp TILDE      &none
                                     &none         &kp SPACE         &to 0                &to 4          &kp N0  &none
