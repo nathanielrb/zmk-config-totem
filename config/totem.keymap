@@ -326,10 +326,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp SQT            &comma_shift_hold COMMA LEFT_SHIFT  &kp PERIOD       &kp P                &kp Y      &kp F  &kp G                &kp C            &kp L            &kp MINUS
-       &hml LEFT_SHIFT A  &hml LEFT_ALT O                     &hml LEFT_GUI E  &hml LEFT_CONTROL U  &kp I      &kp D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
-&none  &kp SEMICOLON      &kp Q                               &kp J            &kp K                &kp X      &kp B  &kp M                &kp W            &kp V            &kp Z              &none
-                                                              &to 6            &kp R                &sltol1    &sl 2  &kp SPACE            &to 7
+       &kp SQT            &comma_shift_hold COMMA LEFT_SHIFT  &kp PERIOD       &kp P                &kp Y    &kp F  &kp G                &kp C            &kp L            &kp MINUS
+       &hml LEFT_SHIFT A  &hml LEFT_ALT O                     &hml LEFT_GUI E  &hml LEFT_CONTROL U  &kp I    &kp D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
+&none  &kp SEMICOLON      &kp Q                               &kp J            &kp K                &kp X    &kp B  &kp M                &kp W            &kp V            &kp Z              &none
+                                                              &to 6            &kp R                &to 1    &sl 2  &kp SPACE            &to 7
             >;
         };
 
