@@ -336,10 +336,10 @@
         punctuation_layer_right {
             label = "punct_right";
             bindings = <
-       &kp TAB   &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp PERCENT          &kp AMPS       &kp AT           &kp HASH           &kp ENTER  &kp BACKSPACE
-       &to 2     &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp UNDER      &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp GRAVE
-&none  &kp PIPE  &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
-                                   &none         &to 0             &to 0                &to 0          &kp SPACE        &none
+       &kp TAB     &kp ESCAPE        &kp CARET     &kp DOLLAR        &kp PERCENT          &kp AMPS       &kp AT           &kp HASH           &kp ENTER  &kp BACKSPACE
+       &caps_word  &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp UNDER      &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp GRAVE
+&none  &kp PIPE    &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
+                                     &none         &to 0             &to 0                &to 2          &kp SPACE        &none
             >;
         };
 
@@ -421,7 +421,7 @@
        &none      &kp COMMA         &kp PERIOD            &kp HASH               &kp PERCENT          &kp PLUS      &kp N7  &kp N8         &kp N9  &kp EQUAL
        &kp TILDE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp ASTERISK  &kp N4  &kp N5         &kp N6  &kp MINUS
 &none  &to 1      &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON            &kp SLASH     &kp N1  &kp N2         &kp N3  &to 4      &none
-                                    &none                 &kp SPACE              &to 0                &to 4         &kp N0  &kp BACKSPACE
+                                    &none                 &kp SPACE              &to 0                &to 1         &kp N0  &kp BACKSPACE
             >;
         };
 
