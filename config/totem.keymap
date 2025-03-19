@@ -36,21 +36,15 @@
     combos {
         compatible = "zmk,combos";
 
-        layeronelh {
-            bindings = <&sltol1>;
+        punct_layer_lh {
+            bindings = <&sl 1>;
             key-positions = <23 24>;
             layers = <0>;
         };
 
-        layeronerh {
-            bindings = <&sl 0>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        layerthreerh {
+        nav_layer {
             bindings = <&to 2>;
-            key-positions = <29 27>;
+            key-positions = <29 28>;
         };
 
         shiftlh {
@@ -58,24 +52,14 @@
             key-positions = <2 3>;
         };
 
-        layertworh {
-            bindings = <&to 3>;
-            key-positions = <29 28>;
-        };
-
-        layerthreelh {
+        num_layer {
             bindings = <&to 2>;
-            key-positions = <22 24>;
+            key-positions = <28 27>;
         };
 
         shiftrh {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <6 7>;
-        };
-
-        layertwolh {
-            bindings = <&to 3>;
-            key-positions = <22 23>;
         };
 
         enter {
@@ -114,15 +98,9 @@
             layers = <1 3 2>;
         };
 
-        backtozerorh {
+        backtozero_all {
             bindings = <&to 0>;
-            key-positions = <27 28>;
-            layers = <1 3 2>;
-        };
-
-        shifttab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <21 22>;
+            key-positions = <22 23>;
         };
 
         bluetoothclr {
@@ -352,8 +330,8 @@
             label = "punct_right";
             bindings = <
        &none  &none          &kp CARET      &kp DOLLAR        &none            &kp AMPS   &kp AT           &kp HASH           &kp GRAVE  &kp PERCENT
-       &none  &kp RA(GRAVE)  &kp RA(E)      &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE   &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp BACKSLASH
-&none  &none  &kp RA(GRAVE)  &kp RIGHT_ALT  &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp UNDER  &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
+       &none  &kp RA(GRAVE)  &kp RA(E)      &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp UNDER  &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp BACKSLASH
+&none  &none  &kp RA(GRAVE)  &kp RIGHT_ALT  &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE   &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
                              &kp TAB        &none             &to 0            &kp CAPS   &kp SPACE        &kp ESCAPE
             >;
         };
