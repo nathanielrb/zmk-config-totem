@@ -326,7 +326,7 @@
        &none  &none          &kp CARET      &kp DOLLAR        &none            &kp AMPS   &kp AT           &kp HASH           &kp GRAVE  &kp PERCENT
        &none  &kp RA(GRAVE)  &kp RA(E)      &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp UNDER  &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp BACKSLASH
 &none  &none  &kp RA(GRAVE)  &kp RIGHT_ALT  &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE   &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
-                             &kp TAB        &none             &to 0            &kp CAPS   &kp SPACE        &kp ESCAPE
+                             &kp TAB        &none             &to 0            &to 2      &kp SPACE        &kp ESCAPE
             >;
         };
 
@@ -350,7 +350,7 @@
        &kp TAB     &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS            &kp DELETE  &kp N7  &kp N8         &kp N9  &kp BACKSPACE
        &kp ESCAPE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp COMMA   &kp N4  &kp N5         &kp N6  &kp ENTER
 &none  &kp SLASH   &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTRK           &kp PERIOD  &kp N1  &kp N2         &kp N3  &to 3          &none
-                                  &none                 &kp SPACE              &to 0               &sl 1       &kp N0  &kp BACKSPACE
+                                  &none                 &kp SPACE              &to 0               &to 1       &kp N0  &kp BACKSPACE
             >;
         };
 
