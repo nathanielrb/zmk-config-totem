@@ -134,6 +134,21 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <21 23 25>;
         };
+
+        promethium {
+            bindings = <&tog 5>;
+            key-positions = <26 30>;
+        };
+
+        rhodium {
+            bindings = <&tog 6>;
+            key-positions = <26 30 29>;
+        };
+
+        shift-both-hands {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <12 17>;
+        };
     };
 
     macros {
@@ -326,20 +341,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp SQT            &comma_shift_hold COMMA LEFT_SHIFT  &kp PERIOD       &kp P                &kp Y                &kp F              &kp G                &kp C            &kp L            &kp MINUS
-       &hml LEFT_SHIFT A  &hml LEFT_ALT O                     &hml LEFT_GUI E  &hml LEFT_CONTROL U  &hml LEFT_SHIFT I    &hml LEFT_SHIFT D  &hmr LEFT_CONTROL H  &hmr LEFT_GUI T  &hmr LEFT_ALT N  &hmr LEFT_SHIFT S
-&none  &kp SEMICOLON      &kp Q                               &kp J            &kp K                &kp X                &kp B              &kp M                &kp W            &kp V            &kp Z              &none
-                                                              &to 5            &kp R                &sl 1                &to 2              &kp SPACE            &to 6
+       &kp SQT          &kp COMMA        &kp PERIOD         &kp P                &kp Y                &kp F              &kp G                &kp C              &kp L            &kp MINUS
+       &hml LEFT_GUI A  &hml LEFT_ALT O  &hml LEFT_SHIFT E  &hml LEFT_CONTROL U  &hml LEFT_SHIFT I    &hml LEFT_SHIFT D  &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &hmr LEFT_GUI S
+&none  &kp SEMICOLON    &kp Q            &kp J              &kp K                &kp X                &kp B              &kp M                &kp W              &kp V            &kp Z            &none
+                                         &kp ENTER          &kp R                &sl 1                &to 2              &kp SPACE            &kp BACKSPACE
             >;
         };
 
         punctuation_layer_right {
             label = "punct_right";
             bindings = <
-       &kp TAB       &kp PIPE          &kp CARET     &kp DOLLAR        &kp PERCENT          &kp AMPS       &kp AT           &kp HASH           &kp GRAVE  &kp BACKSPACE
-       &kp ESCAPE    &kp LEFT_BRACKET  &kp LS(LPAR)  &kp LS(RPAR)      &kp RIGHT_BRACKET    &kp UNDER      &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp ENTER
-&none  &kp CAPSLOCK  &kp RA(GRAVE)     &kp RA(E)     &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
-                                       &none         &to 0             &to 0                &to 0          &kp SPACE        &none
+       &none  &none          &kp CARET      &kp DOLLAR        &none            &kp AMPS   &kp AT           &kp HASH           &kp GRAVE  &kp PERCENT
+       &none  &kp RA(GRAVE)  &kp RA(E)      &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE   &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp BACKSLASH
+&none  &none  &kp RA(GRAVE)  &kp RIGHT_ALT  &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp UNDER  &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
+                             &kp TAB        &none             &to 0            &kp CAPS   &kp SPACE        &kp ESCAPE
             >;
         };
 
@@ -360,10 +375,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB       &kp COMMA         &kp PERIOD            &kp HASH               &kp PERCENT          &kp PLUS   &kp N7  &kp N8         &kp N9  &kp BACKSPACE
-       &kp ESCAPE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp MINUS  &kp N4  &kp N5         &kp N6  &kp ENTER
-&none  &kp ASTERISK  &kp EQUAL         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON            &kp SLASH  &kp N1  &kp N2         &kp N3  &to 3          &none
-                                       &none                 &kp SPACE              &to 0                &to 1      &kp N0  &kp BACKSPACE
+       &kp TAB     &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS            &kp DELETE  &kp N7  &kp N8         &kp N9  &kp BACKSPACE
+       &kp ESCAPE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp COMMA   &kp N4  &kp N5         &kp N6  &kp ENTER
+&none  &kp SLASH   &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTRK           &kp PERIOD  &kp N1  &kp N2         &kp N3  &to 3          &none
+                                  &none                 &kp SPACE              &to 0               &sl 1       &kp N0  &kp BACKSPACE
             >;
         };
 
@@ -384,10 +399,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp LC(A)                  &kp ESCAPE          &kp F2              &kp F11                 &kp LC(Y)     &kp PRINTSCREEN  &kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER      &kp BACKSPACE
-       &mt LEFT_SHIFT LC(ESCAPE)  &mt LEFT_ALT LC(C)  &mt LEFT_GUI LC(X)  &mt LEFT_CONTROL LC(V)  &kp LC(Z)     &sk HOME         &kp LEFT         &kp RIGHT    &kp END        &kp ENTER
-&none  &none                      &kp LC(N)           &kp LC(W)           &kp LC(P)               &kp DELETE    &kp PAGE_UP      &kp UP_ARROW     &kp DOWN     &kp PAGE_DOWN  &to 1          &none
-                                                      &none               &to 0                   &to 0         &to 2            &kp SPACE        &none
+       &kp LC(TAB)          &kp ESCAPE          &kp F2                &kp F11                 &kp F4       &kp PRINTSCREEN  &kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER      &kp BACKSPACE
+       &mt LEFT_GUI ESCAPE  &mt LEFT_ALT LC(N)  &mt LEFT_SHIFT LC(T)  &mt LEFT_CONTROL LC(P)  &kp LC(Y)    &sk HOME         &kp LEFT         &kp RIGHT    &kp END        &kp ENTER
+&none  &kp LC(A)            &kp LC(C)           &kp LC(W)             &kp LC(V)               &kp LC(X)    &kp PAGE_UP      &kp UP_ARROW     &kp DOWN     &kp PAGE_DOWN  &to 1          &none
+                                                &none                 &kp LEFT_SHIFT          &to 0        &to 2            &kp SPACE        &none
             >;
         };
 
