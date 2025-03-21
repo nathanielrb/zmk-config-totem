@@ -419,10 +419,10 @@
 
         promethium_24_alpha2 {
             bindings = <
-        &trans     &kp PIPE  &kp QUESTION  &kp EXCL  &trans     &trans    &kp LS(AT)     &kp LS(POUND)  &kp GRAVE    &trans
-        &kp UNDER  &kp Z     &kp V         &kp X     &trans     &trans    &kp LCTRL      &kp LSHFT      &kp LALT     &kp EQUAL
-&trans  &kp BSLH   &kp Q     &kp J         &kp K     &trans     &trans    &kp LS(CARET)  &kp LS(DLLR)   &kp PERCENT  &kp PLUS   &trans
-                             &trans        &trans    &kp ESC    &kp CAPS  &trans         &trans
+        &trans      &none  &kp QUESTION  &kp EXCL  &trans     &trans    &kp LS(AT)     &kp LS(POUND)  &kp GRAVE    &trans
+        &kp ESCAPE  &kp Z  &kp V         &kp X     &trans     &trans    &kp LCTRL      &kp LSHFT      &kp LALT     &kp UNDER
+&trans  &none       &kp Q  &kp J         &kp K     &trans     &trans    &kp LS(CARET)  &kp LS(DLLR)   &kp PERCENT  &kp PIPE   &trans
+                           &trans        &trans    &kp ESC    &kp CAPS  &trans         &trans
             >;
         };
 
@@ -437,10 +437,10 @@
 
         promethium_24_num {
             bindings = <
-        &trans   &kp LESS_THAN     &kp LBKT      &kp RBKT      &trans    &trans     &kp N7  &kp N8  &kp N9  &trans
-        &kp TAB  &kp GREATER_THAN  &kp LS(LPAR)  &kp LS(RPAR)  &none     &none      &kp N4  &kp N5  &kp N6  &kp N0
-&trans  &to 8    &sl 10            &kp LS(LBRC)  &kp LS(RBRC)  &none     &none      &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
-                                   &trans        &trans        &to 6     &kp ENTER  &trans  &trans
+        &trans   &kp LESS_THAN     &kp LBKT      &kp RBKT      &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
+        &kp TAB  &kp GREATER_THAN  &kp LS(LPAR)  &kp LS(RPAR)  &none     &none   &kp N4  &kp N5  &kp N6  &kp ENTER
+&trans  &to 8    &sl 10            &kp LS(LBRC)  &kp LS(RBRC)  &none     &none   &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
+                                   &trans        &trans        &to 6     &kp N0  &trans  &trans
             >;
         };
 
