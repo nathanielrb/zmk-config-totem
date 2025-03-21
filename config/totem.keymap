@@ -108,18 +108,18 @@
         };
 
         promethium {
-            bindings = <&tog 5>;
+            bindings = <&tog 7>;
             key-positions = <26 30>;
-        };
-
-        rhodium {
-            bindings = <&tog 6>;
-            key-positions = <26 30 29>;
         };
 
         shift-both-hands {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <12 17>;
+        };
+
+        dvorak {
+            bindings = <&to 0>;
+            key-positions = <26 29 30>;
         };
     };
 
@@ -412,23 +412,49 @@
             >;
         };
 
-        rhodium {
-            label = "rhodium";
+        promethium_24 {
+            label = "promethium-24";
             bindings = <
-       &kp W  &kp B  &kp H  &kp G  &kp Z    &kp MINUS  &kp DOT    &kp SQT  &kp J  &kp X
-       &kp C  &kp S  &kp N  &kp T  &kp K    &kp COMMA  &kp A      &kp E    &kp I  &kp M
-&none  &kp P  &kp F  &kp L  &kp D  &kp V    &kp SEMI   &kp U      &kp O    &kp Y  &kp Q  &none
-                     &to 0  &kp R  &sl 1    &sl 1      &kp SPACE  &to 0
+       &none  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &none
+       &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
+&none  &kp F  &kp W            &kp G              &kp M                &none    &none      &sl 7                &sl 8              &to 9            &kp B  &none
+                               &none              &none                &kp R    &kp SPACE  &none                &none
             >;
         };
 
-        punct_for_30_keys {
-            label = "full_punct";
+        promethium_24_alpha2 {
             bindings = <
-       &kp TAB    &kp ESCAPE     &kp CARET   &kp DOLLAR        &kp AMPERSAND        &kp AT         &kp EXCLAMATION    &kp HASH      &kp ENTER  &kp BACKSPACE
-       &kp GRAVE  &kp SEMICOLON  &kp PERIOD  &kp SINGLE_QUOTE  &kp RIGHT_BRACKET    &kp UNDER      &kp QUESTION       &kp MINUS     &kp COLON  &kp UNDER
-&none  &kp PIPE   &kp RA(GRAVE)  &kp RA(E)   &kp RA(NUMBER_6)  &kp RA(COMMA)        &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp ASTERISK  &kp SLASH  &kp TILDE      &none
-                                 &none       &kp LEFT_BRACE    &to 0                &to 2          &caps_word         &none
+        &trans     &kp PIPE  &kp QUESTION  &kp EXCL  &trans     &trans    &kp LS(AT)     &kp LS(POUND)  &kp GRAVE    &trans
+        &kp UNDER  &kp Z     &kp V         &kp X     &trans     &trans    &kp LCTRL      &kp LSHFT      &kp LALT     &kp EQUAL
+&trans  &kp BSLH   &kp Q     &kp J         &kp K     &trans     &trans    &kp LS(CARET)  &kp LS(DLLR)   &kp PERCENT  &kp PLUS   &trans
+                             &trans        &trans    &kp ESC    &kp CAPS  &trans         &trans
+            >;
+        };
+
+        promethium_24_sym {
+            bindings = <
+        &trans         &kp LS(DQT)  &kp MINUS  &kp LS(STAR)   &none     &trans  &kp LS(LC(TAB))  &kp LC(TAB)     &kp PAGE_UP    &trans
+        &kp BSLH       &kp SQT      &kp DOT    &kp COMMA      &trans    &trans  &kp LEFT         &kp RIGHT       &kp HOME       &kp END
+&trans  &kp LS(TILDE)  &kp FSLH     &kp SEMI   &kp LS(COLON)  &none     &trans  &kp UP_ARROW     &kp DOWN_ARROW  &kp PAGE_DOWN  &to 8    &trans
+                                    &trans     &trans         &to 6     &to 9   &trans           &trans
+            >;
+        };
+
+        promethium_24_num {
+            bindings = <
+        &trans   &kp LESS_THAN     &kp LBKT      &kp RBKT      &trans    &trans     &kp N7  &kp N8  &kp N9  &trans
+        &kp TAB  &kp GREATER_THAN  &kp LS(LPAR)  &kp LS(RPAR)  &none     &none      &kp N4  &kp N5  &kp N6  &kp N0
+&trans  &to 8    &sl 10            &kp LS(LBRC)  &kp LS(RBRC)  &none     &none      &kp N1  &kp N2  &kp N3  &kp BSPC  &trans
+                                   &trans        &trans        &to 6     &kp ENTER  &trans  &trans
+            >;
+        };
+
+        promethium_24_num_syms {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans     &kp PERCENT  &kp HASH   &kp EQUAL  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans     &kp COMMA    &kp DOT    &kp COLON  &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp ASTRK    &kp MINUS  &kp SLASH  &kp PLUS           &trans
+                        &trans  &trans  &trans    &kp SPACE  &trans       &trans
             >;
         };
 
