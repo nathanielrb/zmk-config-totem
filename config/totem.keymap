@@ -394,19 +394,19 @@
 
         promethium_24_alpha2 {
             bindings = <
-        &trans  &none  &kp PERIOD  &kp COMMA   &trans     &trans    &trans        &trans     &trans    &trans
-        &kp Z   &kp X  &kp V       &kp F       &trans     &trans    &kp LCTRL     &kp LSHFT  &kp LALT  &none
-&trans  &trans  &kp Q  &kp J       &kp K       &trans     &trans    &trans        &kp AT     &kp HASH  &kp PERCENT  &trans
-                       &trans      &kp ESCAPE  &kp ESC    &kp CAPS  &kp CAPSLOCK  &trans
+        &trans         &kp COMMA  &kp PERIOD  &kp APOSTROPHE  &trans     &trans    &trans        &trans     &trans    &trans
+        &kp Z          &kp X      &kp V       &kp F           &trans     &trans    &kp LCTRL     &kp LSHFT  &kp LALT  &none
+&trans  &kp BACKSLASH  &kp Q      &kp J       &kp K           &trans     &trans    &trans        &kp AT     &kp HASH  &kp PERCENT  &trans
+                                  &trans      &kp ESCAPE      &kp ESC    &kp CAPS  &kp CAPSLOCK  &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-        &trans         &kp LS(DQT)  &kp QUESTION  &kp EXCL       &none     &trans  &trans  &trans  &trans  &trans
-        &kp BSLH       &kp SQT      &kp MINUS     &kp COLON      &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(TILDE)  &kp FSLH     &kp SEMI      &kp LS(ASTRK)  &none     &trans  &to 10  &trans  &sl 11  &trans  &trans
-                                    &trans        &to 5          &to 5     &to 8   &to 8   &trans
+        &trans     &kp EXCL    &kp QUESTION  &kp DOUBLE_QUOTES  &none     &trans  &trans  &trans  &trans  &trans
+        &kp TILDE  &kp SLASH   &kp MINUS     &kp COLON          &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp CARET  &kp DOLLAR  &kp SEMI      &kp LS(ASTRK)      &none     &trans  &to 10  &trans  &sl 11  &trans  &trans
+                               &trans        &to 5              &to 5     &to 8   &to 8   &trans
             >;
         };
 
