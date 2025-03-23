@@ -387,7 +387,7 @@
             bindings = <
        &none  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &none
        &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
-&none  &none  &kp W            &kp G              &kp M                &none    &none      &sl 6                &sl 8              &to 7            &none  &none
+&none  &none  &kp W            &kp G              &kp M                &none    &none      &sl 6                &to 8              &sl 7            &none  &none
                                &none              &kp R                &kp R    &kp SPACE  &kp SPACE            &none
             >;
         };
