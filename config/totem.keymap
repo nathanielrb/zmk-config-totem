@@ -414,8 +414,8 @@
             bindings = <
         &trans      &kp LESS_THAN               &kp LBKT                              &kp RBKT                                 &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
         &kp ESCAPE  &hml LEFT_ALT GREATER_THAN  &hml LS(LEFT_SHIFT) LEFT_PARENTHESIS  &hml LS(LEFT_CONTROL) RIGHT_PARENTHESIS  &none     &none   &kp N4  &kp N5  &kp N6  &kp ENTER
-&trans  &kp TAB     &sl 9                       &kp LS(LBRC)                          &kp LS(RBRC)                             &none     &none   &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
-                                                &trans                                &to 5                                    &to 5     &kp N0  &kp N0  &trans
+&trans  &kp TAB     &sl 5                       &kp LS(LBRC)                          &kp LS(RBRC)                             &none     &none   &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
+                                                &trans                                &to 9                                    &to 9     &kp N0  &kp N0  &trans
             >;
         };
 
@@ -430,10 +430,10 @@
 
         promethium_24_nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &none     &trans     &kp LS(LC(TAB))  &kp LC(TAB)     &kp PAGE_UP    &trans
-        &trans  &trans  &trans  &trans  &trans    &trans     &kp LEFT         &kp RIGHT       &kp HOME       &kp END
-&trans  &trans  &trans  &trans  &trans  &none     &trans     &kp UP_ARROW     &kp DOWN_ARROW  &kp PAGE_DOWN  &to 7    &trans
-                        &trans  &to 5   &to 5     &kp SPACE  &kp SPACE        &trans
+        &trans             &kp F4        &kp F2                &kp F11                &none     &trans     &kp LS(LC(TAB))         &kp LC(TAB)                  &kp HOME         &trans
+        &hml LEFT_GUI TAB  &kp LEFT_ALT  &hml LEFT_SHIFT HOME  &hml LEFT_CONTROL END  &trans    &trans     &hmr LEFT_CONTROL LEFT  &hmr LEFT_SHIFT RIGHT_ARROW  &kp LEFT_ALT     &kp ENTER
+&trans  &kp ESCAPE         &to 5         &kp PAGE_DOWN         &kp PAGE_UP            &none     &trans     &kp UP_ARROW            &kp DOWN_ARROW               &kp PRINTSCREEN  &kp BACKSPACE  &trans
+                                         &trans                &to 5                  &to 5     &kp SPACE  &kp SPACE               &trans
             >;
         };
 
