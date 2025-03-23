@@ -414,8 +414,8 @@
             bindings = <
         &trans      &kp LESS_THAN               &kp LBKT                              &kp RBKT                                 &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
         &kp ESCAPE  &hml LEFT_ALT GREATER_THAN  &hml LS(LEFT_SHIFT) LEFT_PARENTHESIS  &hml LS(LEFT_CONTROL) RIGHT_PARENTHESIS  &none     &none   &kp N4  &kp N5  &kp N6  &kp ENTER
-&trans  &kp TAB     &to 5                       &kp LS(LBRC)                          &kp LS(RBRC)                             &none     &none   &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
-                                                &trans                                &sl 9                                    &sl 9     &kp N0  &kp N0  &trans
+&trans  &kp TAB     &sl 9                       &kp LS(LBRC)                          &kp LS(RBRC)                             &none     &none   &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
+                                                &trans                                &to 5                                    &to 5     &kp N0  &kp N0  &trans
             >;
         };
 
