@@ -403,19 +403,19 @@
 
         promethium_24_sym {
             bindings = <
-        &trans         &kp EXCL   &kp DOUBLE_QUOTES  &kp QUESTION   &none        &trans      &trans      &trans  &trans  &trans
-        &kp BACKSLASH  &kp APOS   &kp B              &kp COLON      &trans       &trans      &trans      &trans  &trans  &trans
-&trans  &kp TILDE      &kp SLASH  &kp SEMI           &kp LS(ASTRK)  &none        &trans      &sl 11      &to 10  &trans  &trans  &trans
-                                  &trans             &kp CARET      &kp CARET    &kp DOLLAR  &kp DOLLAR  &trans
+        &trans         &kp EXCL   &kp DOUBLE_QUOTES  &kp QUESTION   &none        &trans      &trans            &trans          &trans        &trans
+        &kp BACKSLASH  &kp APOS   &kp B              &kp COLON      &trans       &trans      &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_ALT  &trans
+&trans  &kp TILDE      &kp SLASH  &kp SEMI           &kp LS(ASTRK)  &none        &trans      &sl 11            &to 10          &trans        &trans  &trans
+                                  &trans             &kp CARET      &kp CARET    &kp DOLLAR  &kp DOLLAR        &trans
             >;
         };
 
         promethium_24_num {
             bindings = <
-        &trans      &kp LESS_THAN     &kp LBKT      &kp RBKT      &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
-        &kp ESCAPE  &kp GREATER_THAN  &kp LS(LPAR)  &kp LS(RPAR)  &none     &none   &kp N4  &kp N5  &kp N6  &kp ENTER
-&trans  &kp TAB     &sl 9             &kp LS(LBRC)  &kp LS(RBRC)  &none     &none   &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
-                                      &trans        &to 5         &to 5     &kp N0  &kp N0  &trans
+        &trans      &kp LESS_THAN               &kp LBKT                              &kp RBKT                                 &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
+        &kp ESCAPE  &hml LEFT_ALT GREATER_THAN  &hml LS(LEFT_SHIFT) LEFT_PARENTHESIS  &hml LS(LEFT_CONTROL) RIGHT_PARENTHESIS  &none     &none   &kp N4  &kp N5  &kp N6  &kp ENTER
+&trans  &kp TAB     &sl 9                       &kp LS(LBRC)                          &kp LS(RBRC)                             &none     &none   &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
+                                                &trans                                &to 5                                    &to 5     &kp N0  &kp N0  &trans
             >;
         };
 
