@@ -387,7 +387,7 @@
             bindings = <
        &none  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &none
        &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
-&none  &none  &kp W            &kp G              &kp M                &none    &none      &sl 6                &to 8              &sl 7            &none  &none
+&none  &none  &kp W            &kp G              &kp M                &none    &none      &sl 6                &sl 7              &to 8            &none  &none
                                &none              &kp R                &kp R    &kp SPACE  &kp SPACE            &none
             >;
         };
@@ -405,7 +405,7 @@
             bindings = <
         &trans         &kp EXCL   &kp COLON  &kp QUESTION   &none        &trans      &trans                               &trans                     &trans        &trans
         &kp BACKSLASH  &kp APOS   &kp B      &kp MINUS      &trans       &trans      &hmr LEFT_CONTROL RA(DOUBLE_QUOTES)  &hmr LEFT_SHIFT RA(COMMA)  &sk LEFT_ALT  &trans
-&trans  &kp TILDE      &kp SLASH  &kp V      &kp LS(ASTRK)  &none        &trans      &kp PIPE                             &to 10                     &trans        &kp UNDERSCORE  &trans
+&trans  &kp TILDE      &kp SLASH  &kp V      &kp LS(ASTRK)  &none        &trans      &to 10                               &trans                     &kp PIPE      &kp UNDERSCORE  &trans
                                   &trans     &kp CARET      &kp CARET    &kp DOLLAR  &kp DOLLAR                           &trans
             >;
         };
