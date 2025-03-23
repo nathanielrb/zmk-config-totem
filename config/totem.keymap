@@ -395,7 +395,7 @@
         promethium_24_alpha2 {
             bindings = <
         &trans     &kp SEMI           &kp PERIOD  &kp COMMA   &trans     &trans    &kp CARET             &kp RA(APOS)      &kp GRAVE            &trans
-        &kp Z      &kp DOUBLE_QUOTES  &kp F       &kp X       &trans     &trans    &hmr LCTRL RA(CARET)  &hmr LSHFT RA(E)  &hmr LALT RA(GRAVE)  &sk RIGHT_ALT
+        &kp Z      &kp DOUBLE_QUOTES  &kp X       &kp F       &trans     &trans    &hmr LCTRL RA(CARET)  &hmr LSHFT RA(E)  &hmr LALT RA(GRAVE)  &sk RIGHT_ALT
 &trans  &kp GRAVE  &kp Q              &kp J       &kp K       &trans     &trans    &trans                &kp AT            &kp HASH             &kp PERCENT    &trans
                                       &trans      &kp ESCAPE  &kp ESC    &kp CAPS  &kp CAPSLOCK          &trans
             >;
