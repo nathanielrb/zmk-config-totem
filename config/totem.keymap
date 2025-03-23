@@ -394,19 +394,19 @@
 
         promethium_24_alpha2 {
             bindings = <
-        &trans  &kp MINUS  &kp PERIOD  &kp COMMA   &trans     &trans    &trans        &trans     &trans    &trans
-        &kp Z   &kp V      &kp F       &kp X       &trans     &trans    &sk LCTRL     &sk LSHFT  &sk LALT  &sk LEFT_GUI
-&trans  &none   &kp Q      &kp J       &kp K       &trans     &trans    &trans        &kp AT     &kp HASH  &kp PERCENT   &trans
-                           &trans      &kp ESCAPE  &kp ESC    &kp CAPS  &kp CAPSLOCK  &trans
+        &trans     &kp SEMI           &kp PERIOD  &kp COMMA   &trans     &trans    &kp CARET             &kp RA(APOS)      &kp GRAVE            &trans
+        &kp Z      &kp DOUBLE_QUOTES  &kp F       &kp X       &trans     &trans    &hmr LCTRL RA(CARET)  &hmr LSHFT RA(E)  &hmr LALT RA(GRAVE)  &sk RIGHT_ALT
+&trans  &kp GRAVE  &kp Q              &kp J       &kp K       &trans     &trans    &trans                &kp AT            &kp HASH             &kp PERCENT    &trans
+                                      &trans      &kp ESCAPE  &kp ESC    &kp CAPS  &kp CAPSLOCK          &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-        &trans         &kp EXCL   &kp DOUBLE_QUOTES  &kp QUESTION   &none        &trans      &trans            &trans          &trans        &trans
-        &kp BACKSLASH  &kp APOS   &kp B              &kp COLON      &trans       &trans      &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_ALT  &trans
-&trans  &kp TILDE      &kp SLASH  &kp SEMI           &kp LS(ASTRK)  &none        &trans      &sl 11            &to 10          &trans        &trans  &trans
-                                  &trans             &kp CARET      &kp CARET    &kp DOLLAR  &kp DOLLAR        &trans
+        &trans         &kp EXCL   &kp COLON  &kp QUESTION   &none        &trans      &trans                               &trans                     &trans        &trans
+        &kp BACKSLASH  &kp APOS   &kp B      &kp MINUS      &trans       &trans      &hmr LEFT_CONTROL RA(DOUBLE_QUOTES)  &hmr LEFT_SHIFT RA(COMMA)  &sk LEFT_ALT  &trans
+&trans  &kp TILDE      &kp SLASH  &kp V      &kp LS(ASTRK)  &none        &trans      &kp PIPE                             &to 10                     &trans        &kp UNDERSCORE  &trans
+                                  &trans     &kp CARET      &kp CARET    &kp DOLLAR  &kp DOLLAR                           &trans
             >;
         };
 
@@ -434,15 +434,6 @@
         &trans  &trans  &trans  &trans  &trans    &trans     &kp LEFT         &kp RIGHT       &kp HOME       &kp END
 &trans  &trans  &trans  &trans  &trans  &none     &trans     &kp UP_ARROW     &kp DOWN_ARROW  &kp PAGE_DOWN  &to 7    &trans
                         &trans  &to 5   &to 5     &kp SPACE  &kp SPACE        &trans
-            >;
-        };
-
-        promethium_24_accents {
-            bindings = <
-        &trans         &trans           &trans         &kp RA(LS(NUMBER_6))  &trans    &trans  &trans  &trans  &trans  &trans
-        &kp RA(COMMA)  &kp RA(COMMA)    &kp RA(E)      &kp RA(NUMBER_6)      &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &kp RA(LS(SQT))  &kp RA(COMMA)  &kp RA(SQT)           &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans         &trans                &trans    &trans  &trans  &trans
             >;
         };
 
