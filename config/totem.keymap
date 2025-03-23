@@ -387,43 +387,43 @@
             bindings = <
        &none  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &none
        &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
-&none  &none  &kp W            &kp G              &kp M                &none    &none      &sl 6                &sl 7              &to 8            &kp B  &none
+&none  &none  &kp W            &kp G              &kp M                &none    &none      &sl 6                &sl 8              &to 7            &kp B  &none
                                &none              &kp R                &kp R    &kp SPACE  &kp SPACE            &none
             >;
         };
 
         promethium_24_alpha2 {
             bindings = <
-        &trans         &kp COMMA  &kp PERIOD  &kp APOSTROPHE  &trans     &trans    &trans        &trans     &trans    &trans
-        &kp Z          &kp X      &kp V       &kp F           &trans     &trans    &sk LCTRL     &sk LSHFT  &sk LALT  &sk LEFT_GUI
-&trans  &kp BACKSLASH  &kp Q      &kp J       &kp K           &trans     &trans    &trans        &kp AT     &kp HASH  &kp PERCENT   &trans
-                                  &trans      &kp ESCAPE      &kp ESC    &kp CAPS  &kp CAPSLOCK  &trans
+        &trans  &kp MINUS  &kp PERIOD  &kp COMMA   &trans     &trans    &trans        &trans     &trans    &trans
+        &kp Z   &kp V      &kp F       &kp X       &trans     &trans    &sk LCTRL     &sk LSHFT  &sk LALT  &sk LEFT_GUI
+&trans  &none   &kp Q      &kp J       &kp K       &trans     &trans    &trans        &kp AT     &kp HASH  &kp PERCENT   &trans
+                           &trans      &kp ESCAPE  &kp ESC    &kp CAPS  &kp CAPSLOCK  &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-        &trans     &kp EXCL    &kp QUESTION  &kp DOUBLE_QUOTES  &none        &trans      &trans      &trans  &trans  &trans
-        &kp TILDE  &kp SLASH   &kp MINUS     &kp COLON          &trans       &trans      &trans      &trans  &trans  &trans
-&trans  &kp CARET  &kp DOLLAR  &kp SEMI      &kp LS(ASTRK)      &none        &trans      &to 10      &trans  &sl 11  &trans  &trans
-                               &trans        &kp CARET          &kp CARET    &kp DOLLAR  &kp DOLLAR  &trans
+        &trans         &kp EXCL   &kp DOUBLE_QUOTES  &kp QUESTION   &none        &trans      &trans      &trans  &trans  &trans
+        &kp BACKSLASH  &kp APOS   &kp B              &kp COLON      &trans       &trans      &trans      &trans  &trans  &trans
+&trans  &kp TILDE      &kp SLASH  &kp SEMI           &kp LS(ASTRK)  &none        &trans      &sl 11      &to 10  &trans  &trans  &trans
+                                  &trans             &kp CARET      &kp CARET    &kp DOLLAR  &kp DOLLAR  &trans
             >;
         };
 
         promethium_24_num {
             bindings = <
-        &trans         &kp LESS_THAN     &kp LBKT      &kp RBKT      &trans    &trans     &kp N7     &kp N8  &kp N9  &trans
-        &kp LESS_THAN  &kp GREATER_THAN  &kp LS(LPAR)  &kp LS(RPAR)  &none     &none      &kp N4     &kp N5  &kp N6  &kp N0
-&trans  &kp TAB        &sl 9             &kp LS(LBRC)  &kp LS(RBRC)  &none     &none      &kp N1     &kp N2  &kp N3  &kp BACKSPACE  &trans
-                                         &trans        &to 5         &to 5     &kp ENTER  &kp ENTER  &trans
+        &trans   &kp LESS_THAN     &kp LBKT      &kp RBKT      &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
+        &kp TAB  &kp GREATER_THAN  &kp LS(LPAR)  &kp LS(RPAR)  &none     &none   &kp N4  &kp N5  &kp N6  &kp ENTER
+&trans  &none    &sl 9             &kp LS(LBRC)  &kp LS(RBRC)  &none     &none   &kp N1  &kp N2  &kp N3  &kp BACKSPACE  &trans
+                                   &trans        &to 5         &to 5     &kp N0  &kp N0  &trans
             >;
         };
 
         promethium_24_num_syms {
             bindings = <
-        &trans        &trans        &trans          &trans            &trans    &trans     &kp SQT    &kp PERIOD  &kp COMMA  &trans
-        &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans    &trans     &kp MINUS  &kp EQUAL   &kp COLON  &kp PERCENT
-&trans  &trans        &trans        &trans          &trans            &trans    &trans     &kp ASTRK  &kp PLUS    &kp SLASH  &kp PLUS     &trans
+        &trans        &trans        &trans          &trans            &trans    &trans     &kp SQT    &kp PERCENT  &kp COMMA  &trans
+        &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans    &trans     &kp COLON  &kp PERIOD   &kp MINUS  &kp EQUAL
+&trans  &trans        &trans        &trans          &trans            &trans    &trans     &kp ASTRK  &kp PLUS     &kp SLASH  &kp HASH   &trans
                                     &trans          &trans            &trans    &kp SPACE  &kp SPACE  &trans
             >;
         };
