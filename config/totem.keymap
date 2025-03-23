@@ -107,8 +107,8 @@
         };
 
         promethium {
-            bindings = <&tog 5>;
-            key-positions = <26 30>;
+            bindings = <&to 5>;
+            key-positions = <26 30 27>;
         };
 
         dvorak {
@@ -386,8 +386,8 @@
             label = "promethium-24";
             bindings = <
        &none  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &none
-       &kp C  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp S
-&none  &kp V  &kp W            &kp G              &kp M                &none    &none      &sl 6                &sl 7              &to 8            &kp B  &none
+       &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
+&none  &none  &kp W            &kp G              &kp M                &none    &none      &sl 6                &sl 7              &to 8            &kp B  &none
                                &none              &kp R                &kp R    &kp SPACE  &kp SPACE            &none
             >;
         };
@@ -395,18 +395,18 @@
         promethium_24_alpha2 {
             bindings = <
         &trans         &kp COMMA  &kp PERIOD  &kp APOSTROPHE  &trans     &trans    &trans        &trans     &trans    &trans
-        &kp Z          &kp X      &kp V       &kp F           &trans     &trans    &sk LCTRL     &sk LSHFT  &sk LALT  &none
-&trans  &kp BACKSLASH  &kp Q      &kp J       &kp K           &trans     &trans    &trans        &kp AT     &kp HASH  &kp PERCENT  &trans
+        &kp Z          &kp X      &kp V       &kp F           &trans     &trans    &sk LCTRL     &sk LSHFT  &sk LALT  &sk LEFT_GUI
+&trans  &kp BACKSLASH  &kp Q      &kp J       &kp K           &trans     &trans    &trans        &kp AT     &kp HASH  &kp PERCENT   &trans
                                   &trans      &kp ESCAPE      &kp ESC    &kp CAPS  &kp CAPSLOCK  &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-        &trans     &kp EXCL    &kp QUESTION  &kp DOUBLE_QUOTES  &none     &trans  &trans  &trans  &trans  &trans
-        &kp TILDE  &kp SLASH   &kp MINUS     &kp COLON          &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp CARET  &kp DOLLAR  &kp SEMI      &kp LS(ASTRK)      &none     &trans  &to 10  &trans  &sl 11  &trans  &trans
-                               &trans        &to 5              &to 5     &to 8   &to 8   &trans
+        &trans     &kp EXCL    &kp QUESTION  &kp DOUBLE_QUOTES  &none        &trans      &trans      &trans  &trans  &trans
+        &kp TILDE  &kp SLASH   &kp MINUS     &kp COLON          &trans       &trans      &trans      &trans  &trans  &trans
+&trans  &kp CARET  &kp DOLLAR  &kp SEMI      &kp LS(ASTRK)      &none        &trans      &to 10      &trans  &sl 11  &trans  &trans
+                               &trans        &kp CARET          &kp CARET    &kp DOLLAR  &kp DOLLAR  &trans
             >;
         };
 
@@ -421,10 +421,10 @@
 
         promethium_24_num_syms {
             bindings = <
-        &trans        &trans        &trans          &trans            &trans    &trans     &kp PERCENT  &kp EQUAL  &kp HASH   &trans
-        &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans    &trans     &kp PERIOD   &kp MINUS  &kp COLON  &kp DOUBLE_QUOTES
-&trans  &trans        &trans        &trans          &trans            &trans    &trans     &kp ASTRK    &kp PLUS   &kp SLASH  &kp COMMA          &trans
-                                    &trans          &trans            &trans    &kp SPACE  &trans       &trans
+        &trans        &trans        &trans          &trans            &trans    &trans     &kp SQT    &kp PERIOD  &kp COMMA  &trans
+        &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans    &trans     &kp MINUS  &kp EQUAL   &kp COLON  &kp PERCENT
+&trans  &trans        &trans        &trans          &trans            &trans    &trans     &kp ASTRK  &kp PLUS    &kp SLASH  &kp PLUS     &trans
+                                    &trans          &trans            &trans    &kp SPACE  &kp SPACE  &trans
             >;
         };
 
