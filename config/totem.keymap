@@ -441,7 +441,7 @@
             bindings = <
         &trans  &trans        &trans          &trans            &trans    &trans  &trans            &trans          &trans         &trans
         &trans  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT   &trans
-&trans  &trans  &kp TAB       &kp ESCAPE      &trans            &trans    &trans  &trans            &kp ENTER       &kp BACKSPACE  &trans  &trans
+&trans  &trans  &kp TAB       &kp ESCAPE      &to 5             &trans    &trans  &to 5             &kp ENTER       &kp BACKSPACE  &trans  &trans
                               &trans          &trans            &trans    &trans  &trans            &trans
             >;
         };
