@@ -386,26 +386,26 @@
             label = "promethium-24";
             bindings = <
        &none  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &none
-       &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
-&none  &kp B  &kp W            &kp G              &kp M                &none    &none      &sl 6                &sl 7              &to 8            &kp F  &none
-                               &none              &kp R                &kp R    &kp SPACE  &kp SPACE            &none
+       &kp R  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp S
+&none  &kp W  &kp B            &kp G              &kp M                &none    &none      &sl 6                &sl 7              &to 8            &kp F  &none
+                               &none              &kp C                &kp C    &kp SPACE  &kp SPACE            &none
             >;
         };
 
         promethium_24_alpha2 {
             bindings = <
-        &trans         &kp SEMI  &kp PERIOD  &kp COMMA   &trans     &trans    &kp CARET             &kp RA(APOS)      &kp GRAVE            &trans
-        &kp BACKSLASH  &kp Q     &kp V       &kp X       &trans     &trans    &hmr LCTRL RA(CARET)  &hmr LSHFT RA(E)  &hmr LALT RA(GRAVE)  &sk RIGHT_ALT
-&trans  &kp GRAVE      &kp Z     &kp J       &kp K       &trans     &trans    &trans                &kp AT            &kp HASH             &kp PERCENT    &trans
-                                 &trans      &kp ESCAPE  &kp ESC    &kp CAPS  &kp CAPSLOCK          &trans
+        &trans         &kp SEMI  &kp MINUS  &kp COLON   &trans     &trans    &kp CARET             &kp RA(APOS)      &kp GRAVE            &trans
+        &kp BACKSLASH  &kp Q     &kp V      &kp X       &trans     &trans    &hmr LCTRL RA(CARET)  &hmr LSHFT RA(E)  &hmr LALT RA(GRAVE)  &sk RIGHT_ALT
+&trans  &kp GRAVE      &kp Z     &kp J      &kp K       &trans     &trans    &trans                &to 10            &kp HASH             &kp PERCENT    &trans
+                                 &trans     &kp ESCAPE  &kp ESC    &kp CAPS  &kp CAPSLOCK          &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-        &trans         &kp EXCL   &kp COLON          &kp QUESTION   &none        &trans      &trans                               &trans                     &trans        &trans
-        &kp BACKSLASH  &kp APOS   &kp V              &kp MINUS      &trans       &trans      &hmr LEFT_CONTROL RA(DOUBLE_QUOTES)  &hmr LEFT_SHIFT RA(COMMA)  &sk LEFT_ALT  &trans
-&trans  &kp TILDE      &kp SLASH  &kp DOUBLE_QUOTES  &kp LS(ASTRK)  &none        &trans      &to 10                               &trans                     &kp PIPE      &kp UNDERSCORE  &trans
+        &trans         &kp AT     &kp QUESTION       &kp EXCL       &none        &trans      &trans                               &trans                     &trans        &trans
+        &kp BACKSLASH  &kp APOS   &kp PERIOD         &kp COMMA      &trans       &trans      &hmr LEFT_CONTROL RA(DOUBLE_QUOTES)  &hmr LEFT_SHIFT RA(COMMA)  &sk LEFT_ALT  &trans
+&trans  &kp TILDE      &kp SLASH  &kp DOUBLE_QUOTES  &kp LS(ASTRK)  &none        &trans      &to 11                               &trans                     &kp PIPE      &kp UNDERSCORE  &trans
                                   &trans             &kp CARET      &kp CARET    &kp DOLLAR  &kp DOLLAR                           &trans
             >;
         };
@@ -434,6 +434,15 @@
         &hml LEFT_GUI TAB  &kp LEFT_ALT  &hml LEFT_SHIFT HOME  &hml LEFT_CONTROL END  &trans    &trans     &hmr LEFT_CONTROL LEFT  &hmr LEFT_SHIFT RIGHT_ARROW  &kp LEFT_ALT     &kp ENTER
 &trans  &kp ESCAPE         &to 5         &kp PAGE_DOWN         &kp PAGE_UP            &none     &trans     &kp UP_ARROW            &kp DOWN_ARROW               &kp PRINTSCREEN  &kp BACKSPACE  &trans
                                          &trans                &to 5                  &to 5     &kp SPACE  &kp SPACE               &trans
+            >;
+        };
+
+        promethium_24_command {
+            bindings = <
+        &trans  &trans        &trans          &trans            &trans    &trans  &trans            &trans          &trans         &trans
+        &trans  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT   &trans
+&trans  &trans  &kp TAB       &kp ESCAPE      &trans            &trans    &trans  &trans            &kp ENTER       &kp BACKSPACE  &trans  &trans
+                              &trans          &trans            &trans    &trans  &trans            &trans
             >;
         };
 
