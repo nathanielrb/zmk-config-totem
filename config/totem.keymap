@@ -386,18 +386,18 @@
             label = "promethium-24";
             bindings = <
        &none  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &none
-       &kp R  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp S
+       &kp C  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp S
 &none  &kp W  &kp B            &kp G              &kp M                &none    &none      &sl 6                &sl 6              &to 8            &kp F  &none
-                               &kp C              &kp C                &kp C    &kp SPACE  &kp SPACE            &kp BACKSPACE
+                               &kp R              &kp R                &kp R    &kp SPACE  &kp SPACE            &kp BACKSPACE
             >;
         };
 
         promethium_24_alpha2 {
             bindings = <
-        &trans     &kp DOUBLE_QUOTES  &kp COMMA  &kp PERIOD  &trans     &trans  &none                &none             &none            &trans
-        &kp MINUS  &kp SQT            &kp V      &kp X       &trans     &trans  &hmr LCTRL ASTERISK  &hmr LSHFT RA(E)  &hmr LALT COLON  &kp SEMICOLON
-&trans  &kp Z      &kp Q              &kp J      &kp K       &trans     &trans  &sl 7                &sl 12            &kp QUESTION     &kp EXCLAMATION  &trans
-                                      &trans     &kp ESCAPE  &kp ESC    &to 10  &to 10               &trans
+        &trans     &kp DOUBLE_QUOTES  &kp PERIOD  &kp COMMA   &trans     &trans  &none                &none             &none            &trans
+        &kp MINUS  &kp SQT            &kp V       &kp X       &trans     &trans  &hmr LCTRL ASTERISK  &hmr LSHFT RA(E)  &hmr LALT COLON  &kp SEMICOLON
+&trans  &kp Z      &kp Q              &kp J       &kp K       &trans     &trans  &sl 7                &sl 12            &kp QUESTION     &kp EXCLAMATION  &trans
+                                      &trans      &kp ESCAPE  &kp ESC    &to 10  &to 10               &trans
             >;
         };
 
@@ -413,9 +413,9 @@
         promethium_24_num {
             bindings = <
         &trans     &kp N7                  &kp N8              &kp N9                      &trans    &trans  &kp PERIOD            &kp MINUS              &kp COLON         &trans
-        &sl 9      &hml LEFT_ALT NUMBER_4  &hml LEFT_SHIFT N5  &hml LEFT_CONTROL NUMBER_6  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+        &kp N0     &hml LEFT_ALT NUMBER_4  &hml LEFT_SHIFT N5  &hml LEFT_CONTROL NUMBER_6  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans  &kp COMMA  &kp N1                  &kp N2              &kp N3                      &none     &none   &kp ENTER             &kp BACKSPACE          &kp TAB           &kp SLASH          &trans
-                                           &trans              &kp N0                      &kp N0    &to 5   &to 5                 &trans
+                                           &trans              &to 5                       &to 5     &sl 9   &sl 9                 &trans
             >;
         };
 
