@@ -293,9 +293,9 @@
         promethium_24 {
             label = "promethium-24";
             bindings = <
-       &none  &none            &kp D              &kp L                &none    &none      &kp U                &kp O              &none            &none
+       &kp X  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &kp V
        &kp C  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp S
-&none  &none  &kp P            &kp G              &kp M                &none    &none      &sl 1                &sl 1              &sl 2            &none  &none
+&none  &kp W  &kp B            &kp G              &kp M                &none    &none      &sl 1                &sl 1              &sl 2            &kp F  &none
                                &kp R              &kp R                &kp R    &kp SPACE  &kp SPACE            &kp SPACE
             >;
         };
@@ -303,7 +303,7 @@
         promethium_24_alpha2 {
             bindings = <
         &trans  &kp DOUBLE_QUOTES  &kp PERIOD  &kp COMMA   &trans     &trans  &kp GRAVE         &kp EXCL              &none            &trans
-        &kp F   &kp B              &kp W       &kp Y       &trans     &trans  &hmr LCTRL SLASH  &hmr LSHFT RA(MINUS)  &hmr LALT COLON  &kp QUESTION
+        &kp F   &kp P              &kp W       &kp Y       &trans     &trans  &hmr LCTRL SLASH  &hmr LSHFT RA(MINUS)  &hmr LALT COLON  &kp QUESTION
 &trans  &none   &kp APOS           &kp V       &kp X       &trans     &trans  &sl 2             &kp DOUBLE_QUOTES     &kp COLON        &none         &trans
                                    &trans      &kp ESCAPE  &kp ESC    &to 3   &to 3             &trans
             >;
