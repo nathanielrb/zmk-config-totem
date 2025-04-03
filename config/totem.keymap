@@ -293,28 +293,28 @@
         promethium_24 {
             label = "promethium-24";
             bindings = <
-       &kp X  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &kp F
+       &kp X  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &kp B
        &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
-&none  &kp V  &kp B            &kp G              &kp M                &none    &none      &sl 1                &sl 1              &sl 2            &kp W  &none
+&none  &kp V  &kp F            &kp G              &kp M                &none    &none      &sl 1                &sl 1              &sl 2            &kp W  &none
                                &kp R              &kp R                &kp R    &kp SPACE  &kp SPACE            &kp SPACE
             >;
         };
 
         promethium_24_alpha2 {
             bindings = <
-        &trans  &kp DOUBLE_QUOTES  &kp PERIOD  &kp COMMA   &trans     &trans  &kp GRAVE         &kp EXCL              &none            &trans
-        &kp F   &kp P              &kp W       &kp Y       &trans     &trans  &hmr LCTRL SLASH  &hmr LSHFT RA(MINUS)  &hmr LALT COLON  &kp QUESTION
-&trans  &none   &kp APOS           &kp V       &kp X       &trans     &trans  &sl 2             &kp DOUBLE_QUOTES     &kp COLON        &none         &trans
-                                   &trans      &kp ESCAPE  &kp ESC    &to 3   &to 3             &trans
+        &trans  &kp COLON  &kp PERIOD  &kp COMMA          &trans       &trans  &kp HASH          &kp AT            &none                &trans
+        &kp X   &kp B      &kp W       &kp V              &trans       &trans  &hmr LCTRL SPACE  &hmr LSHFT SPACE  &hmr LALT BACKSLASH  &kp UNDER
+&trans  &none   &kp APOS   &kp MINUS   &kp DOUBLE_QUOTES  &trans       &trans  &sl 2             &kp TILDE         &kp SLASH            &none      &trans
+                           &trans      &kp ASTRK          &kp ASTRK    &to 3   &to 3             &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-        &trans  &none    &kp AT         &kp AMPS   &none       &trans  &kp CARET                        &kp DOLLAR               &trans        &trans
-        &kp Z   &kp Q    &kp K          &kp J      &trans      &trans  &hmr LEFT_CONTROL RA(BACKSLASH)  &hmr LEFT_SHIFT PERCENT  &sk RA(PIPE)  &kp UNDER
-&trans  &none   &kp TAB  &kp BACKSPACE  &kp ENTER  &none       &trans  &kp ASTRK                        &sl 4                    &kp TILDE     &none      &trans
-                         &trans         &kp HASH   &kp HASH    &to 5   &to 5                            &trans
+        &trans  &kp SEMI  &kp QUESTION   &kp EXCL    &none         &trans  &kp CARET         &kp DOLLAR      &trans        &trans
+        &kp Z   &kp Q     &kp K          &kp J       &trans        &trans  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_ALT  &kp UNDER
+&trans  &none   &kp TAB   &kp BACKSPACE  &kp ENTER   &none         &trans  &kp PERCENT       &sl 4           &kp TILDE     &none      &trans
+                          &trans         &kp ESCAPE  &kp ESCAPE    &to 5   &to 5             &trans
             >;
         };
 
@@ -329,7 +329,7 @@
 
         promethium_24_parens {
             bindings = <
-        &trans         &none             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans     &kp COMMA     &kp LS(AMPS)   &kp COMMA      &trans
+        &trans         &kp CARET         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans     &kp COMMA     &kp LS(AMPS)   &kp COMMA      &trans
         &kp LESS_THAN  &kp GREATER_THAN  &sk LEFT_PARENTHESIS  &sk RIGHT_PARENTHESIS  &trans    &trans     &kp LS(PLUS)  &kp EQUAL      &kp LS(CARET)  &kp C
 &trans  &trans         &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans     &kp ASTRK     &kp LS(PRCNT)  &kp FSLH       &none   &trans
                                          &trans                &trans                 &trans    &kp SPACE  &kp SPACE     &trans
