@@ -320,19 +320,19 @@
 
         promethium_24_num {
             bindings = <
-        &trans      &none    &kp N7    &kp N8   &trans    &trans     &kp N9     &kp N0     &none     &trans
-        &kp PERIOD  &kp N1   &kp N2    &kp N3   &none     &none      &kp N4     &kp N5     &kp N6    &sl 4
-&trans  &none       &kp TAB  &kp BSPC  &kp RET  &none     &none      &kp COLON  &kp MINUS  &kp FSLH  &none   &trans
-                             &trans    &to 0    &to 0     &kp SPACE  &kp SPACE  &trans
+        &trans     &kp PERIOD  &kp N7    &kp N8   &trans    &trans     &kp N9     &kp N0     &none     &trans
+        &kp COMMA  &kp N1      &kp N2    &kp N3   &none     &none      &kp N4     &kp N5     &kp N6    &sl 4
+&trans  &none      &kp TAB     &kp BSPC  &kp RET  &none     &none      &kp COLON  &kp MINUS  &kp FSLH  &none   &trans
+                               &trans    &to 0    &to 0     &kp SPACE  &kp SPACE  &trans
             >;
         };
 
         promethium_24_parens {
             bindings = <
-        &trans         &kp CARET         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans     &kp COMMA     &kp LS(AMPS)   &kp COMMA      &trans
-        &kp LESS_THAN  &kp GREATER_THAN  &sk LEFT_PARENTHESIS  &sk RIGHT_PARENTHESIS  &trans    &trans     &kp LS(PLUS)  &kp EQUAL      &kp LS(CARET)  &kp C
-&trans  &trans         &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans     &kp ASTRK     &kp LS(PRCNT)  &kp FSLH       &none   &trans
-                                         &trans                &trans                 &trans    &kp SPACE  &kp SPACE     &trans
+        &trans         &kp CARET         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans     &kp COMMA  &kp LS(AMPS)  &trans       &trans
+        &kp LESS_THAN  &kp GREATER_THAN  &sk LEFT_PARENTHESIS  &sk RIGHT_PARENTHESIS  &trans    &trans     &kp PLUS   &kp EQUAL     &kp ASTRK    &trans
+&trans  &trans         &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans     &kp CARET  &kp SLASH     &kp PERCENT  &none   &trans
+                                         &trans                &trans                 &trans    &kp SPACE  &kp SPACE  &trans
             >;
         };
 
