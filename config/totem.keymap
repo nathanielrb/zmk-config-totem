@@ -302,7 +302,7 @@
 
         promethium_24_alpha2 {
             bindings = <
-        &trans  &kp COLON  &kp PERIOD  &kp COMMA          &trans       &trans  &kp HASH          &kp AT            &none                &trans
+        &trans  &kp COLON  &kp PERIOD  &kp COMMA          &trans       &trans  &kp HASH          &kp AT            &kp PERCENT          &trans
         &kp X   &kp B      &kp W       &kp V              &trans       &trans  &hmr LCTRL SPACE  &hmr LSHFT SPACE  &hmr LALT BACKSLASH  &kp UNDER
 &trans  &none   &kp APOS   &kp MINUS   &kp DOUBLE_QUOTES  &trans       &trans  &sl 2             &kp TILDE         &kp SLASH            &none      &trans
                            &trans      &kp ASTRK          &kp ASTRK    &to 3   &to 3             &trans
@@ -312,8 +312,8 @@
         promethium_24_sym {
             bindings = <
         &trans  &kp SEMI  &kp QUESTION   &kp EXCL    &none         &trans  &kp CARET         &kp DOLLAR      &trans        &trans
-        &kp Z   &kp Q     &kp K          &kp J       &trans        &trans  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_ALT  &kp UNDER
-&trans  &none   &kp TAB   &kp BACKSPACE  &kp ENTER   &none         &trans  &kp PERCENT       &sl 4           &kp TILDE     &none      &trans
+        &kp Z   &kp Q     &kp K          &kp J       &trans        &trans  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_ALT  &kp PIPE
+&trans  &none   &kp TAB   &kp BACKSPACE  &kp ENTER   &none         &trans  &kp AMPS          &sl 4           &trans        &none     &trans
                           &trans         &kp ESCAPE  &kp ESCAPE    &to 5   &to 5             &trans
             >;
         };
