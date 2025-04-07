@@ -293,9 +293,9 @@
         promethium_24 {
             label = "promethium-24";
             bindings = <
-       &kp X  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &kp V
+       &kp X  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &kp F
        &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
-&none  &kp B  &kp F            &kp G              &kp M                &none    &none      &sl 1                &sl 1              &sl 2            &kp W  &none
+&none  &kp V  &kp F            &kp G              &kp M                &none    &none      &sl 1                &sl 1              &sl 2            &kp W  &none
                                &kp R              &kp R                &kp R    &kp SPACE  &kp SPACE            &kp SPACE
             >;
         };
