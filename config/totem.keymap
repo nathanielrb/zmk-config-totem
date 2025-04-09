@@ -295,26 +295,26 @@
             bindings = <
        &kp X  &kp P            &kp D              &kp L                &none    &none      &kp U                &kp O              &kp Y            &kp F
        &kp S  &hml LEFT_ALT N  &hml LEFT_SHIFT T  &hml LEFT_CONTROL H  &none    &none      &hmr LEFT_CONTROL A  &hmr LEFT_SHIFT E  &hmr LEFT_ALT I  &kp C
-&none  &kp V  &kp F            &kp G              &kp M                &none    &none      &sl 1                &sl 1              &sl 2            &kp W  &none
+&none  &kp V  &kp B            &kp G              &kp M                &none    &none      &sl 1                &sl 1              &sl 2            &kp W  &none
                                &kp R              &kp R                &kp R    &kp SPACE  &kp SPACE            &kp SPACE
             >;
         };
 
         promethium_24_alpha2 {
             bindings = <
-        &trans  &kp APOS   &kp PERIOD  &kp COMMA          &trans       &trans  &kp HASH          &kp AT            &kp PERCENT          &trans
-        &kp X   &kp B      &kp W       &kp V              &trans       &trans  &hmr LCTRL SPACE  &hmr LSHFT SPACE  &hmr LALT BACKSLASH  &kp UNDER
-&trans  &none   &kp COLON  &kp MINUS   &kp DOUBLE_QUOTES  &trans       &trans  &sl 2             &kp TILDE         &kp SLASH            &none      &trans
-                           &trans      &kp ASTRK          &kp ASTRK    &to 3   &to 3             &trans
+        &trans    &kp COLON  &kp MINUS      &kp DOUBLE_QUOTES  &none         &trans  &kp HASH          &kp AT            &kp PERCENT          &trans
+        &kp SEMI  &kp SQT    &kp DOT        &kp COMMA          &trans        &trans  &hmr LCTRL SPACE  &hmr LSHFT SPACE  &hmr LALT BACKSLASH  &kp UNDER
+&trans  &none     &kp TAB    &kp BACKSPACE  &kp ENTER          &trans        &trans  &sl 4             &kp TILDE         &kp SLASH            &none      &trans
+                             &trans         &kp ESCAPE         &kp ESCAPE    &to 3   &to 3             &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-        &trans  &kp SEMI  &kp QUESTION   &kp EXCL    &none         &trans  &kp CARET         &kp DOLLAR      &trans        &trans
-        &kp Z   &kp Q     &kp K          &kp J       &trans        &trans  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_ALT  &kp PIPE
-&trans  &none   &kp TAB   &kp BACKSPACE  &kp ENTER   &none         &trans  &kp AMPS          &sl 4           &trans        &none     &trans
-                          &trans         &kp ESCAPE  &kp ESCAPE    &to 5   &to 5             &trans
+        &trans  &kp ASTRK  &kp QUESTION   &kp EXCL    &none         &trans  &kp CARET         &kp DOLLAR      &trans        &trans
+        &kp Z   &kp Q      &kp K          &kp J       &trans        &trans  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_ALT  &kp PIPE
+&trans  &none   &kp TAB    &kp BACKSPACE  &kp ENTER   &none         &trans  &kp AMPS          &sl 6           &trans        &none     &trans
+                           &trans         &kp ESCAPE  &kp ESCAPE    &to 5   &to 5             &trans
             >;
         };
 
