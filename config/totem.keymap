@@ -302,9 +302,9 @@
 
         promethium_24_alpha2 {
             bindings = <
-        &kp DOUBLE_QUOTES  &kp SQT    &kp DOT        &kp COMMA   &none         &trans  &none            &none             &none            &trans
-        &kp Z              &kp MINUS  &kp K          &kp J       &trans        &trans  &hmr LCTRL PLUS  &hmr LSHFT EQUAL  &hmr LALT GRAVE  &kp PERCENT
-&trans  &kp UNDER          &kp TAB    &kp BACKSPACE  &kp ENTER   &trans        &trans  &sl 4            &kp CARET         &kp DOLLAR       &kp PIPE     &trans
+        &kp MINUS  &kp DOUBLE_QUOTES  &kp DOT        &kp COMMA   &none         &trans  &none            &none             &none            &trans
+        &kp Z      &kp SINGLE_QUOTE   &kp K          &kp J       &trans        &trans  &hmr LCTRL PLUS  &hmr LSHFT EQUAL  &hmr LALT GRAVE  &kp PERCENT
+&trans  &kp UNDER  &kp TAB            &kp BACKSPACE  &kp ENTER   &trans        &trans  &sl 4            &kp CARET         &kp DOLLAR       &kp PIPE     &trans
                                       &trans         &kp ESCAPE  &kp ESCAPE    &to 3   &to 3            &trans
             >;
         };
