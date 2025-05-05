@@ -311,28 +311,28 @@
 
         promethium_24_sym {
             bindings = <
-        &kp LS(POUND)  &kp LS(AT)   &kp MINUS      &kp LS(STAR)  &none     &trans  &none          &kp CAPS       &trans        &trans
-        &kp LS(AMPS)   &kp SQT      &kp DOT        &kp COMMA     &trans    &trans  &kp LC(EQUAL)  &kp EQUAL      &kp LS(PLUS)  &kp LS(PRCNT)
-&trans  &kp BSLH       &kp LS(DQT)  &kp LS(COLON)  &kp SEMI      &none     &trans  &sl 6          &kp LS(CARET)  &kp LS(DLLR)  &kp LS(UNDER)  &trans
-                                    &trans         &to 0         &to 0     &to 5   &to 5          &trans
+        &kp LS(POUND)  &kp LS(AT)   &kp MINUS  &kp LS(STAR)  &none     &trans  &none             &kp CAPS   &trans        &trans
+        &kp LS(AMPS)   &kp SQT      &kp DOT    &kp COMMA     &trans    &trans  &sk LEFT_CONTROL  &kp EQUAL  &kp LS(PLUS)  &kp LS(PRCNT)
+&trans  &kp BSLH       &kp LS(DQT)  &kp SEMI   &kp COLON     &none     &trans  &sl 6             &kp CARET  &kp DOLLAR    &kp UNDER      &trans
+                                    &trans     &to 0         &to 0     &to 5   &to 5             &trans
             >;
         };
 
         promethium_24_num {
             bindings = <
-        &trans     &kp PERIOD  &kp NUMBER_4  &kp N5   &trans    &trans     &kp N6     &kp N7     &kp LS(PRCNT)  &trans
-        &kp COMMA  &kp N1      &kp N2        &kp N3   &none     &none      &kp N8     &kp N9     &kp N0         &sl 4
-&trans  &none      &kp TAB     &kp BSPC      &kp RET  &none     &none      &kp COLON  &kp MINUS  &kp FSLH       &none   &trans
-                               &trans        &to 0    &to 0     &kp SPACE  &kp SPACE  &trans
+        &trans       &kp PERIOD  &kp NUMBER_4  &kp N5   &trans    &trans     &kp N6     &kp N7     &kp COMMA  &trans
+        &kp PERCENT  &kp N1      &kp N2        &kp N3   &none     &none      &kp N8     &kp N9     &kp N0     &sl 4
+&trans  &kp DELETE   &kp TAB     &kp BSPC      &kp RET  &none     &none      &kp COLON  &kp MINUS  &kp FSLH   &none   &trans
+                                 &trans        &to 0    &to 0     &kp SPACE  &kp SPACE  &trans
             >;
         };
 
         promethium_24_parens {
             bindings = <
-        &trans         &kp CARET         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans     &kp COMMA  &kp LS(AMPS)  &trans       &trans
-        &kp LESS_THAN  &kp GREATER_THAN  &sk LEFT_PARENTHESIS  &sk RIGHT_PARENTHESIS  &trans    &trans     &kp PLUS   &kp EQUAL     &kp ASTRK    &trans
-&trans  &trans         &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans     &kp CARET  &kp SLASH     &kp PERCENT  &none   &trans
-                                         &trans                &trans                 &trans    &kp SPACE  &kp SPACE  &trans
+        &trans  &kp CARET         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans     &kp COMMA  &kp LS(AMPS)  &trans       &trans
+        &none   &kp LESS_THAN     &sk LEFT_PARENTHESIS  &sk RIGHT_PARENTHESIS  &trans    &trans     &kp PLUS   &kp EQUAL     &kp ASTRK    &trans
+&trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans     &kp CARET  &kp SLASH     &kp PERCENT  &none   &trans
+                                  &trans                &trans                 &trans    &kp SPACE  &kp SPACE  &trans
             >;
         };
 
