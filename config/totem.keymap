@@ -302,10 +302,10 @@
 
         promethium_24_alpha2 {
             bindings = <
-        &kp TILDE   &kp SLASH  &kp QUESTION   &kp EXCLAMATION  &none     &trans      &none       &none      &none      &trans
-        &kp Z       &kp Q      &kp K          &kp J            &trans    &trans      &kp LCTRL   &kp LSHFT  &kp LALT   &kp PERCENT
-&trans  &kp DELETE  &kp TAB    &kp BACKSPACE  &kp ENTER        &trans    &trans      &sl 4       &to 1      &kp GRAVE  &kp PIPE     &trans
-                               &trans         &to 0            &to 0     &kp ESCAPE  &kp ESCAPE  &trans
+        &kp TILDE    &kp SLASH     &kp QUESTION    &kp EXCLAMATION   &none     &trans      &kp EXCL    &kp QUESTION   &kp SLASH  &kp TILDE
+        &kp PERCENT  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans      &kp J       &kp K          &kp Q      &kp Z
+&trans  &kp PIPE     &kp GRAVE     &to 1           &sl 4             &trans    &trans      &kp ENTER   &kp BACKSPACE  &kp TAB    &kp DELETE  &trans
+                                   &trans          &to 0             &to 0     &kp ESCAPE  &kp ESCAPE  &trans
             >;
         };
 
