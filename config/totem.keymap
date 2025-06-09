@@ -304,7 +304,7 @@
             bindings = <
         &kp TILDE    &kp SLASH     &kp QUESTION    &kp EXCLAMATION   &none     &trans      &kp EXCL    &kp QUESTION   &kp SLASH  &kp TILDE
         &kp PERCENT  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans      &kp J       &kp K          &kp Q      &kp Z
-&trans  &kp PIPE     &kp GRAVE     &to 1           &sl 4             &trans    &trans      &kp ENTER   &kp BACKSPACE  &kp TAB    &kp DELETE  &trans
+&trans  &kp GRAVE    &kp RA(E)     &to 1           &sl 4             &trans    &trans      &kp ENTER   &kp BACKSPACE  &kp TAB    &kp DELETE  &trans
                                    &trans          &to 0             &to 0     &kp ESCAPE  &kp ESCAPE  &trans
             >;
         };
@@ -312,8 +312,8 @@
         promethium_24_sym {
             bindings = <
         &kp LS(POUND)  &kp LS(AT)  &kp MINUS  &kp LS(STAR)      &none     &trans  &kp LS(STAR)  &kp MINUS      &kp LS(AT)   &kp LS(POUND)
-        &kp N3         &kp PLUS    &kp EQUAL  &kp LEFT_CONTROL  &trans    &trans  &kp COMMA     &kp DOT        &kp SQT      &kp LS(AMPS)
-&kp N7  &kp UNDER      &kp DOLLAR  &kp CARET  &sl 6             &none     &trans  &kp SEMI      &kp LS(COLON)  &kp LS(DQT)  &kp BSLH       &kp SQT
+        &kp UNDER      &kp PLUS    &kp EQUAL  &kp LEFT_CONTROL  &trans    &trans  &kp COMMA     &kp DOT        &kp SQT      &kp LS(AMPS)
+&kp N7  &kp PIPE       &kp DOLLAR  &kp CARET  &sl 6             &none     &trans  &kp SEMI      &kp LS(COLON)  &kp LS(DQT)  &kp BSLH       &kp SQT
                                    &trans     &to 0             &to 0     &to 5   &to 5         &trans
             >;
         };
@@ -347,10 +347,10 @@
 
         promethium_24_accents {
             bindings = <
-        &trans       &none              &sk RALT       &sk RALT           &trans    &trans  &trans  &trans     &trans     &trans
-        &kp RA(SQT)  &kp RA(COMMA)      &kp RA(GRAVE)  &kp RA(NUMBER_6)   &trans    &trans  &trans  &kp RA(O)  &kp RA(I)  &none
-&trans  &trans       &kp RA(LS(COMMA))  &none          &kp RA(LS(GRAVE))  &trans    &trans  &trans  &kp RA(E)  &kp RA(U)  &trans  &trans
-                                        &trans         &trans             &trans    &trans  &trans  &trans
+        &trans       &none              &sk RALT       &sk RALT           &trans    &trans  &trans            &kp RIGHT_ALT  &trans         &trans
+        &kp RA(SQT)  &kp RA(COMMA)      &kp RA(GRAVE)  &kp RA(NUMBER_6)   &trans    &trans  &kp RA(NUMBER_6)  &kp RA(GRAVE)  &kp RA(COMMA)  &kp RA(APOS)
+&trans  &trans       &kp RA(LS(COMMA))  &none          &kp RA(LS(GRAVE))  &trans    &trans  &trans            &kp RA(CARET)  &kp RA(U)      &kp RA(DOUBLE_QUOTES)  &trans
+                                        &trans         &trans             &trans    &trans  &trans            &trans
             >;
         };
 
