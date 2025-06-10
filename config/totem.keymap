@@ -293,9 +293,9 @@
         promethium_24 {
             label = "promethium-24";
             bindings = <
-       &kp B  &kp Y            &kp O              &kp U                &none    &none      &kp L                &kp D              &kp P            &kp X
+       &kp B  &kp Y            &kp O              &kp U                &none    &none      &kp L                &kp D              &kp P            &kp F
        &kp C  &hml LEFT_ALT I  &hml LEFT_SHIFT E  &hml LEFT_CONTROL A  &none    &none      &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &kp S
-&none  &kp F  &to 3            &sl 1              &sl 2                &none    &none      &kp M                &kp G              &kp W            &kp V  &none
+&none  &kp X  &to 3            &sl 1              &sl 2                &none    &none      &kp M                &kp G              &kp W            &kp V  &none
                                &kp R              &kp R                &kp R    &kp SPACE  &kp SPACE            &kp SPACE
             >;
         };
@@ -311,19 +311,19 @@
 
         promethium_24_sym {
             bindings = <
-        &kp LS(POUND)  &kp LS(AT)  &kp MINUS  &kp LS(STAR)      &none     &trans  &kp LS(STAR)  &kp MINUS      &kp LS(AT)   &kp LS(POUND)
-        &kp UNDER      &kp PLUS    &kp EQUAL  &kp LEFT_CONTROL  &trans    &trans  &kp COMMA     &kp DOT        &kp SQT      &kp LS(AMPS)
-&kp N7  &kp PIPE       &kp DOLLAR  &kp CARET  &sl 6             &none     &trans  &kp SEMI      &kp LS(COLON)  &kp LS(DQT)  &kp BSLH       &kp SQT
-                                   &trans     &to 0             &to 0     &to 5   &to 5         &trans
+        &kp LS(POUND)  &kp LS(AT)  &kp MINUS  &kp LS(STAR)      &none     &trans  &kp ASTRK  &kp MINUS  &kp LS(AT)         &kp LS(POUND)
+        &kp UNDER      &kp PLUS    &kp EQUAL  &kp LEFT_CONTROL  &trans    &trans  &kp COMMA  &kp DOT    &kp SQT            &kp LS(AMPS)
+&kp N7  &kp PIPE       &kp DOLLAR  &kp CARET  &sl 6             &none     &trans  &kp SEMI   &kp COLON  &kp DOUBLE_QUOTES  &kp BSLH       &kp SQT
+                                   &trans     &to 0             &to 0     &to 5   &to 5      &trans
             >;
         };
 
         promethium_24_num {
             bindings = <
-        &trans      &kp H     &kp DOT    &kp COMMA  &trans    &trans     &kp N7     &kp N8    &kp N9   &trans
-        &kp N0      &kp N1    &kp N2     &kp N3     &none     &none      &kp N4     &kp N5    &kp N6   &sl 4
-&trans  &kp DELETE  &kp FSLH  &kp MINUS  &kp COLON  &none     &none      &kp ENTER  &kp BSPC  &kp TAB  &kp DELETE  &trans
-                              &trans     &to 0      &to 0     &kp SPACE  &kp SPACE  &trans
+        &kp H     &kp SLASH  &kp DOT    &kp COMMA  &trans    &trans     &kp N7     &kp N8    &kp N9   &kp EQUAL
+        &kp N0    &kp N1     &kp N2     &kp N3     &none     &none      &kp N4     &kp N5    &kp N6   &sl 4
+&trans  &kp PLUS  &kp ASTRK  &kp MINUS  &kp COLON  &none     &none      &kp ENTER  &kp BSPC  &kp TAB  &kp DELETE  &trans
+                             &trans     &to 0      &to 0     &kp SPACE  &kp SPACE  &trans
             >;
         };
 
