@@ -303,7 +303,7 @@
         promethium_24_alpha2 {
             bindings = <
         &kp TILDE    &kp SLASH     &kp QUESTION    &kp EXCLAMATION   &none     &trans      &kp EXCL    &kp QUESTION   &kp SLASH  &kp TILDE
-        &kp PERCENT  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans      &kp J       &kp K          &kp Q      &kp Z
+        &kp PERCENT  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans      &kp K       &kp J          &kp Q      &kp Z
 &trans  &kp GRAVE    &kp RA(E)     &to 1           &sl 4             &trans    &trans      &kp ENTER   &kp BACKSPACE  &kp TAB    &kp DELETE  &trans
                                    &trans          &to 0             &to 0     &kp ESCAPE  &kp ESCAPE  &trans
             >;
@@ -338,10 +338,10 @@
 
         promethium_24_nav {
             bindings = <
-        &trans       &none          &kp F2                    &kp F11                   &none     &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &kp PRINTSCREEN  &trans
-        &kp PAGE_UP  &kp PAGE_DOWN  &hml LEFT_SHIFT UP_ARROW  &hml LEFT_CONTROL DELETE  &trans    &trans     &kp LEFT         &kp RIGHT    &kp HOME         &kp END
-&trans  &none        &kp TAB        &kp BACKSPACE             &kp ENTER                 &none     &trans     &kp UP_ARROW     &kp DOWN     &kp PAGE_DOWN    &kp PAGE_UP  &trans
-                                    &trans                    &to 0                     &to 0     &kp SPACE  &kp SPACE        &trans
+        &trans       &none          &kp LC(LS(LEFT_ALT))  &kp LC(LEFT_ALT)  &none     &trans     &kp F2            &kp F11         &kp PRINTSCREEN  &trans
+        &kp END      &kp HOME       &kp LEFT_ARROW        &kp RIGHT         &trans    &trans     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT     &kp END
+&trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp UP_ARROW          &kp DOWN_ARROW    &none     &trans     &kp ENTER         &kp BACKSPACE   &kp TAB          &kp DELETE  &trans
+                                    &trans                &to 0             &to 0     &kp SPACE  &kp SPACE         &trans
             >;
         };
 
