@@ -296,7 +296,7 @@
        &kp B  &kp Y            &kp O              &kp U                &none    &none      &kp L                &kp D              &kp P            &kp F
        &kp C  &hml LEFT_ALT I  &hml LEFT_SHIFT E  &hml LEFT_CONTROL A  &none    &none      &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &kp S
 &none  &kp X  &to 3            &sl 1              &sl 2                &none    &none      &kp M                &kp G              &kp W            &kp V  &none
-                               &kp R              &kp R                &kp R    &kp SPACE  &kp SPACE            &kp SPACE
+                               &kp R              &kp SPACE            &kp R    &kp SPACE  &kp R                &kp SPACE
             >;
         };
 
