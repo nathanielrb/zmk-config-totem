@@ -293,19 +293,19 @@
         promethium_24 {
             label = "promethium-24";
             bindings = <
-       &kp B  &kp Y            &kp O              &kp U                &none    &none      &kp L                &kp D              &kp P            &kp F
-       &kp C  &hml LEFT_ALT I  &hml LEFT_SHIFT E  &hml LEFT_CONTROL A  &none    &none      &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &kp S
-&none  &kp X  &to 3            &sl 1              &sl 2                &none    &none      &kp M                &kp G              &kp W            &kp V  &none
-                               &kp R              &kp SPACE            &kp R    &kp SPACE  &kp R                &kp SPACE
+       &kp B            &kp Y            &kp O              &kp U                &none             &none           &kp L                &kp D              &kp P            &kp F
+       &hml LEFT_GUI C  &hml LEFT_ALT I  &hml LEFT_SHIFT E  &hml LEFT_CONTROL A  &none             &none           &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &hml LEFT_GUI S
+&none  &kp X            &to 3            &sl 1              &sl 2                &none             &none           &kp M                &kp G              &kp W            &kp V            &none
+                                         &kp R              &kp SPACE            &sk LEFT_SHIFT    &sk LEFT_SHIFT  &kp R                &kp SPACE
             >;
         };
 
         promethium_24_alpha2 {
             bindings = <
-        &kp TILDE    &kp SLASH     &kp QUESTION    &kp EXCLAMATION   &none     &trans      &kp EXCL    &kp QUESTION   &kp SLASH  &kp TILDE
-        &kp PERCENT  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans      &kp K       &kp J          &kp Q      &kp Z
-&trans  &kp GRAVE    &kp RA(E)     &to 1           &sl 4             &trans    &trans      &kp ENTER   &kp BACKSPACE  &kp TAB    &kp DELETE  &trans
-                                   &trans          &to 0             &to 0     &kp ESCAPE  &kp ESCAPE  &trans
+        &kp TILDE    &kp SLASH     &kp QUESTION    &kp EXCLAMATION   &none     &trans      &kp EXCL   &kp QUESTION   &kp SLASH  &kp TILDE
+        &kp PERCENT  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans      &kp K      &kp J          &kp Q      &kp Z
+&trans  &kp GRAVE    &kp RA(E)     &to 1           &sl 4             &trans    &trans      &kp ENTER  &kp BACKSPACE  &kp TAB    &kp DELETE  &trans
+                                   &trans          &kp ESCAPE        &to 0     &kp ESCAPE  &to 0      &trans
             >;
         };
 
@@ -314,7 +314,7 @@
         &kp LS(POUND)  &kp LS(AT)  &kp MINUS  &kp LS(STAR)      &none     &trans  &kp ASTRK  &kp MINUS  &kp LS(AT)         &kp LS(POUND)
         &kp UNDER      &kp PLUS    &kp EQUAL  &kp LEFT_CONTROL  &trans    &trans  &kp COMMA  &kp DOT    &kp SQT            &kp LS(AMPS)
 &kp N7  &kp PIPE       &kp DOLLAR  &kp CARET  &sl 6             &none     &trans  &kp SEMI   &kp COLON  &kp DOUBLE_QUOTES  &kp BSLH       &kp SQT
-                                   &trans     &to 0             &to 0     &to 5   &to 5      &trans
+                                   &trans     &to 5             &to 0     &to 5   &to 0      &trans
             >;
         };
 
@@ -323,7 +323,7 @@
         &kp H     &kp COMMA  &kp N7     &kp N8     &trans    &trans     &kp N9     &kp N0    &kp PERIOD  &kp EQUAL
         &kp N0    &kp N1     &kp N2     &kp N3     &none     &none      &kp N4     &kp N5    &kp N6      &sl 4
 &trans  &kp PLUS  &kp ASTRK  &kp MINUS  &kp COLON  &none     &none      &kp ENTER  &kp BSPC  &kp TAB     &kp DELETE  &trans
-                             &trans     &to 0      &to 0     &kp SPACE  &kp SPACE  &trans
+                             &trans     &kp SPACE  &to 0     &kp SPACE  &to 0      &trans
             >;
         };
 
@@ -332,7 +332,7 @@
         &trans  &kp CARET         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET         &trans
         &none   &kp ASTRK         &kp EQUAL         &sk PLUS           &trans    &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &trans
 &trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN  &none   &trans
-                                  &trans            &trans             &trans    &kp SPACE  &kp SPACE             &trans
+                                  &trans            &kp SPACE          &trans    &kp SPACE  &kp SPACE             &trans
             >;
         };
 
@@ -341,7 +341,7 @@
         &trans       &none          &kp LC(LS(LEFT_ALT))  &kp LC(LEFT_ALT)  &none     &trans     &kp F2            &kp F11         &kp PRINTSCREEN  &trans
         &kp HOME     &kp END        &kp LEFT_ARROW        &kp RIGHT         &trans    &trans     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT     &kp END
 &trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp UP_ARROW          &kp DOWN_ARROW    &none     &trans     &kp ENTER         &kp BACKSPACE   &kp TAB          &kp DELETE  &trans
-                                    &trans                &to 0             &to 0     &kp SPACE  &kp SPACE         &trans
+                                    &trans                &kp SPACE         &to 0     &kp SPACE  &to 0             &trans
             >;
         };
 
