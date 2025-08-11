@@ -35,52 +35,6 @@
     combos {
         compatible = "zmk,combos";
 
-        punct_layer {
-            bindings = <&sl 8>;
-            key-positions = <23 24>;
-            layers = <7>;
-        };
-
-        nav_layer {
-            bindings = <&to 9>;
-            key-positions = <29 28>;
-        };
-
-        shiftlh {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <2 3>;
-        };
-
-        num_layer {
-            bindings = <&to 9>;
-            key-positions = <28 27>;
-        };
-
-        shiftrh {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <6 7>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <7 8>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
-        };
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 1>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <1 0>;
-        };
-
         bluetoothnext {
             bindings = <&bt BT_NXT>;
             key-positions = <22 25>;
@@ -106,14 +60,24 @@
             key-positions = <21 23 25>;
         };
 
-        promethium {
-            bindings = <&to 0>;
-            key-positions = <26 30 27>;
+        j {
+            bindings = <&kp J>;
+            key-positions = <17 16>;
         };
 
-        dvorak {
-            bindings = <&to 7>;
-            key-positions = <26 30>;
+        k {
+            bindings = <&kp K>;
+            key-positions = <15 16>;
+        };
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <6 7>;
+        };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <17 18>;
         };
     };
 
