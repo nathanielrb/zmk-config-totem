@@ -275,10 +275,10 @@
 
         promethium_24_sym {
             bindings = <
-        &kp LS(POUND)  &kp LS(AT)  &kp MINUS  &kp LS(STAR)      &none     &trans  &kp ASTRK  &kp MINUS  &kp LS(AT)         &kp LS(POUND)
-        &kp UNDER      &kp PLUS    &kp EQUAL  &kp LEFT_CONTROL  &trans    &trans  &kp COMMA  &kp DOT    &kp SQT            &kp LS(AMPS)
-&kp N7  &kp PIPE       &kp DOLLAR  &kp CARET  &sl 6             &none     &trans  &kp SEMI   &kp COLON  &kp DOUBLE_QUOTES  &kp BSLH       &kp SQT
-                                   &trans     &to 5             &to 0     &to 5   &to 0      &trans
+        &kp PIPE   &kp CARET  &kp DOLLAR  &kp LS(GRAVE)     &none     &trans  &kp ASTRK     &kp MINUS  &kp AMPS           &kp POUND
+        &kp UNDER  &kp PLUS   &kp EQUAL   &kp LEFT_CONTROL  &trans    &trans  &kp COMMA     &kp DOT    &kp SQT            &kp AT
+&kp N7  &none      &none      &kp RA(E)   &sl 6             &none     &trans  &kp SEMI      &kp COLON  &kp DOUBLE_QUOTES  &kp BSLH   &kp SQT
+                              &trans      &to 5             &none     &none   &kp CAPSLOCK  &trans
             >;
         };
 
