@@ -284,28 +284,28 @@
 
         promethium_24_num {
             bindings = <
-        &kp EQUAL  &kp COMMA  &kp N7     &kp N8     &trans    &trans     &kp N9     &kp N0    &kp PERIOD  &kp EQUAL
-        &kp H      &kp N1     &kp N2     &kp N3     &none     &none      &kp N4     &kp N5    &kp N6      &sl 4
-&trans  &kp PLUS   &kp ASTRK  &kp MINUS  &kp COLON  &none     &none      &kp ENTER  &kp BSPC  &kp TAB     &kp DELETE  &trans
-                              &trans     &kp SPACE  &to 0     &kp SPACE  &to 0      &trans
+        &kp EQUAL    &kp PERIOD    &kp N0         &kp N9        &trans    &trans  &kp N7     &kp N8     &kp SLASH  &kp EQUAL
+        &kp PERCENT  &kp NUMBER_3  &kp N2         &kp NUMBER_1  &none     &none   &kp N4     &kp N5     &kp N6     &sl 4
+&trans  &kp TAB      &kp DELETE    &kp BACKSPACE  &kp ENTER     &none     &none   &kp COLON  &kp MINUS  &kp ASTRK  &kp PLUS   &trans
+                                   &trans         &kp SPACE     &none     &none   &to 0      &trans
             >;
         };
 
         promethium_24_parens {
             bindings = <
-        &trans  &kp CARET         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET         &trans
-        &none   &kp ASTRK         &kp EQUAL         &sk PLUS           &trans    &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &trans
-&trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN  &none   &trans
-                                  &trans            &kp SPACE          &trans    &kp SPACE  &kp SPACE             &trans
+        &trans  &kp CARET         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET         &trans
+        &none   &kp ASTRK         &kp EQUAL         &sk PLUS           &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &trans
+&trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN  &none   &trans
+                                  &trans            &kp SPACE          &trans    &none   &kp SPACE             &trans
             >;
         };
 
         promethium_24_nav {
             bindings = <
-        &trans       &none          &kp LC(LS(LEFT_ALT))  &kp LC(LEFT_ALT)  &none     &trans     &kp F2            &kp F11         &kp PRINTSCREEN  &trans
-        &kp HOME     &kp END        &kp LEFT_ARROW        &kp RIGHT         &trans    &trans     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT     &kp END
-&trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp UP_ARROW          &kp DOWN_ARROW    &none     &trans     &kp ENTER         &kp BACKSPACE   &kp TAB          &kp DELETE  &trans
-                                    &trans                &kp SPACE         &to 0     &kp SPACE  &to 0             &trans
+        &kp F11     &kp F2                &kp LC(LS(LEFT_ALT))       &kp LC(LEFT_ALT)         &none     &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &kp PRINTSCREEN  &trans
+        &kp ESCAPE  &hml LEFT_ALT DELETE  &hml LEFT_SHIFT BACKSPACE  &hml LEFT_CONTROL ENTER  &trans    &trans     &kp LEFT         &kp RIGHT    &kp HOME         &kp END
+&trans  &none       &none                 &kp TAB                    &kp DOWN_ARROW           &none     &trans     &kp UP_ARROW     &kp DOWN     &kp PAGE_UP      &kp PAGE_DOWN  &trans
+                                          &trans                     &kp SPACE                &to 0     &kp SPACE  &to 0            &trans
             >;
         };
 
