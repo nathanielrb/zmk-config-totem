@@ -62,22 +62,22 @@
 
         j {
             bindings = <&kp J>;
-            key-positions = <17 16>;
+            key-positions = <17 18>;
         };
 
         k {
             bindings = <&kp K>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
         };
 
         q {
             bindings = <&kp Q>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
         };
 
         z {
             bindings = <&kp Z>;
-            key-positions = <17 18>;
+            key-positions = <18 19>;
         };
     };
 
