@@ -266,10 +266,10 @@
 
         promethium_24_control {
             bindings = <
-        &sk RIGHT_ALT     &kp SLASH     &kp QUESTION    &kp PERCENT       &none             &trans      &kp EXCL   &kp QUESTION   &kp SLASH   &kp TILDE
-        &kp RA(NUMBER_6)  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &trans      &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp ESCAPE
-&trans  &kp RA(COMMA)     &kp GRAVE     &kp CAPSLOCK    &sl 4             &trans            &trans      &kp K      &kp J          &kp Q       &kp Z       &trans
-                                        &trans          &kp ESCAPE        &sk LEFT_SHIFT    &kp ESCAPE  &to 0      &trans
+        &sk RIGHT_ALT     &kp SLASH     &kp QUESTION    &kp PERCENT       &none     &trans  &kp EXCL        &kp QUESTION   &kp SLASH   &kp TILDE
+        &kp RA(NUMBER_6)  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER       &kp BACKSPACE  &kp DELETE  &kp ESCAPE
+&trans  &kp RA(COMMA)     &kp GRAVE     &kp CAPSLOCK    &sl 4             &trans    &trans  &kp K           &kp J          &kp Q       &kp Z       &trans
+                                        &trans          &kp ESCAPE        &none     &none   &sk LEFT_SHIFT  &trans
             >;
         };
 
