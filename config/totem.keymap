@@ -264,7 +264,7 @@
             >;
         };
 
-        promethium_24_alpha2 {
+        promethium_24_control {
             bindings = <
         &sk RIGHT_ALT     &kp SLASH     &kp QUESTION    &kp PERCENT       &none             &trans      &kp EXCL   &kp QUESTION   &kp SLASH   &kp TILDE
         &kp RA(NUMBER_6)  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &trans      &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp ESCAPE
@@ -284,10 +284,10 @@
 
         promethium_24_num {
             bindings = <
-        &kp EQUAL    &kp PERIOD    &kp N0         &kp N9        &trans    &trans  &kp N7     &kp N8     &kp SLASH  &kp EQUAL
-        &kp PERCENT  &kp NUMBER_3  &kp N2         &kp NUMBER_1  &none     &none   &kp N4     &kp N5     &kp N6     &sl 4
-&trans  &kp TAB      &kp DELETE    &kp BACKSPACE  &kp ENTER     &none     &none   &kp COLON  &kp MINUS  &kp ASTRK  &kp PLUS   &trans
-                                   &trans         &kp SPACE     &none     &none   &to 0      &trans
+        &kp EQUAL    &kp PERIOD    &kp N0  &kp N9        &trans    &trans  &kp N7     &kp N8     &kp SLASH  &kp EQUAL
+        &kp PERCENT  &kp NUMBER_3  &kp N2  &kp NUMBER_1  &none     &none   &kp N4     &kp N5     &kp N6     &sl 4
+&trans  &none        &none         &sl 1   &sl 2         &none     &none   &kp COLON  &kp MINUS  &kp ASTRK  &kp PLUS   &trans
+                                   &trans  &kp SPACE     &none     &none   &to 0      &trans
             >;
         };
 
