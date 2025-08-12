@@ -266,19 +266,19 @@
 
         promethium_24_control {
             bindings = <
-        &sk RIGHT_ALT     &kp SLASH     &kp QUESTION    &kp PERCENT       &none     &trans  &kp EXCL        &kp QUESTION   &kp SLASH   &kp TILDE
-        &kp RA(NUMBER_6)  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER       &kp BACKSPACE  &kp DELETE  &kp ESCAPE
-&trans  &kp RA(COMMA)     &kp GRAVE     &kp CAPSLOCK    &sl 4             &trans    &trans  &kp K           &kp J          &kp Q       &kp Z       &trans
-                                        &trans          &kp ESCAPE        &none     &none   &sk LEFT_SHIFT  &trans
+        &sk RIGHT_ALT     &kp SLASH     &kp QUESTION    &kp PERCENT       &none     &trans  &kp PRINTSCREEN  &kp CAPSLOCK   &kp SLASH  &kp TILDE
+        &kp RA(NUMBER_6)  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER        &kp BACKSPACE  &kp TAB    &kp ESCAPE
+&trans  &kp RA(COMMA)     &kp GRAVE     &kp CAPSLOCK    &sl 4             &trans    &trans  &kp DELETE       &kp ESCAPE     &kp Q      &kp Z       &trans
+                                        &trans          &kp ESCAPE        &none     &none   &sk LEFT_SHIFT   &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-        &kp PIPE   &kp CARET  &kp DOLLAR  &kp LS(GRAVE)     &none     &trans  &kp ASTRK     &kp MINUS  &kp AMPS           &kp POUND
-        &kp UNDER  &kp PLUS   &kp EQUAL   &kp LEFT_CONTROL  &trans    &trans  &kp COMMA     &kp DOT    &kp SQT            &kp AT
-&kp N7  &none      &none      &kp RA(E)   &sl 6             &none     &trans  &kp SEMI      &kp COLON  &kp DOUBLE_QUOTES  &kp BSLH   &kp SQT
-                              &trans      &to 5             &none     &none   &kp CAPSLOCK  &trans
+        &kp PIPE   &kp CARET  &kp DOLLAR    &kp LS(GRAVE)     &none     &trans  &kp ASTRK     &kp MINUS  &kp SLASH          &kp TILDE
+        &kp UNDER  &kp PLUS   &kp EQUAL     &kp LEFT_CONTROL  &trans    &trans  &kp COMMA     &kp DOT    &kp SQT            &kp AT
+&kp N7  &none      &none      &kp RA(HASH)  &sl 6             &none     &trans  &kp SEMI      &kp COLON  &kp DOUBLE_QUOTES  &kp BSLH   &kp SQT
+                              &trans        &to 5             &none     &none   &kp QUESTION  &trans
             >;
         };
 
