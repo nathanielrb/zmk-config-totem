@@ -334,7 +334,7 @@
             bindings = <
         &none       &kp LEFT_CONTROL      &kp LC(LS(LEFT_ALT))  &kp LC(LEFT_ALT)         &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
         &kp ESCAPE  &hml LEFT_ALT DELETE  &hmkl LEFT_SHIFT MB2  &hmkl LEFT_CONTROL LCLK  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
-&trans  &none       &none                 &sl 2                 &kp DELETE               &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
+&trans  &none       &none                 &sl 1                 &kp DELETE               &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
                                           &trans                &kp SPACE                &none     &none   &to 0         &trans
             >;
         };
