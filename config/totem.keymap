@@ -59,60 +59,53 @@
         j {
             bindings = <&kp J>;
             key-positions = <17 18>;
+            layers = <0>;
         };
 
         k {
             bindings = <&kp K>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         q {
             bindings = <&kp Q>;
             key-positions = <27 28>;
+            layers = <0>;
         };
 
         z {
             bindings = <&kp Z>;
             key-positions = <6 7>;
+            layers = <0>;
         };
 
         eaigu {
             bindings = <&kp RA(E)>;
             key-positions = <13 12>;
+            layers = <0>;
         };
 
         grave {
             bindings = <&kp RA(GRAVE)>;
             key-positions = <12 11>;
+            layers = <0>;
         };
 
         circ {
             bindings = <&kp RA(NUMBER_6)>;
             key-positions = <3 2>;
+            layers = <0>;
         };
 
         cedille {
             bindings = <&kp RA(COMMA)>;
             key-positions = <2 1>;
+            layers = <0>;
         };
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&key_repeat>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-
         frtaandroid: fra {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -289,8 +282,26 @@
             bindings = <
        &kp B            &kp Y            &kp O              &kp U                &none    &none  &kp L                &kp D              &kp P            &kp F
        &hml LEFT_GUI C  &hml LEFT_ALT I  &hml LEFT_SHIFT E  &hml LEFT_CONTROL A  &none    &none  &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &hml LEFT_GUI S
-&none  &kp X            &sk LEFT_SHIFT   &sl 1              &sl 2                &none    &none  &kp M                &kp G              &kp W            &kp V            &none
+&none  &kp X            &sk LEFT_SHIFT   &sl 3              &sl 4                &none    &none  &kp M                &kp G              &kp W            &kp V            &none
                                          &none              &kp SPACE            &none    &none  &kp R                &none
+            >;
+        };
+
+        promethium_24_num {
+            bindings = <
+        &none   &none         &none   &none         &trans    &trans  &kp N7  &kp N8  &kp N9  &kp H
+        &kp N0  &kp NUMBER_3  &kp N2  &kp NUMBER_1  &none     &none   &kp N4  &kp N5  &kp N6  &sl 5
+&trans  &none   &none         &sl 3   &sl 4         &none     &none   &none   &none   &none   &none  &trans
+                              &trans  &kp SPACE     &none     &none   &to 0   &trans
+            >;
+        };
+
+        promethium_24_nav {
+            bindings = <
+        &none       &kp LEFT_CONTROL      &kp LC(LS(LEFT_ALT))  &kp LC(LEFT_ALT)         &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
+        &kp ESCAPE  &hml LEFT_ALT DELETE  &hmkl LEFT_SHIFT MB2  &hmkl LEFT_CONTROL LCLK  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
+&trans  &none       &none                 &sl 3                 &kp DELETE               &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
+                                          &trans                &kp SPACE                &none     &none   &to 0         &trans
             >;
         };
 
@@ -298,8 +309,8 @@
             bindings = <
         &kp F2        &none         &none           &none             &none     &trans  &kp PRINTSCREEN  &kp CAPSLOCK   &sk RIGHT_ALT  &kp F11
         &sk LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER        &kp BACKSPACE  &kp TAB        &kp LS(TAB)
-&trans  &none         &caps_word    &to 3           &sl 4             &trans    &trans  &kp DELETE       &kp ESCAPE     &none          &none        &trans
-                                    &trans          &to 5             &none     &none   &to 3            &trans
+&trans  &none         &caps_word    &to 1           &sl 5             &trans    &trans  &kp DELETE       &kp ESCAPE     &none          &none        &trans
+                                    &trans          &to 2             &none     &none   &to 1            &trans
             >;
         };
 
@@ -312,30 +323,12 @@
             >;
         };
 
-        promethium_24_num {
-            bindings = <
-        &none   &none         &none   &none         &trans    &trans  &kp N7  &kp N8  &kp N9  &kp H
-        &kp N0  &kp NUMBER_3  &kp N2  &kp NUMBER_1  &none     &none   &kp N4  &kp N5  &kp N6  &sl 4
-&trans  &none   &none         &mo 1   &sl 2         &none     &none   &none   &none   &none   &none  &trans
-                              &trans  &kp SPACE     &none     &none   &to 0   &trans
-            >;
-        };
-
         promethium_24_parens {
             bindings = <
         &trans  &kp CARET         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET         &trans
         &none   &kp ASTRK         &kp EQUAL         &sk PLUS           &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &trans
 &trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN  &none   &trans
                                   &trans            &kp SPACE          &trans    &none   &kp SPACE             &trans
-            >;
-        };
-
-        promethium_24_nav {
-            bindings = <
-        &none       &kp LEFT_CONTROL      &kp LC(LS(LEFT_ALT))  &kp LC(LEFT_ALT)         &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
-        &kp ESCAPE  &hml LEFT_ALT DELETE  &hmkl LEFT_SHIFT MB2  &hmkl LEFT_CONTROL LCLK  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
-&trans  &none       &none                 &sl 1                 &kp DELETE               &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
-                                          &trans                &kp SPACE                &none     &none   &to 0         &trans
             >;
         };
 
