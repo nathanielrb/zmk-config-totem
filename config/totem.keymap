@@ -289,10 +289,10 @@
 
         promethium_24_num {
             bindings = <
-        &none   &none         &none   &none         &trans    &trans  &kp N7  &kp N8  &kp N9  &kp H
-        &kp N0  &kp NUMBER_3  &kp N2  &kp NUMBER_1  &none     &none   &kp N4  &kp N5  &kp N6  &sl 5
-&trans  &none   &none         &sl 3   &sl 4         &none     &none   &none   &none   &none   &none  &trans
-                              &trans  &kp SPACE     &none     &none   &to 0   &trans
+        &kp CARET  &kp SLASH     &kp EQUAL  &kp PLUS      &trans    &trans  &kp N7     &kp N8     &kp N9  &kp H
+        &kp N0     &kp NUMBER_3  &kp N2     &kp NUMBER_1  &none     &none   &kp N4     &kp N5     &kp N6  &sl 5
+&trans  &none      &none         &sl 3      &sl 4         &none     &none   &kp ASTRK  &kp MINUS  &none   &none  &trans
+                                 &trans     &kp SPACE     &none     &none   &to 0      &trans
             >;
         };
 
@@ -309,17 +309,17 @@
             bindings = <
         &kp F2        &none         &none           &none             &none     &trans  &kp PRINTSCREEN  &kp CAPSLOCK   &sk RIGHT_ALT  &kp F11
         &sk LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER        &kp BACKSPACE  &kp TAB        &kp LS(TAB)
-&trans  &none         &caps_word    &to 1           &sl 5             &trans    &trans  &kp DELETE       &kp ESCAPE     &none          &none        &trans
-                                    &trans          &to 2             &none     &none   &to 1            &trans
+&trans  &none         &none         &caps_word      &sl 5             &trans    &trans  &kp DELETE       &kp ESCAPE     &none          &none        &trans
+                                    &trans          &to 1             &none     &none   &to 2            &trans
             >;
         };
 
         promethium_24_sym {
             bindings = <
-       &kp PIPE   &kp CARET  &kp DOLLAR  &none             &none     &trans  &kp ASTRK  &kp MINUS  &kp QUESTION  &kp EXCL
-       &kp UNDER  &kp AMPS   &kp HASH    &kp LEFT_CONTROL  &trans    &trans  &kp COMMA  &kp DOT    &kp SQT       &kp DOUBLE_QUOTES
-&none  &none      &none      &kp AT      &kp GRAVE         &none     &trans  &kp SEMI   &kp COLON  &none         &none              &none
-                             &trans      &kp TILDE         &none     &none   &kp SLASH  &trans
+       &kp PIPE   &kp CARET  &kp DOLLAR  &none          &none     &trans  &kp ASTRK  &kp MINUS  &kp QUESTION  &kp EXCL
+       &kp UNDER  &kp AMPS   &kp HASH    &kp GRAVE      &trans    &trans  &kp COMMA  &kp DOT    &kp SQT       &kp DOUBLE_QUOTES
+&none  &none      &none      &kp AT      &kp BACKSLASH  &none     &trans  &kp SEMI   &kp COLON  &none         &none              &none
+                             &trans      &kp TILDE      &none     &none   &kp SLASH  &trans
             >;
         };
 
