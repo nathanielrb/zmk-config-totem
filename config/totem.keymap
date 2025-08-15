@@ -298,7 +298,7 @@
 
         promethium_24_nav {
             bindings = <
-        &none       &kp LEFT_CONTROL      &kp LC(LS(LEFT_ALT))  &kp LC(LEFT_ALT)         &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
+        &none       &kp LEFT_CONTROL      &msc SCRL_UP          &msc SCRL_DOWN           &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
         &kp ESCAPE  &hml LEFT_ALT DELETE  &hmkl LEFT_SHIFT MB2  &hmkl LEFT_CONTROL LCLK  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
 &trans  &none       &none                 &sl 3                 &kp DELETE               &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
                                           &trans                &kp SPACE                &none     &none   &to 0         &trans
@@ -310,7 +310,7 @@
         &kp F2        &none         &none           &none             &none     &trans  &kp PRINTSCREEN  &kp CAPSLOCK   &sk RIGHT_ALT  &kp F11
         &sk LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER        &kp BACKSPACE  &kp TAB        &kp LS(TAB)
 &trans  &none         &none         &caps_word      &sl 5             &trans    &trans  &kp DELETE       &kp ESCAPE     &none          &none        &trans
-                                    &trans          &to 1             &none     &none   &to 2            &trans
+                                    &trans          &to 2             &none     &none   &to 1            &trans
             >;
         };
 
