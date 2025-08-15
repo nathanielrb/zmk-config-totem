@@ -316,10 +316,10 @@
 
         promethium_24_sym {
             bindings = <
-       &kp PIPE   &kp CARET  &kp DOLLAR  &none             &none     &trans  &kp EXCL   &kp QUESTION  &kp SLASH          &kp TILDE
-       &kp UNDER  &kp PLUS   &kp EQUAL   &kp LEFT_CONTROL  &trans    &trans  &kp COMMA  &kp DOT       &kp SQT            &kp AT
-&none  &kp GRAVE  &kp AMPS   &kp HASH    &sl 6             &none     &trans  &kp SEMI   &kp COLON     &kp DOUBLE_QUOTES  &kp BSLH   &none
-                             &trans      &kp MINUS         &none     &none   &kp ASTRK  &trans
+       &kp PIPE   &kp CARET  &kp DOLLAR  &none             &none     &trans  &kp ASTRK  &kp MINUS  &kp SLASH          &kp TILDE
+       &kp UNDER  &kp PLUS   &kp EQUAL   &kp LEFT_CONTROL  &trans    &trans  &kp COMMA  &kp DOT    &kp SQT            &kp AT
+&none  &kp GRAVE  &kp AMPS   &kp HASH    &sl 6             &none     &trans  &kp SEMI   &kp COLON  &kp DOUBLE_QUOTES  &kp BSLH   &none
+                             &trans      &kp QUESTION      &none     &none   &kp EXCL   &trans
             >;
         };
 
