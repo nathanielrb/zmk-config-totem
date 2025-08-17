@@ -70,13 +70,13 @@
 
         q {
             bindings = <&kp Q>;
-            key-positions = <27 28>;
+            key-positions = <29 28>;
             layers = <0>;
         };
 
         z {
             bindings = <&kp Z>;
-            key-positions = <6 7>;
+            key-positions = <8 7>;
             layers = <0>;
         };
 
@@ -102,6 +102,16 @@
             bindings = <&kp RA(COMMA)>;
             key-positions = <2 1>;
             layers = <0>;
+        };
+
+        letter-v {
+            bindings = <&kp V>;
+            key-positions = <27 28>;
+        };
+
+        letter-x {
+            bindings = <&kp X>;
+            key-positions = <6 7>;
         };
     };
 
