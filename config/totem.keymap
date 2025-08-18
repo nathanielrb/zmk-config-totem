@@ -335,9 +335,9 @@
 
         promethium_24_parens {
             bindings = <
-        &trans  &kp CARET         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET         &trans
-        &none   &kp ASTRK         &kp EQUAL         &sk PLUS           &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &trans
-&trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN  &none   &trans
+        &trans  &kp CARET         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET      &kp MINUS
+        &none   &kp ASTRK         &kp EQUAL         &sk PLUS           &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN
+&trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &none             &trans
                                   &trans            &kp SPACE          &trans    &none   &kp SPACE             &trans
             >;
         };
