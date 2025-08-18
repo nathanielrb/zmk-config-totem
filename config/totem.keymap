@@ -264,7 +264,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SLTOL1";
             #binding-cells = <0>;
-            bindings = <&sl 8>, <&to 8>;
+            bindings = <&sl 9>, <&to 9>;
         };
 
         hmkl: hmkl {
@@ -292,7 +292,7 @@
             bindings = <
        &kp B            &kp Y            &kp O              &kp U                &none    &none  &kp L                &kp D              &kp P            &kp F
        &hml LEFT_GUI C  &hml LEFT_ALT I  &hml LEFT_SHIFT E  &hml LEFT_CONTROL A  &none    &none  &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &hml LEFT_GUI S
-&none  &kp X            &sk LEFT_SHIFT   &sl 3              &sl 4                &none    &none  &kp M                &kp G              &kp W            &kp V            &none
+&none  &kp X            &sk LEFT_SHIFT   &sl 4              &sl 5                &none    &none  &kp M                &kp G              &kp W            &kp V            &none
                                          &none              &kp SPACE            &none    &none  &kp R                &none
             >;
         };
@@ -300,8 +300,8 @@
         promethium_24_num {
             bindings = <
         &kp CARET  &kp SLASH     &kp EQUAL  &kp PLUS      &trans    &trans  &kp N7     &kp N8     &kp N9  &kp PERCENT
-        &kp N0     &kp NUMBER_3  &kp N2     &kp NUMBER_1  &none     &none   &kp N4     &kp N5     &kp N6  &sl 5
-&trans  &none      &none         &sl 3      &sl 4         &none     &none   &kp ASTRK  &kp MINUS  &none   &none        &trans
+        &kp N0     &kp NUMBER_3  &kp N2     &kp NUMBER_1  &none     &none   &kp N4     &kp N5     &kp N6  &sl 6
+&trans  &none      &none         &sl 4      &sl 5         &none     &none   &kp ASTRK  &kp MINUS  &none   &none        &trans
                                  &trans     &kp SPACE     &none     &none   &to 0      &trans
             >;
         };
@@ -310,17 +310,26 @@
             bindings = <
         &none       &kp LEFT_CONTROL      &msc SCRL_UP          &msc SCRL_DOWN           &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
         &kp ESCAPE  &hml LEFT_ALT DELETE  &hmkl LEFT_SHIFT MB2  &hmkl LEFT_CONTROL LCLK  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
-&trans  &none       &none                 &sl 3                 &kp DELETE               &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
+&trans  &none       &none                 &sl 4                 &kp DELETE               &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
                                           &trans                &kp SPACE                &none     &none   &to 0         &trans
+            >;
+        };
+
+        promethium_24_mouse {
+            bindings = <
+        &none       &kp LEFT_CONTROL      &msc SCRL_UP  &msc SCRL_DOWN  &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
+        &kp ESCAPE  &hml LEFT_ALT DELETE  &mkp RCLK     &mkp LCLK       &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
+&trans  &none       &none                 &sl 4         &kp DELETE      &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
+                                          &trans        &kp SPACE       &none     &none   &to 0         &trans
             >;
         };
 
         promethium_24_control {
             bindings = <
-        &kp F2        &none         &none           &none             &none     &trans  &kp PRINTSCREEN  &kp CAPSLOCK   &sk RIGHT_ALT  &kp F11
-        &sk LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER        &kp BACKSPACE  &kp TAB        &kp LS(TAB)
-&trans  &none         &none         &caps_word      &sl 5             &trans    &trans  &kp DELETE       &kp ESCAPE     &none          &none        &trans
-                                    &trans          &to 2             &none     &none   &to 1            &trans
+        &kp F11       &kp F2          &none           &none             &none     &trans  &kp DELETE  &kp X          &sk V    &kp Z
+        &sk LEFT_GUI  &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER   &kp BACKSPACE  &kp TAB  &kp ESCAPE
+&trans  &none         &sk LEFT_SHIFT  &to 3           &sl 6             &trans    &trans  &kp K       &kp J          &kp Q    &none       &trans
+                                      &trans          &to 1             &none     &none   &to 2       &trans
             >;
         };
 
@@ -328,17 +337,17 @@
             bindings = <
        &kp PIPE   &kp CARET  &kp DOLLAR  &none          &none     &trans  &kp ASTRK  &kp MINUS  &kp QUESTION  &kp EXCL
        &kp UNDER  &kp AMPS   &kp HASH    &kp GRAVE      &trans    &trans  &kp COMMA  &kp DOT    &kp SQT       &kp DOUBLE_QUOTES
-&none  &none      &none      &kp AT      &kp BACKSLASH  &none     &trans  &kp SEMI   &kp COLON  &none         &none              &none
-                             &trans      &kp TILDE      &none     &none   &kp SLASH  &trans
+&none  &none      &kp TILDE  &kp AT      &kp BACKSLASH  &none     &trans  &kp SEMI   &kp COLON  &kp SLASH     &none              &none
+                             &trans      &to 3          &none     &none   &kp SLASH  &trans
             >;
         };
 
         promethium_24_parens {
             bindings = <
-        &trans  &kp CARET         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET      &kp MINUS
-        &none   &kp ASTRK         &kp EQUAL         &sk PLUS           &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN
-&trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &none             &trans
-                                  &trans            &kp SPACE          &trans    &none   &kp SPACE             &trans
+        &trans  &none      &none      &none      &trans    &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET      &kp MINUS
+        &none   &kp ASTRK  &kp EQUAL  &sk PLUS   &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN
+&trans  &trans  &none      &none      &to 6      &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &none             &trans
+                           &trans     &kp SPACE  &trans    &none   &kp SPACE             &trans
             >;
         };
 
@@ -371,7 +380,7 @@
        &kp SQT          &kp COMMA        &kp PERIOD         &kp P                &kp Y                &kp F              &kp G                &kp C              &kp L            &kp MINUS
        &hml LEFT_GUI A  &hml LEFT_ALT O  &hml LEFT_SHIFT E  &hml LEFT_CONTROL U  &hml LEFT_SHIFT I    &hml LEFT_SHIFT D  &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &hmr LEFT_GUI S
 &none  &kp SEMICOLON    &kp Q            &kp J              &kp K                &kp X                &kp B              &kp M                &kp W              &kp V            &kp Z            &none
-                                         &kp ENTER          &kp R                &sl 8                &to 9              &kp SPACE            &kp BACKSPACE
+                                         &kp ENTER          &kp R                &sl 9                &to 10             &kp SPACE            &kp BACKSPACE
             >;
         };
 
@@ -381,7 +390,7 @@
        &none  &none          &kp CARET      &kp DOLLAR        &none            &kp AMPS   &kp AT           &kp HASH           &kp GRAVE  &kp PERCENT
        &none  &kp RA(GRAVE)  &kp RA(E)      &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp UNDER  &kp EXCLAMATION  &kp QUESTION       &kp COLON  &kp BACKSLASH
 &none  &none  &kp RA(GRAVE)  &kp RIGHT_ALT  &kp RA(NUMBER_6)  &kp RA(COMMA)    &kp PIPE   &kp ASTRK        &kp DOUBLE_QUOTES  &kp SLASH  &kp TILDE      &none
-                             &kp TAB        &none             &to 7            &to 9      &kp SPACE        &kp ESCAPE
+                             &kp TAB        &none             &to 8            &to 10     &kp SPACE        &kp ESCAPE
             >;
         };
 
@@ -404,8 +413,8 @@
             bindings = <
        &kp TAB     &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS            &kp DELETE  &kp N7  &kp N8         &kp N9  &kp BACKSPACE
        &kp ESCAPE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp COMMA   &kp N4  &kp N5         &kp N6  &kp ENTER
-&none  &kp SLASH   &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTRK           &kp PERIOD  &kp N1  &kp N2         &kp N3  &to 10         &none
-                                  &none                 &kp SPACE              &to 7               &to 8       &kp N0  &kp BACKSPACE
+&none  &kp SLASH   &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTRK           &kp PERIOD  &kp N1  &kp N2         &kp N3  &to 11         &none
+                                  &none                 &kp SPACE              &to 8               &to 9       &kp N0  &kp BACKSPACE
             >;
         };
 
@@ -428,8 +437,8 @@
             bindings = <
        &kp LC(TAB)          &kp ESCAPE          &kp F2                &kp F11                 &kp F4       &kp PRINTSCREEN  &kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER      &kp BACKSPACE
        &mt LEFT_GUI ESCAPE  &mt LEFT_ALT LC(N)  &mt LEFT_SHIFT LC(T)  &mt LEFT_CONTROL LC(P)  &kp LC(Y)    &sk HOME         &kp LEFT         &kp RIGHT    &kp END        &kp ENTER
-&none  &kp LC(A)            &kp LC(C)           &kp LC(W)             &kp LC(V)               &kp LC(X)    &kp PAGE_UP      &kp UP_ARROW     &kp DOWN     &kp PAGE_DOWN  &to 8          &none
-                                                &none                 &kp LEFT_SHIFT          &to 7        &to 9            &kp SPACE        &none
+&none  &kp LC(A)            &kp LC(C)           &kp LC(W)             &kp LC(V)               &kp LC(X)    &kp PAGE_UP      &kp UP_ARROW     &kp DOWN     &kp PAGE_DOWN  &to 9          &none
+                                                &none                 &kp LEFT_SHIFT          &to 8        &to 10           &kp SPACE        &none
             >;
         };
 
