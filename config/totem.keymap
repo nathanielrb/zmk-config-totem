@@ -58,13 +58,13 @@
 
         j {
             bindings = <&kp J>;
-            key-positions = <17 18>;
+            key-positions = <7 8>;
             layers = <0>;
         };
 
         k {
             bindings = <&kp K>;
-            key-positions = <16 17>;
+            key-positions = <27 28>;
             layers = <0>;
         };
 
@@ -76,7 +76,7 @@
 
         z {
             bindings = <&kp Z>;
-            key-positions = <8 7>;
+            key-positions = <7 6>;
             layers = <0>;
         };
 
@@ -106,12 +106,12 @@
 
         letter-v {
             bindings = <&kp V>;
-            key-positions = <27 28>;
+            key-positions = <16 17>;
         };
 
         letter-x {
             bindings = <&kp X>;
-            key-positions = <6 7>;
+            key-positions = <17 18>;
         };
     };
 
@@ -308,19 +308,19 @@
 
         promethium_24_nav {
             bindings = <
-        &none       &kp LEFT_CONTROL      &msc SCRL_UP          &msc SCRL_DOWN           &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
-        &kp ESCAPE  &hml LEFT_ALT DELETE  &hmkl LEFT_SHIFT MB2  &hmkl LEFT_CONTROL LCLK  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
-&trans  &none       &none                 &sl 3                 &kp DELETE               &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
-                                          &trans                &kp SPACE                &none     &none   &to 0         &trans
+        &kp ESCAPE    &kp DELETE    &msc SCRL_UP    &msc SCRL_DOWN    &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
+        &kp LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
+&trans  &none         &kp TAB       &kp BACKSPACE   &kp ENTER         &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
+                                    &trans          &kp SPACE         &none     &none   &to 0         &trans
             >;
         };
 
         promethium_24_control {
             bindings = <
-        &kp F11       &kp F2          &none           &none             &none     &trans  &kp DELETE  &kp X          &sk V    &kp Z
-        &sk LEFT_GUI  &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER   &kp BACKSPACE  &kp TAB  &kp ESCAPE
-&trans  &none         &sk LEFT_SHIFT  &to 6           &sl 5             &trans    &trans  &kp K       &kp J          &kp Q    &none       &trans
-                                      &trans          &to 1             &none     &none   &to 2       &trans
+        &kp F11       &kp F2          &none           &none             &none     &trans  &kp V      &kp X          &sk DELETE  &kp Z
+        &sk LEFT_GUI  &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER  &kp BACKSPACE  &kp TAB     &kp ESCAPE
+&trans  &none         &sk LEFT_SHIFT  &to 7           &sl 5             &trans    &trans  &kp K      &kp J          &kp Q       &none       &trans
+                                      &trans          &to 1             &none     &none   &kp ESC    &trans
             >;
         };
 
@@ -353,8 +353,8 @@
 
         promethium_24_mouse {
             bindings = <
-        &kp LEFT_CONTROL  &kp DELETE      &msc SCRL_UP   &msc SCRL_DOWN  &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
-        &kp ESCAPE        &kp LEFT_SHIFT  &mkp RCLK      &mkp LCLK       &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
+        &kp ESCAPE        &kp DELETE      &msc SCRL_UP   &msc SCRL_DOWN  &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
+        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mkp RCLK      &mkp LCLK       &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
 &trans  &none             &kp TAB         &kp BACKSPACE  &kp ENTER       &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
                                           &trans         &kp SPACE       &none     &none   &to 0         &trans
             >;
