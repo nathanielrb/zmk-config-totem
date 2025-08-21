@@ -317,10 +317,10 @@
 
         promethium_24_control {
             bindings = <
-        &kp F11       &kp F2          &none           &none             &none     &trans  &kp V      &kp X          &sk DELETE  &kp Z
-        &sk LEFT_GUI  &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER  &kp BACKSPACE  &kp TAB     &kp ESCAPE
-&trans  &none         &sk LEFT_SHIFT  &to 7           &sl 5             &trans    &trans  &kp K      &kp J          &kp Q       &none       &trans
-                                      &trans          &to 1             &none     &none   &kp ESC    &trans
+        &kp F11       &kp F2          &none           &none             &none     &trans  &kp V           &kp X          &sk DELETE  &kp Z
+        &sk LEFT_GUI  &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &trans  &kp ENTER       &kp BACKSPACE  &kp TAB     &kp ESCAPE
+&trans  &none         &sk LEFT_SHIFT  &to 7           &sl 5             &trans    &trans  &kp K           &kp J          &kp Q       &none       &trans
+                                      &trans          &to 1             &none     &none   &sk LEFT_SHIFT  &trans
             >;
         };
 
@@ -329,7 +329,7 @@
        &kp PIPE   &kp CARET  &kp DOLLAR  &none          &none     &trans  &kp ASTRK  &kp MINUS  &kp QUESTION  &kp EXCL
        &kp UNDER  &kp AMPS   &kp HASH    &kp GRAVE      &trans    &trans  &kp COMMA  &kp DOT    &kp SQT       &kp DOUBLE_QUOTES
 &none  &none      &kp TILDE  &kp AT      &kp BACKSLASH  &none     &trans  &kp SEMI   &kp COLON  &kp SLASH     &none              &none
-                             &trans      &to 6          &none     &none   &kp SLASH  &trans
+                             &trans      &to 2          &none     &none   &kp SLASH  &trans
             >;
         };
 
