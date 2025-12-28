@@ -58,19 +58,19 @@
 
         j {
             bindings = <&kp J>;
-            key-positions = <28 29>;
+            key-positions = <28 27>;
             layers = <0>;
         };
 
         k {
             bindings = <&kp K>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
             layers = <0>;
         };
 
         q {
             bindings = <&kp Q>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
             layers = <0>;
         };
 
