@@ -292,7 +292,7 @@
             bindings = <
        &kp B            &kp Y            &kp O              &kp U                &none    &none  &kp L                &kp D              &kp P            &kp F
        &hml LEFT_GUI C  &hml LEFT_ALT I  &hml LEFT_SHIFT E  &hml LEFT_CONTROL A  &none    &none  &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &hml LEFT_GUI S
-&none  &kp X            &sk LEFT_SHIFT   &sl 3              &sl 4                &none    &none  &kp M                &kp G              &kp W            &kp V            &none
+&none  &none            &sk LEFT_SHIFT   &sl 3              &sl 4                &none    &none  &kp M                &kp G              &kp W            &none            &none
                                          &none              &kp SPACE            &none    &none  &kp R                &none
             >;
         };
