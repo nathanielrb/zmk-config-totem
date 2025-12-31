@@ -292,35 +292,8 @@
             bindings = <
        &kp B            &kp Y            &kp O              &kp U                &none    &none  &kp L                &kp D              &kp P            &kp F
        &hml LEFT_GUI C  &hml LEFT_ALT I  &hml LEFT_SHIFT E  &hml LEFT_CONTROL A  &none    &none  &hmr LEFT_CONTROL H  &hmr LEFT_SHIFT T  &hmr LEFT_ALT N  &hml LEFT_GUI S
-&none  &none            &sk LEFT_SHIFT   &sl 3              &sl 4                &none    &none  &kp M                &kp G              &kp W            &none            &none
+&none  &none            &sk LEFT_SHIFT   &sl 2              &sl 1                &none    &none  &kp M                &kp G              &kp W            &none            &none
                                          &none              &kp SPACE            &none    &none  &kp R                &none
-            >;
-        };
-
-        promethium_24_num {
-            bindings = <
-        &kp CARET  &kp SLASH       &kp EQUAL  &kp PLUS      &trans    &trans  &kp N7     &kp N8     &kp N9       &kp H
-        &kp N0     &kp NUMBER_3    &kp N2     &kp NUMBER_1  &none     &none   &kp N4     &kp N5     &kp N6       &sl 5
-&trans  &none      &sk LEFT_SHIFT  &sl 3      &sl 4         &none     &none   &kp ASTRK  &kp MINUS  &kp PERCENT  &none  &trans
-                                   &trans     &kp SPACE     &none     &none   &to 0      &trans
-            >;
-        };
-
-        promethium_24_nav {
-            bindings = <
-        &kp ESCAPE    &kp DELETE    &msc SCRL_UP    &msc SCRL_DOWN    &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
-        &kp LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
-&trans  &none         &kp TAB       &sl 3           &kp ENTER         &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
-                                    &trans          &kp SPACE         &none     &none   &to 0         &trans
-            >;
-        };
-
-        promethium_24_control {
-            bindings = <
-        &kp PRINTSCREEN  &kp F2          &none           &none             &none     &kp CARET   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sk DELETE  &kp F11
-        &sk LEFT_GUI     &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &kp DOLLAR  &kp ENTER             &kp BACKSPACE          &kp TAB     &kp ESCAPE
-&trans  &none            &sk LEFT_SHIFT  &to 7           &sl 5             &trans    &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp Q       &none       &trans
-                                         &trans          &to 1             &none     &none       &sk LEFT_SHIFT        &trans
             >;
         };
 
@@ -329,7 +302,34 @@
        &kp PIPE   &kp CARET  &kp DOLLAR  &none          &none     &kp PERCENT  &kp ASTRK  &kp MINUS  &kp QUESTION  &kp EXCL
        &kp UNDER  &kp AMPS   &kp HASH    &kp GRAVE      &trans    &kp GRAVE    &kp COMMA  &kp DOT    &kp SQT       &kp DOUBLE_QUOTES
 &none  &none      &kp TILDE  &kp AT      &kp BACKSLASH  &none     &trans       &kp SEMI   &kp COLON  &kp SLASH     &none              &none
-                             &trans      &to 2          &none     &none        &sl 1      &trans
+                             &trans      &to 4          &none     &none        &sl 3      &trans
+            >;
+        };
+
+        promethium_24_control {
+            bindings = <
+        &kp PRINTSCREEN  &kp F2          &none           &none             &none     &kp CARET   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sk DELETE  &kp F11
+        &sk LEFT_GUI     &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &kp DOLLAR  &kp ENTER             &kp BACKSPACE          &kp TAB     &kp ESCAPE
+&trans  &none            &sk LEFT_SHIFT  &to 7           &sl 5             &trans    &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp Q       &none       &trans
+                                         &trans          &to 3             &none     &none       &sk LEFT_SHIFT        &trans
+            >;
+        };
+
+        promethium_24_num {
+            bindings = <
+        &kp CARET  &kp SLASH       &kp EQUAL  &kp PLUS      &trans    &trans  &kp N7     &kp N8     &kp N9       &kp H
+        &kp N0     &kp NUMBER_3    &kp N2     &kp NUMBER_1  &none     &none   &kp N4     &kp N5     &kp N6       &sl 5
+&trans  &none      &sk LEFT_SHIFT  &sl 2      &sl 1         &none     &none   &kp ASTRK  &kp MINUS  &kp PERCENT  &none  &trans
+                                   &trans     &kp SPACE     &none     &none   &to 0      &trans
+            >;
+        };
+
+        promethium_24_nav {
+            bindings = <
+        &kp ESCAPE    &kp DELETE    &msc SCRL_UP    &msc SCRL_DOWN    &none     &trans  &kp PAGE_UP   &kp PAGE_DOWN  &none     &trans
+        &kp LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans    &trans  &kp LEFT      &kp RIGHT      &kp HOME  &kp END
+&trans  &none         &kp TAB       &sl 2           &kp ENTER         &none     &trans  &kp UP_ARROW  &kp DOWN       &none     &none    &trans
+                                    &trans          &kp SPACE         &none     &none   &to 0         &trans
             >;
         };
 
