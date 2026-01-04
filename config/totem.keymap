@@ -320,7 +320,7 @@
        &kp PIPE   &kp CARET  &kp DOLLAR  &none      &none     &kp PERCENT  &kp ASTRK  &kp MINUS  &kp QUESTION  &kp EXCL
        &kp UNDER  &kp AMPS   &kp HASH    &kp GRAVE  &trans    &kp GRAVE    &kp COMMA  &kp DOT    &kp SQT       &kp DOUBLE_QUOTES
 &none  &none      &kp TILDE  &kp AT      &kp GRAVE  &none     &trans       &kp SEMI   &kp COLON  &kp SLASH     &none              &none
-                             &trans      &to 2      &none     &none        &sl 1      &trans
+                             &trans      &to 2      &none     &none        &sl 5      &trans
             >;
         };
 
